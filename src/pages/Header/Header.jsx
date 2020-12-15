@@ -1,75 +1,115 @@
 import React from 'react'
-
-import { Link, BrowserRouter as Router } from 'react-router-dom'
-import { Nav } from 'react-bootstrap'
+import './Header.css'
+import { NavLink, BrowserRouter as Router } from 'react-router-dom'
+import { Nav, Navbar } from 'react-bootstrap'
 const styledDiv = {
-    "backgroundImage": 'url("img1.png")',
-    "borderBottomLeftRadius": "50%",
-    "borderBottomRightRadius": "50%",
-    "height": "100vh",
-    "alignContent" :"space-between"
+    "backgroundImage": 'url("Hero.png")',
+
+    "minHeight": "100vh",
+    backgroundPosition: "center center",
+    backgroundRepeat: "no-repeat",
+    backgroundSize: "cover",
+    // backgroundAttachment: "fixed"
+
 
 }
 const styledButton = {
-    "color": "purple",
-    "borderRadius": "21px",
-    "width": "100%"
+    "borderRadius": "26px",
+    color: "#492477",
+    width: "234px",
+    padding: "0.2rem",
+    fontSize: "20px",
+    fontWeight: "500",
+    marginTop: "1rem",
+    marginLeft:"4rem"
+    // "width": "100%"
 
 
 }
 const styledLogo = {
 
-    "height": "4.5rem"
+    "height": "6.5rem",
+    // "marginLeft":"8rem"
+
 }
 const styledNav = {
-    "color": "white",
-    "margin": "0 1.25rem"
+    "marginTop": "2rem",
+    "justifyContent": "space-around"
 }
 const styledHeading = {
-    "color": "white"
-    
+    "color": "white",
+    "marginLeft" :"4rem"
+
 }
 export default function Header() {
     return (
         <>
-            <Router>
-                <div className="d-flex flex-column" style={styledDiv}>
-                    <div className="d-flex flex-row" style={{justifyContent:"space-around"}}>
-                        <Link to="/" className="mt-5">
-                            <img alt="" src="logo.png" style={styledLogo} />
+            <div className="d-flex flex-column Header" id="Header" style={styledDiv}>
+                <Router>
+                    <Navbar bg="transparent" variant="dark" expand="lg" className="d-flex" style={styledNav}>
+                        <Navbar.Brand href="/" className="">
+                            <img src="logo (1).png" style={styledLogo} />
+                        </Navbar.Brand>
+                        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+                        <Navbar.Collapse id="basic-navbar-nav" className=" flex-grow-0">
+                            <Nav className="ml-auto" style={{
+                                fontSize: "20px",
+                                fontWeight: "500",
+                                color: "white"
+                                // "marginRight":"8rem"
 
-                        </Link>
-                        <Nav className="d-flex mt-5" style={{ fontSize: "1.25em", fontWeight: "600" }}>
-                            <Nav.Item>
-                                <Nav.Link as={Link} to="/" style={styledNav}>
+
+                            }}>
+                                <Nav.Link as={NavLink} className="color-white pl-5" to="/home" style={{
+                                    color: "white"
+                                }}>
                                     Home
-                    </Nav.Link>
-                            </Nav.Item>
-                            <Nav.Item>
-                                <Nav.Link as={Link} to="/how-to-play" style={styledNav}>
+                            </Nav.Link>
+                                <Nav.Link as={NavLink} className="color-white pl-5" to="/how-to-play" style={{
+                                    color: "white"
+
+                                }}>
                                     HowToPlay
-                    </Nav.Link>
-                            </Nav.Item>
-                            <Nav.Item>
-                                <Nav.Link as={Link} to="/faq" style={styledNav}>
-                                    FAQ
-                    </Nav.Link>
-                            </Nav.Item>
-                            <Nav.Item>
-                                <Nav.Link as={Link} to="/signin">
-                                    <button style={styledButton}>Sign In</button>
+                            </Nav.Link>
+                                <Nav.Link as={NavLink} to="/faq" className="color-white pl-5" style={{
+                                    color: "white"
+
+                                }}>
+                                    FAQs
+                            </Nav.Link>
+                                <Nav.Link as={NavLink} to="/login" className="color-white pl-5" style={{
+                                    color: "white"
+
+                                }}>
+                                    <button  style={{
+                                        width: "8rem", "borderRadius": "26px",
+                                        padding: "0.25rem",
+                                        fontSize: "20px",
+                                        fontWeight: "500",
+                                        color: "#492477"
+
+                                    }}>
+                                        Sign In
+                                    </button>
                                 </Nav.Link>
-                            </Nav.Item>
-                        </Nav>
+                            </Nav>
+                        </Navbar.Collapse>
+
+                    </Navbar>
+                </Router>
+                <div className="d-flex justify-content-center row" style={{ marginTop: "4rem", width:"100%"}}>
+                    <div className="container">
+                        <h1
+                            style={styledHeading}>
+                            Win the game, <br />
+                            Win the play
+                        </h1>
+                        <button style={styledButton}>Start Playing</button>
+
                     </div>
-                    <h1 style={styledHeading} >
-                        Win the Game,
-                        Win thr day
-               </h1>
                 </div>
 
-
-            </Router>
+            </div>
 
         </>
     )
