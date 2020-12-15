@@ -1,0 +1,53 @@
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  {
+    
+    #cards{
+
+        margin-top: 50rem;
+        margin-left: 15rem;
+    }
+
+  }
+  @media only screen and (min-width:540px) and (max-device-width:700px){
+    #cards{
+        margin-top:29rem;
+        margin-left:5rem
+    }
+    #how-to-play{
+        width:200%
+    }
+  }
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  {
+  #cards{
+    margin-left:5rem;
+    margin-top: 21rem;
+
+   }
+   #div1, #div2 
+   {
+     margin-top:1rem;  
+   }
+    #container{
+        display:flex;
+        flex-direction: column;
+    }
+    #how-to-play{
+        width:200%
+    }
+  }
+@media only screen 
+  and (min-device-width: 1280px)
+  and (max-device-width:1440px)
+  {
+      #cards
+      {
+
+          margin-top: 8rem;
+      }
+  } 
+  
