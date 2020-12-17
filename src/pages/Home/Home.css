@@ -1,3 +1,119 @@
+h2 , p{
+text-align:center
+}
+.rotated-stroke{
+    transform:rotateX(180deg);
+    position: absolute;
+    left: 57%;
+
+}
+.stroke1{
+    position: absolute;
+    left: 35%;
+}
+#cards button{
+    width: 260px;
+     border-radius: 26px;
+    padding: 0.25rem;
+    font-size: 20px;
+    font-weight: 500;
+    color: #492477;
+    border: none
+
+}
+.subscribe-letter{
+border-radius: 50px;
+color:white;
+background-image: url("../../opaque.png"), linear-gradient(280deg, #B90D8E, #110A3E);
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+position: absolute;
+left:17%;
+top:135rem;
+padding-left:10rem;
+padding-right:10rem;
+
+/* opacity: 0.3; */
+}
+#faq button{
+    border-radius: 26px;
+    /* padding: 0.5rem; */
+    font-size: 20px;
+    font-weight: 600;
+    color: #0E335E;
+    background-color:white;
+    box-shadow: 0px 3px 6px #00000029;
+border: 3px solid #FFFFFF;
+}
+.subscribe-letter .subscribe-button{
+    margin:1rem 0 1rem 0;
+    width: 206px;
+    border-radius: 26px;
+   padding: 0.25rem;
+   font-size: 20px;
+   font-weight: 500;
+   color: #492477;
+   border: none
+
+}
+#how-to-play{
+    background: #E4F0F9B0;
+    border-radius: 500px;
+    margin-top: 5rem;
+    padding:10rem 6rem 18rem 6rem
+}
+#how-to-play .circle-row{
+    width:100%;
+    padding:3rem
+}
+#how-to-play .circle {
+    background:transparent linear-gradient(140deg, #F603BE 0%, #340056 126%);
+     color: white;
+      height: 200px;
+      width: 200px
+
+}
+#cards{
+    position: absolute;
+    top: 76%;
+    left: 23%;
+}
+#cards #div1{
+    background: #FF2882;
+    border-radius: 50px;
+    opacity: 1;
+    padding: 2rem;
+    color: white;
+    margin-right:1rem;
+    box-shadow: -3px 14px 52px -6px rgba(59,57,59,1)
+
+}
+#cards #div2{
+    background: #963CFF;
+    border-radius: 50px;
+    opacity: 1;
+    padding: 2rem;
+    color: white;
+    margin-right: 1rem;
+    box-shadow: -3px 14px 52px -6px rgba(59,57,59,1)
+}
+  
+@media only screen 
+and (max-device-width:1440px)
+and (max-device-width:1280px) 
+
+{
+    .subscribe-letter{
+      left: 18%;
+      top: 146rem;
+    }
+    #cards
+    {
+
+    top:80%  
+    }
+} 
 @media only screen 
   and (min-device-width: 768px) 
   and (max-device-width: 1024px) 
@@ -5,49 +121,64 @@
     
     #cards{
 
-        margin-top: 50rem;
-        margin-left: 15rem;
+        top: 127%;
+        left: 55%;
     }
-
+    #how-to-play{
+       padding-top:8rem;
+        width:200%
+    }
   }
-  @media only screen and (min-width:540px) and (max-device-width:700px){
+
+@media only screen and (min-width:540px) and (max-device-width:700px){
     #cards{
-        margin-top:29rem;
-        margin-left:5rem
-    }
+        top: 127%;
+        left: 38%;
+           }
     #how-to-play{
-        width:200%
+        width:200%;
+        padding-top:8rem;
     }
   }
-@media only screen 
-  and (min-device-width: 320px) 
-  and (max-device-width: 480px)
-  {
-  #cards{
-    margin-left:5rem;
-    margin-top: 21rem;
-
-   }
-   #div1, #div2 
-   {
-     margin-top:1rem;  
-   }
-    #container{
-        display:flex;
-        flex-direction: column;
-    }
-    #how-to-play{
-        width:200%
-    }
-  }
-@media only screen 
-  and (min-device-width: 1280px)
-  and (max-device-width:1440px)
-  {
-      #cards
-      {
-
-          margin-top: 8rem;
-      }
-  } 
   
+@media only screen 
+and (min-device-width: 280px) 
+and (max-device-width: 480px)
+{
+    .subscribe-letter{
+      top: 210rem;
+      
+
+    }
+    #cards{
+
+     top: 89%;
+     left: 57%;   
+      }
+     #how-to-play .circles{
+       flex-direction: column;
+       }
+
+      #div1, #div2 
+      {
+       margin-top:1rem;  
+      }
+      #container{
+      display:flex;
+      flex-direction: column;
+      }
+      #how-to-play{
+      width:200%;
+      padding-top:17rem;
+       }
+     #how-to-play .rotated-stroke{
+      transform: rotateZ(270deg);
+      margin-top: 28rem;
+
+       }
+     #how-to-play .stroke1{
+      margin-top: 11rem;
+      transform: rotateZ(90deg);
+      margin-left: 16rem;
+     }
+}
