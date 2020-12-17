@@ -21,7 +21,8 @@ const styledButton = {
     fontSize: "20px",
     fontWeight: "500",
     marginTop: "1rem",
-    marginLeft:"4rem"
+    marginLeft:"4rem",
+    border:"none"
     // "width": "100%"
 
 
@@ -48,7 +49,7 @@ export default function Header() {
                 <Router>
                     <Navbar bg="transparent" variant="dark" expand="lg" className="d-flex" style={styledNav}>
                         <Navbar.Brand href="/" className="">
-                            <img src="logo (1).png" style={styledLogo} />
+                            <img src="logo.png" style={styledLogo} />
                         </Navbar.Brand>
                         <Navbar.Toggle aria-controls="basic-navbar-nav" />
                         <Navbar.Collapse id="basic-navbar-nav" className=" flex-grow-0">
@@ -86,7 +87,8 @@ export default function Header() {
                                         padding: "0.25rem",
                                         fontSize: "20px",
                                         fontWeight: "500",
-                                        color: "#492477"
+                                        color: "#492477",
+                                        border:"none"
 
                                     }}>
                                         Sign In
@@ -101,8 +103,8 @@ export default function Header() {
                     <div className="container">
                         <h1
                             style={styledHeading}>
-                            Win the game, <br />
-                            Win the play
+                            Win the Game, <br />
+                            Win the Day.
                         </h1>
                         <button style={styledButton}>Start Playing</button>
 

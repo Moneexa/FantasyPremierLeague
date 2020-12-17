@@ -17,7 +17,7 @@ height:150vh
           }
   }
   @media only screen 
-  and (min-device-width: 320px) 
+  and (min-device-width: 280px) 
   and (max-device-width: 480px){
     #Header{
       width:200%;
