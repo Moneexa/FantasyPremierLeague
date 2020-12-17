@@ -5,6 +5,7 @@ import Routes from './Routes';
 import reportWebVitals from './reportWebVitals';
 import store from 'easy-peasy'
 import  'bootstrap/dist/css/bootstrap.min.css'
+import 'typeface-rubik'
 
 ReactDOM.render(
   <React.StrictMode>
