@@ -1,0 +1,71 @@
+.signin-form {
+    color: white;
+    z-index: 0;
+    margin-top: -35rem;
+    margin-bottom: 5rem;
+}
+
+.signin-form .signin-heading {
+    text-align: center;
+    font: "normal normal medium 5rem Rubik"
+}
+
+.signin-form .para {
+    font: normal normal 300 1.3rem Rubik;
+    width: 35%
+}
+
+.signin-form .signin-button {
+    text-align: center;
+    border: 3px solid #FFFFFF;
+    padding: 0.25rem 1rem 0.25rem 1rem;
+    font-weight: 500;
+    font: normal normal medium 1.938rem Rubik;
+    color: #492477;
+    border-radius: 26px;
+}
+
+.signin-form .last-para {
+    margin-top: 0.4rem
+}
+
+.signin-form .fpl-email {
+    width: 40rem;
+    text-align: center;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    margin-top: 1.5rem;
+    border: 2px solid #FFFFFF;
+    background: transparent;
+    border-radius: 30px;
+    color: white
+}
+
+@media only screen and (min-device-width: 1280px) and (max-device-width: 1440px) {
+    .signin-form {
+        margin-top: -30rem
+    }
+    .last-para {
+        margin-top: 8rem;
+    }
+    .signin-form .para {
+        font: normal normal 300 1.3rem Rubik;
+        width: 50%
+    }
+}
+
+@media only screen and (min-device-width: 280px) and (max-device-width: 480px) {
+    .signin-form .para {
+        font: normal normal 300 0.8rem Rubik;
+        width: 100%;
+    }
+    .signin-form .fpl-email {
+        width: 15rem
+    }
+    .signin-form {
+        margin-top: -38rem
+    }
+    .last-para {
+        margin-top: 2rem;
+    }
+}
