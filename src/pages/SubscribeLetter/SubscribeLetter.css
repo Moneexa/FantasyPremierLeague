@@ -1,0 +1,47 @@
+.subscribe-letter {
+    border-radius: 50px;
+    color: white;
+    background-image: url("../../opaque.png"), linear-gradient(280deg, #B90D8E, #110A3E);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-left: 10rem;
+    padding-right: 10rem;
+    margin: -4rem 8rem 2rem 8rem;
+    z-index: 0;
+    /* opacity: 0.3; */
+}
+
+.subscribe-letter .subscribe-button {
+    margin: 1rem 0 1rem 0;
+    width: 206px;
+    border-radius: 26px;
+    padding: 0.25rem;
+    font-size: 20px;
+    font-weight: 500;
+    color: #492477;
+    border: none
+}
+
+@media only screen and (max-device-width:1440px) and (max-device-width:1280px) {
+    .subscribe-letter .text {
+        width: 60vw;
+    }
+}
+
+@media only screen and (max-device-width: 760px) and (max-device-width) {
+    .subscribe-letter {
+        margin-right: 1rem;
+        margin-left: 1rem;
+    }
+}
+
+@media only screen and (min-device-width: 280px) and (max-device-width: 480px) {
+    .subscribe-letter {
+        margin-left: 1.5rem;
+        margin-right: 2rem;
+    }
+    .subscribe-letter .text {
+        width: 88vw
+    }
+}
