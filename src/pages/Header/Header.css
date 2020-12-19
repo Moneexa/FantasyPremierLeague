@@ -1,28 +1,55 @@
-@media only screen 
-  and (min-device-width: 768px) 
-  and (max-device-width: 1024px) {
-#Header{
-width:200%;
-height:150vh
-
+.heading-row {
+  margin-top: 5rem;
+  width: 100%
 }
 
+.heading-row .heading-h1 {
+  color: white;
+  margin-left: 4rem;
+  margin-right: 45rem;
+  font: normal normal medium 5rem Rubik;
+}
+
+.heading-row .start-playing {
+  border-radius: 26px;
+  color: #492477;
+  padding: 0.2rem 3.5rem 0.2rem 3.5rem;
+  font-size: 20px;
+  font-weight: 500;
+  margin-top: 1rem;
+  margin-left: 4rem;
+  border: none
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  #Header {
+    height: 150vh
+  }
+  .heading-row .heading-h1{
+    margin-right: 22rem;
 
   }
-  @media only screen and (min-width:540px) and (max-device-width:700px){
-    #Header{
-      width:200%;
-      height:150vh
-      
-          }
+}
+
+@media only screen and (min-width:540px) and (max-device-width:700px) {
+  #Header {
+    height: 150vh
   }
-  @media only screen 
-  and (min-device-width: 280px) 
-  and (max-device-width: 480px){
-    #Header{
-      width:200%;
-      height:150vh
-      
-          }
-    
+}
+
+@media only screen and (min-device-width: 280px) and (max-device-width: 480px) {
+  #Header {
+    height: 150vh
   }
+  #Header .start-playing {
+    width: 183px;
+  }
+  .heading-row .heading-h1 {
+    color: white;
+    margin-left: 4rem;
+    margin-right: -2rem;
+  }
+  .heading-row .start-playing {
+    padding: 0.5rem 0.5rem 0.5rem 0.5rem
+  }
+}
