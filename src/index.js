@@ -3,14 +3,20 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import Routes from './Routes';
 import reportWebVitals from './reportWebVitals';
-import store from 'easy-peasy'
+import {store} from './shared/store/store'
 import  'bootstrap/dist/css/bootstrap.min.css'
 import 'typeface-rubik'
+import { StoreProvider } from 'easy-peasy';
 
+function Index() {
+  return (
+    <StoreProvider store={store}>
+      <Routes />
+    </StoreProvider>
+  );
+}
 ReactDOM.render(
-  <React.StrictMode>
-    <Routes storeProvider={store}/>
-  </React.StrictMode>,
+  <Index />,
   document.getElementById('root')
 );
 
