@@ -1,0 +1,76 @@
+#footer {
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center
+}
+
+#footer .first-footer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+#footer .first-footer .first-child {
+    width: 13%
+}
+
+#footer .first-footer .first-child .fpl-logo {
+    margin-bottom: auto;
+
+    height: 7rem;
+}
+
+#footer .first-footer .bold-text {
+    text-align: left;
+    font: normal normal medium 0.9rem Rubik;
+    color: #0F1F4E;
+    font-weight: 500
+}
+
+#footer .last-footer {
+    background:linear-gradient(to left, #B90D8E, #110A3E);
+    text-align: center;
+}
+
+#footer .last-footer .last-footer-text {
+    text-align: center;
+    font: normal normal 300 0.4rem Rubik;
+    color: #FFFFFF;
+}
+
+#footer .first-footer .text {
+    text-align: left;
+    font: normal normal 300 0.65rem Rubik;
+    color: #0F1F4E
+}
+
+#footer .first-footer .social-icon {
+    height: 2rem
+}
+@media only screen and (min-device-width: 768px) and (max-device-width: 41024px) {
+    #footer .first-footer .first-child {
+        width: 25%;
+    }
+}
+@media only screen and (min-device-width: 280px) and (max-device-width: 480px) {
+    #footer .first-footer {
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: flex-start;
+    }
+    #footer .first-footer .first-child {
+        width: 77%;
+    }
+    #footer .first-footer .first-child .fpl-logo {
+        height: 5rem;
+    }
+    #footer .first-footer .bold-text {
+        font: normal normal medium 1.1rem Rubik;
+    }
+    #footer .first-footer .text {
+        font: normal normal 300 0.8rem Rubik;
+    }
+}
