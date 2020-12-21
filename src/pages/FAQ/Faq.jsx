@@ -43,7 +43,7 @@ export default function Faq() {
 
                                     >
                                         <Typography style={{
-                                            font: "normal normal 300 1.1rem Rubik",
+                                            font: "normal normal 300 1.9rem Rubik",
                                             color: "#10093D",
                                             fontWeight: "300"
 
@@ -51,7 +51,7 @@ export default function Faq() {
                                     </AccordionSummary>
                                     <AccordionDetails>
                                         <Typography style={{
-                                            textAlign: "left", font: "normal normal 300 1rem Rubik",
+                                            textAlign: "left", font: "normal normal 300 1.5rem Rubik",
                                             color: "#10093D",
                                             fontWeight: "300"
                                         }} >
