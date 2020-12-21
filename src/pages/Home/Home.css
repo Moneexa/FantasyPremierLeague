@@ -5,7 +5,7 @@ h2, p {
 .rotated-stroke {
     transform: rotateX(180deg);
     position: absolute;
-    left: 59%;
+    left: 55%;
 }
 
 #cards .card-heading {
@@ -14,7 +14,7 @@ h2, p {
 
 .stroke1 {
     position: absolute;
-    left: 32%;
+    left: 36%;
 }
 
 #cards .gets-started-button {
@@ -44,6 +44,12 @@ h2, p {
     padding: 7rem 6rem 10rem 6rem
 }
 
+#how-to-play .how-to-play-text {
+    font: normal normal 300 1.875rem Rubik;
+    margin-left: 6rem;
+    margin-right: 6rem;
+}
+
 #how-to-play .circle-row {
     width: 100%;
     padding: 3rem
@@ -59,7 +65,7 @@ h2, p {
 #cards {
     position: absolute;
     top: 76%;
-    left: 23%;
+    left: 25%;
 }
 
 #cards #div1 {
@@ -83,12 +89,11 @@ h2, p {
 }
 
 #how-to-play .how-to-play-heading {
-    font-weight: 650;
+    /* font-weight: 650; */
     font: normal normal medium 5rem Rubik;
     color: #10093D;
     padding-top: 2rem;
     text-align: center;
-
 }
 
 @media only screen and (max-device-width:1440px) and (max-device-width:1280px) {
@@ -100,7 +105,7 @@ h2, p {
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
     #cards {
         top: 131%;
-        left: 12%;
+        left: 7%;
     }
     /* #how-to-play {
         padding-top: 8rem;
@@ -157,7 +162,8 @@ h2, p {
         padding-top: 12rem
     }
     #how-to-play .how-to-play-text {
-        width: 100vw
+        width: 100vw;
+         font: normal normal 300 1.2rem Rubik;
     }
     #how-to-play .stroke1 {
         margin-top: 11rem;
