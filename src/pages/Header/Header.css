@@ -3,14 +3,25 @@
   width: 100%
 }
 
-.heading-row .heading-h1 {
+.heading-row .contain .heading-h1 {
   color: white;
   margin-left: 4rem;
   margin-right: 45rem;
   font: normal normal medium 5rem Rubik;
 }
 
-.heading-row .start-playing {
+.heading-row .contain .para-text {
+  color: white;
+  text-align: left;
+  margin-left: 4rem;
+  margin-right: 30rem
+}
+
+.heading-row .contain {
+  margin-left: 4rem
+}
+
+.heading-row .contain .start-playing {
   border-radius: 26px;
   color: #492477;
   padding: 0.2rem 3.5rem 0.2rem 3.5rem;
@@ -25,9 +36,11 @@
   #Header {
     height: 150vh
   }
-  .heading-row .heading-h1{
+  .heading-row .contain .heading-h1 {
     margin-right: 22rem;
-
+  }
+  .heading-row .contain {
+    margin-left: 3rem
   }
 }
 
@@ -35,21 +48,32 @@
   #Header {
     height: 150vh
   }
+  .heading-row .contain {
+    margin-left: 3rem
+  }
 }
 
 @media only screen and (min-device-width: 280px) and (max-device-width: 480px) {
+  .heading-row .contain {
+    margin-left: -1rem
+  }
   #Header {
     height: 150vh
   }
   #Header .start-playing {
     width: 183px;
   }
-  .heading-row .heading-h1 {
+  .heading-row .contain .heading-h1 {
     color: white;
     margin-left: 4rem;
-    margin-right: -2rem;
+    margin-right: 1rem;
+    font: normal normal medium 3rem Rubik;
   }
-  .heading-row .start-playing {
+  .heading-row .contain .para-text {
+    margin-left: 4rem;
+    margin-right: 2rem;
+  }
+  .heading-row .contain .start-playing {
     padding: 0.5rem 0.5rem 0.5rem 0.5rem
   }
 }
