@@ -6,26 +6,30 @@ import Faq from './pages/FAQ/Faq'
 import SignIn from './pages/SignIn/SignIn'
 import Header from './pages/Header/Header'
 import Footer from './pages/Footer/Footer'
-import { useStoreActions, useStoreState } from 'easy-peasy'
 export default function Routes() {
-    // const loggedIn = useStoreState(state => state.loggedIn)
     return (
         <>
             <Router>
-
                 <Header />
                 <Switch>
                     <Redirect from="/" exact to="/home" />
                     <Route path="/home" component={Home} />
+
                     <Route path="/how-to-play" component={HowToPlay} />
+                    <Route path="/dashboard" />
+
                     <Route path="/faq" component={Faq} />
+
+                    <Route path="/my-leagues" />
+
                     <Route path="/signin" component={SignIn} />
+                    <Route path="/wallet" />
+
 
                 </Switch>
             </Router>
             <Footer />
 
         </>)
-
 
 }
