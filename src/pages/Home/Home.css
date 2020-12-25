@@ -26,7 +26,7 @@ h2, p {
     border: none
 }
 
-#faq button {
+#faq button, #how-to-play #leaguesBtn {
     border-radius: 26px;
     /* padding: 0.5rem; */
     font-size: 20px;
@@ -41,7 +41,7 @@ h2, p {
     background: #E4F0F9B0;
     border-radius: 500px;
     margin-top: 5rem;
-    padding: 7rem 6rem 10rem 6rem
+    padding: 7rem 10rem 10rem 10rem
 }
 
 #how-to-play .how-to-play-text {
@@ -62,10 +62,46 @@ h2, p {
     width: 13.25rem
 }
 
+#how-to-play .tab1 {
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+#how-to-play .table-headings {
+    width: 100%;
+    justify-content: space-around;
+}
+
+#how-to-play .rows {
+    width: 100%;
+    justify-content: space-around;
+    box-shadow: 0px 3px 6px #00000029;
+    border-radius: 30px;
+    background: white;
+}
+
+/* #how-to-play .table-headings, .rows{
+    justify-content: space-between;
+} */
+
+#how-to-play .tab1 .rows .row-text {
+    font-family: Rubik;
+    font-size: 1.63rem;
+    color: #0F1F4E;
+}
+
+#how-to-play .tab1 .table-headings .head-text {
+    font-family: Rubik;
+    font-size: 1.3rem;
+    color: #0F1F4E;
+}
+
 #cards {
     position: absolute;
     top: 76%;
-    left: 25%;
+    left: 22%;
+    right: 0;
+    width: 55%
 }
 
 #cards #div1 {
@@ -75,7 +111,8 @@ h2, p {
     padding: 2rem;
     color: white;
     margin-right: 1rem;
-    box-shadow: -3px 14px 52px -6px rgba(59, 57, 59, 1)
+    box-shadow: -3px 14px 52px -6px rgba(59, 57, 59, 1);
+    margin-bottom: 1rem
 }
 
 #cards #div2 {
@@ -85,7 +122,8 @@ h2, p {
     padding: 2rem;
     color: white;
     margin-right: 1rem;
-    box-shadow: -3px 14px 52px -6px rgba(59, 57, 59, 1)
+    box-shadow: -3px 14px 52px -6px rgba(59, 57, 59, 1);
+    margin-bottom: 1rem
 }
 
 #how-to-play .how-to-play-heading {
@@ -98,14 +136,17 @@ h2, p {
 
 @media only screen and (max-device-width:1440px) and (max-device-width:1280px) {
     #cards {
-        top: 80%
+        top: 80%;
+        width:55%;
     }
 }
 
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
     #cards {
-        top: 131%;
-        left: 7%;
+        top: 80%;
+        /* left: 25%; */
+        left: 190px;
+        width: 66%;
     }
     /* #how-to-play {
         padding-top: 8rem;
@@ -114,8 +155,8 @@ h2, p {
 
 @media only screen and (min-width:540px) and (max-device-width:700px) {
     #cards {
-        top: 127%;
-        left: 38%;
+        top: 80%;
+        /* left: 38%; */
     }
     /* #how-to-play {
         padding-top: 8rem;
@@ -124,9 +165,11 @@ h2, p {
 
 @media only screen and (min-device-width: 280px) and (max-device-width: 480px) {
     #cards {
-        width: 75%;
-        top: 89%;
-        left: 16%;
+        top: 69%;
+        /* left: 16%; */
+        left: 35px;
+        width: 90%;
+        right: 0;
     }
     #cards button {
         width: 180px;
@@ -150,9 +193,19 @@ h2, p {
         display: flex;
         flex-direction: column;
     }
-    /* #how-to-play {
-        padding-top: 17rem;
-    } */
+    #how-to-play {
+        padding-left: 5rem;
+        padding-right: 5rem;
+    }
+    #how-to-play .tab1 {
+        width: auto
+    }
+    #how-to-play .table-headings {
+        width: auto
+    }
+    #how-to-play .rows {
+        width: auto;
+    }
     #how-to-play .rotated-stroke {
         transform: rotateZ(270deg);
         margin-top: 30rem;
@@ -163,7 +216,7 @@ h2, p {
     }
     #how-to-play .how-to-play-text {
         width: 100vw;
-         font: normal normal 300 1.2rem Rubik;
+        font: normal normal 300 1.2rem Rubik;
     }
     #how-to-play .stroke1 {
         margin-top: 11rem;

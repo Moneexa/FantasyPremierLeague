@@ -12,7 +12,7 @@ import ExpandIcon from '@material-ui/icons/ExpandMore'
 import SubscribeLetter from '../SubscribeLetter/SubscribeLetter'
 import { useStoreActions, useStoreState } from 'easy-peasy';
 import Arrow from './Arrow.svg'
-import {Link} from 'react-router-dom'
+import { Link } from 'react-router-dom'
 
 
 export default function Home() {
@@ -40,7 +40,7 @@ export default function Home() {
         }
     }, [])
     return (<>
-        <div className="row" id="cards">
+        <div  className="row" id="cards">
             <div className="d-flex container" id="container">
 
                 <div className="d-flex flex-column justify-content-center align-items-center col-sm-12 col-lg-6 col-md-6 col-xs-12" id="div1">
@@ -94,7 +94,7 @@ export default function Home() {
                     <h1 className="pb-3 how-to-play-heading">How to Play</h1>
                     <p className="pt-3 how-to-play-text">We made it easy to play and win. login with your FPL account and compete with the players at closely matched overall rank</p>
                     <div className="circle-row">
-                        <div className="d-flex container circles">
+                        <div className="d-flex flex-wrap-row-wrap circles">
                             <div className="d-flex flex-column justify-content-center align-items-center col-md-4 col-sm-12 col-lg-4 mx-1">
                                 <div className="rounded-circle d-flex align-items-center justify-content-center circle" >
                                     <img src={Select} />
@@ -185,39 +185,41 @@ export default function Home() {
                     <p className="pt-3 how-to-play-text">
                         Explore the leagues you are playing or previously played
                         </p>
-                    <table className='table borderless'>
-                        <thead>
-                            <tr>
-                                <th>#</th>
-                                <th>Game Weak League</th>
-                                <th>League No.</th>
-                                <th>Your Rank</th>
-                                <th>Stake</th>
-                            </tr>
-                        </thead>
+                    <div className="d-flex flex-column align-items-center tab1">
+                        <div className="d-flex align-items-center table-headings p-2">
+                            <p className="head-text" style={{ width: "10%" }}>#</p>
+                            <p className="head-text" style={{ width: "25%" }}>Game Weak League</p>
+                            <p className="head-text" style={{ width: "30%" }}>League No.</p>
+                            <p className="head-text" style={{ width: "20%" }}>Your Rank</p>
+                            <p className="head-text" style={{ width: "20%" }}>Stack</p>
+                        </div>
 
-                        <tbody>
-                            {myLeagues.map((value, index) => {
-                                if (index <= 5) {
-                                    return (<tr key={index} className="mb-2" style={{
-                                        boxShadow: "0px 3px 6px #00000029",
-                                        borderRadius: "30px", backgroundColor:"white"
+                        {myLeagues.map((value, index) => {
+                            if (index < 5) {
+                                return (<div key={index} className="d-flex align-items-center rows mb-2 p-3">
+                                    <p className="row-text" style={{
+                                        width: "10%",
+                                        border: "3px solid #0E335E",
+                                        borderRadius: "14px"
+                                    }}>{value.id}</p>
+                                    <p className="row-text" style={{ width: "25%" }}>{value.gameWeakLeague}</p>
+                                    <p className="row-text" style={{ width: "30%" }}>{value.leagueNo}</p>
+                                    <p className="row-text" style={{ width: "20%" }}>{value.yourRank}</p>
+                                    <p className="row-text pl-md-5 pl-sm-0" style={{ width: "20%" }}>{value.stake}
+                                        <Link to="/my-leagues" className="ml-md-5 ml-sm-0">
+                                            <img src={Arrow} style={{ height: "0.813rem" }} />
+                                        </Link>
+                                    </p>
 
-                                    }}>
-                                        <td>{value.id}</td>
-                                        <td>{value.gameWeakLeague}</td>
-                                        <td>{value.leagueNo}</td>
-                                        <td>{value.yourRank}</td>
-                                        <td>{value.stake}</td>
-                                        <td><Link to="/my-leagues">
-                                            <img src={Arrow} />
-                                             </Link></td>
-                                    </tr>)
-                                }
-                            })}
-                        </tbody>
+                                </div>)
+                            }
+                        })}
+                    </div>
+                    <button className="mt-2 py-2 px-5" id="leaguesBtn">View All +</button>
 
-                    </table>
+
+
+
                 </>
             }
 
