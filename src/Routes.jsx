@@ -6,10 +6,16 @@ import Faq from './pages/FAQ/Faq'
 import SignIn from './pages/SignIn/SignIn'
 import Header from './pages/Header/Header'
 import Footer from './pages/Footer/Footer'
+import Wallet from './pages/Wallet/Wallet'
+import MyLeagues from './pages/MyLeagues/MyLeagues'
+import Menu from './pages/Menu/Menu'
+import PrivacyPolicy from './pages/PrivacyPolicy/PrivacyPolicy'
+import Mayhem from './pages/Mayhem/Mayhem'
 export default function Routes() {
     return (
         <>
             <Router>
+
                 <Header />
                 <Switch>
                     <Redirect from="/" exact to="/home" />
@@ -20,15 +26,18 @@ export default function Routes() {
 
                     <Route path="/faq" component={Faq} />
 
-                    <Route path="/my-leagues" />
+                    <Route path="/my-leagues" component={MyLeagues} />
 
                     <Route path="/signin" component={SignIn} />
-                    <Route path="/wallet" />
-
+                    <Route path="/wallet" component={Wallet} />
+                    <Route path="/privacy-policy" component={PrivacyPolicy} />
+                    <Route path="/mayhem" component={Mayhem}/>
+                    <Route path="/menu" component={Menu} />
 
                 </Switch>
+                <Footer />
+
             </Router>
-            <Footer />
 
         </>)
 
