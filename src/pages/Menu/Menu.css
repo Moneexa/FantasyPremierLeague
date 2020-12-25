@@ -1,0 +1,21 @@
+.menu {
+    color: white;
+    position: absolute;
+    z-index: 0;
+    top: 15%;
+    left: 0;
+    right: 0%;
+}
+.home-menu{
+    color: white;
+    padding: 1rem 7rem 1rem 7rem;
+    border-bottom: 1px solid lightslategray;
+    font: normal normal medium 28px/33px Rubik;
+}
+
+
+@media only screen and (min-device-width: 280px) and (max-device-width: 480px) {
+    .menu {
+        top: 25%
+    }
+}
