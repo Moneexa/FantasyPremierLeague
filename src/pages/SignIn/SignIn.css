@@ -1,8 +1,9 @@
 .signin-form {
     color: white;
     z-index: 0;
-    margin-top: -10rem;
-     margin-bottom: 0rem; 
+    position: absolute;
+    left:0; right:0;
+    top:25%
 }
 
 .signin-form .signin-heading {
@@ -26,7 +27,7 @@
 }
 
 .signin-form .last-para {
-    margin-top: 1rem
+    margin-top: 2rem
 }
 
 .signin-form .fpl-email {
@@ -42,9 +43,7 @@
 }
 
 @media only screen and (min-device-width: 1280px) and (max-device-width: 1440px) {
-    .signin-form {
-        margin-top: -30rem
-    }
+   
     .signin-form.last-para {
         margin-top: 0.5rem;
     }
@@ -54,10 +53,7 @@
     }
 }
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
-    .signin-form {
-        margin-top: -47rem;
-        margin-bottom: 5rem;
-    }
+   
     .signin-form .last-para {
         margin-top: 13rem;
     }
@@ -66,6 +62,9 @@
     }
 }
 @media only screen and (min-device-width: 280px) and (max-device-width: 480px) {
+    .signin-form{
+        top:30%
+    }
     .signin-form .para {
         font: normal normal 300 0.8rem Rubik;
         width: 100%;
@@ -73,10 +72,7 @@
     .signin-form .fpl-email {
         width: 15rem
     }
-    .signin-form {
-        margin-top: -40rem;
-        margin-bottom: 6rem;
-    }
+    
    .signin-form .last-para {
         margin-top: 2rem;
     }
