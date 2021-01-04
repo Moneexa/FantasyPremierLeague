@@ -41,9 +41,7 @@ export default function Menu() {
             <Link className="home-menu" to="/my-leagues">
                 My Leagues
                 </Link>
-            <Link className="home-menu" to="">
-                How  To Play
-                </Link>
+           
             <Link className="home-menu" to="/faq">
                 FAQs
                 </Link>
