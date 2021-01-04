@@ -3,7 +3,9 @@
     color: white;
     text-align: left;
 }
-
+.mayhem .MuiAccordionSummary-content{
+    max-width: 100%;
+}
 .mayhem-parent #bg {
     background: #E4F0F9B0;
     border-radius: 500px;
@@ -23,10 +25,29 @@
 
 .mayhem-card .mayhem-headings {
     width: 100%;
-    justify-content: space-evenly;
 }
 
 .mayhem-card {
     width: 100%;
     margin-top: -6rem
+}
+@media only screen and (min-device-width: 2500px) {
+    .mayhem-parent #bg {
+        background: #E4F0F9B0;
+    border-radius: 500px;
+    margin-top: 5rem;
+    padding: 7rem 6rem 10rem 6rem;
+    position: absolute;
+    width: 100%;
+    top: 38%;
+    height: 28%;
+    z-index: -1;
+    }
+}
+@media only screen and (min-device-width: 280px) and (max-device-width: 480px) {
+    .mayhem-card {
+        width: 100%;
+        margin-top: -4rem
+    }
+
 }

@@ -18,23 +18,22 @@ export default function Mayhem() {
         <div className="mayhem-parent">
             <div className="d-flex flex-column justify-content-center align-items-center" id="bg" > </div>
 
-            <div className="mayhem-card mb-3">
+            <div className="mayhem-card">
                 <div className="container">
 
 
                     <div className="d-flex flex-column align-items-center mayhem">
                         <div className="d-flex align-items-center mayhem-headings py-2 overflow-auto">
                             <p className="heading-text" style={{ width: "5%", minWidth: "3rem" }}>Rank</p>
-                            <p className="heading-text" style={{ width: "16%", minWidth: "5rem" }}>League Rank</p>
-                            <p className="heading-text" style={{ width: "11%", minWidth: "3rem" }}>Manager</p>
-                            <p className="heading-text" style={{ width: "16%", minWidth: "3rem" }}>Team</p>
+                            <p className="heading-text" style={{ width: "16%", minWidth: "5rem" }}>Team and Manager</p>
+                            <p className="heading-text" style={{ width: "11%", minWidth: "3rem" }}>Total</p>
+                            <p className="heading-text" style={{ width: "13%", minWidth: "3rem" }}>Monthly Points</p>
 
-                            <p className="heading-text" style={{ width: "10%", minWidth: "3rem" }}>GW Points(Hit)</p>
-                            <p className="heading-text" style={{ width: "10%", minWidth: "3rem" }}>Chip</p>
-                            <p className="heading-text" style={{ width: "10%", minWidth: "3rem" }}>Captain</p>
-                            <p className="heading-text" style={{ width: "10%", minWidth: "3rem" }}>Vice</p>
+                            <p className="heading-text" style={{ width: "16%", minWidth: "3rem" }}>GW Points(Hits)</p>
 
-                            <p className="heading-text" style={{ width: "10%", minWidth: "3rem" }}>Players Played</p>
+                            <p className="heading-text" style={{ width: "9%", minWidth: "3rem" }}>Captain</p>
+                            <p className="heading-text" style={{ width: "9%", minWidth: "3rem" }}>Vice</p>
+                            <p className="heading-text" style={{ width: "9%", minWidth: "3rem" }}>Payout</p>
 
                         </div>
                         <Accordion className="mt-1 w-100" style={{
