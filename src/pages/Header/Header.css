@@ -1,79 +1,90 @@
 .heading-row {
   margin-top: 5rem;
-  width: 100%
+  margin-bottom: 16rem;
+  padding-left: 10rem;
 }
 
-.heading-row .contain .heading-h1 {
+.heading-row .heading-h1 {
   color: white;
-  max-width: 21rem;
+  max-width: 25rem;
   width: 100%;
-  margin-left: 4rem;
+  
+  /* margin-left: 4rem; */
   font: normal normal medium 2.5rem Rubik;
 }
 
-.heading-row .contain .para-text {
+.heading-row  .para-text {
   color: white;
   text-align: left;
   font-size: 1.375rem;
   max-width: 27rem;
   width: 89%;
-  margin-left: 4rem;
+  /* margin-left: 4rem; */
 }
 
 .heading-row .contain {
-  margin-left: 4rem
+  /* margin-left: 4rem */
 }
 
-.heading-row .contain .start-playing {
+.heading-row  .start-playing {
   border-radius: 26px;
   color: #492477;
   padding: 0.2rem 3.5rem 0.2rem 3.5rem;
   font-size: 20px;
   font-weight: 500;
   margin-top: 1rem;
-  margin-left: 4rem;
-  border: none
+  /* margin-left: 4rem; */
+  border: none;
+  min-width: 10rem;
+
+}
+
+@media only screen and (min-device-width: 1440px) {
+  .heading-row .contain {
+    margin-left: 7rem;
+  }
 }
 
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
-  #Header {
-    height:100vh
-  }
+  
   .heading-row .contain {
     margin-left: 3rem
   }
 }
 
 @media only screen and (min-width:540px) and (max-device-width:700px) {
-  #Header {
-    height: 100vh
-  }
+  
   .heading-row .contain {
     margin-left: 3rem
   }
 }
 
 @media only screen and (min-device-width: 280px) and (max-device-width: 480px) {
-  .heading-row .contain {
-    margin-left: -1rem
+  .heading-row {
+    padding-left: 5rem
   }
-  #Header {
-    height: 100vh
-  }
+ 
   #Header .start-playing {
     width: 183px;
   }
-  .heading-row .contain .heading-h1 {
+  .heading-row .heading-h1 {
     max-width: 17rem;
     color: white;
     margin-right: 1rem;
     font: normal normal medium 3rem Rubik;
   }
-  .heading-row .contain .para-text {
-    margin-left: 4rem;
-    margin-right: 2rem;
+  .heading-row .para-text {
   }
-  .heading-row .contain .start-playing {
+  .heading-row .start-playing {
     padding: 0.5rem 0.5rem 0.5rem 0.5rem
+  }
+}
+
+@media only screen and (min-device-width: 2500px) {
+  .heading-row .contain {
+    margin-left: 26rem;
+  }
+  .heading-row .heading-h1 {
+    font-size: 4rem;
   }
 }

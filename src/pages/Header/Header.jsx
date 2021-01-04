@@ -1,6 +1,18 @@
 import React, { useState, useEffect } from 'react'
 import './Header.css'
-import { NavLink, BrowserRouter as Router, useLocation } from 'react-router-dom'
+import SignIn from '../../headings/SignIn'
+import home from '../../headings/home'
+import PrivacyPolicy from '../../headings/privacyPolicy'
+import Faq from '../../headings/Faq'
+import Mayhem from '../../headings/Mayhem'
+import MyLeagues from '../../headings/MyLeagues'
+import Winnings from '../../headings/winnings'
+import Stakes from '../../headings/Stakes'
+import PayStake from '../PayStakes/PayStakes'
+import Confirmation from '../Confirmation/Confirmation'
+import Wallet from '../../headings/Wallet'
+import MayhemMonthly from '../../headings/MayhemMonthly'
+import { NavLink, BrowserRouter as Router, useLocation, Link, Switch, Route } from 'react-router-dom'
 import { Nav, Navbar } from 'react-bootstrap'
 import { useStoreActions, useStoreState } from 'easy-peasy';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -8,15 +20,10 @@ import { faTimes } from '@fortawesome/free-solid-svg-icons'
 import MenuIcon from './menu icon.svg'
 const styledDiv = {
     "backgroundImage": 'url("Hero.png")',
-
-    "minHeight": "100vh",
     backgroundPosition: "center center",
     backgroundRepeat: "no-repeat",
     backgroundSize: "cover",
     zIndex: "1"
-    // backgroundAttachment: "fixed"
-
-
 }
 const styledButton = {
 
@@ -69,9 +76,19 @@ export default function Header() {
                 zIndex: "1"
             })
         }
-        else if (location.pathname === "/wallet" || location.pathname === "/privacy-policy" ) {
+        else if (location.pathname === "/wallet" || location.pathname === "/privacy-policy" || location.pathname === "/winnings"
+
+            || location.pathname === "/blank"
+        ) {
             setChangedStyle({
-                minHeight: "75vh",
+                zIndex: "1",
+                background: "linear-gradient(to left, #B90D8E, #110A3E)",
+                borderRadius: "0px 0px 500px 500px",
+
+            })
+        }
+        else if (location.pathname === "/pay-stake" || location.pathname === "/confirm") {
+            setChangedStyle({
                 zIndex: "1",
                 background: "linear-gradient(to left, #B90D8E, #110A3E)",
                 borderRadius: "0px 0px 500px 500px",
@@ -130,23 +147,10 @@ export default function Header() {
                                             <Nav.Link as={NavLink} className="color-white pl-5" to="/home" style={{
                                                 color: "white"
                                             }}>
-                                                Home
+                                                Dashboard
                             </Nav.Link>
                                     }
-                                    {
-                                        !loggedIn ? <Nav.Link className="color-white pl-5" to="/how-to-play" style={{
-                                            color: "white"
 
-                                        }}>
-                                            HowToPlay
-                                </Nav.Link>
-                                            : <Nav.Link className="color-white pl-5" to="/how-to-play" style={{
-                                                color: "white"
-
-                                            }}>
-                                                Dashboard
-                                </Nav.Link>
-                                    }
                                     {!loggedIn ? <Nav.Link as={NavLink} to="/faq" className="color-white pl-5" style={{
                                         color: "white"
 
@@ -167,7 +171,7 @@ export default function Header() {
                                         }}>
 
 
-                                            <button style={{
+                                            <button className="bg-white" style={{
                                                 "borderRadius": "26px",
                                                 padding: "0.25rem 2.5rem 0.25rem 2.5rem",
                                                 fontSize: "20px",
@@ -185,7 +189,7 @@ export default function Header() {
                                             }}>
 
 
-                                                <button style={{
+                                                <button className="bg-white" style={{
                                                     "borderRadius": "26px",
                                                     padding: "0.25rem 2.5rem 0.25rem 2.5rem",
                                                     fontSize: "20px",
@@ -213,30 +217,24 @@ export default function Header() {
                     </Navbar.Collapse>
 
                 </Navbar>
-                {heading === "Your Wallet" || heading === "Privacy Policy" ?
-                    <div className="d-flex flex-column  justify-content-center align-items-center heading-row">
-                        <h1 style={{
-                            color: "white",
-                            font: "normal normal medium 2.5rem Rubik",
-                            marginTop: "-3rem"
-                        }}> {heading}</h1>
-                    </div>
-                    :
-                    <div className="d-flex flex-column  justify-content-center align-items-flex-start heading-row">
-                        <div className="container contain">
-                            <h1 className="heading-h1"
-                            >
-                                {heading}
-                            </h1>
-                            {heading !== "Win the Game, Win the Day." || heading === "" ? "" :
-                                <button className="start-playing">Start Playing</button>
-                            }
-                            <p className="para-text">{para}</p>
+                <Switch>
+                    <Route component={SignIn} path="/signin" />
+                    <Route component={home} path="/home" />
+                    <Route component={PrivacyPolicy} path="/privacy-policy" />
+                    <Route component={Faq} path="/faq" />
+                    <Route component={MyLeagues} path="/my-leagues" />
+                    <Route component={Mayhem} path="/mayhem" />
+                    <Route path="/mayhem-monthly" component={MayhemMonthly} />
 
-                        </div>
-                    </div>
+                    <Route component={Wallet} path="/wallet" />
+                    <Route component={Winnings} path="/winnings" />
+                    <Route path="/stakes" component={Stakes} />
+                    <Route path="/pay-stake" component={PayStake} />
+                    <Route path="/confirm" component={Confirmation} />
 
-                }
+                </Switch>
+
+
 
             </div>
 
