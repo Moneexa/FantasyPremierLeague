@@ -6,9 +6,11 @@ import UpdateArrow from './update-arrows.svg'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faPaypal } from '@fortawesome/free-brands-svg-icons'
 import { faCross, faReply } from '@fortawesome/free-solid-svg-icons'
+import SubscribeLetter from '../SubscribeLetter/SubscribeLetter'
 // import { getPaymentRequest, getPaymentRequestButton } from '../../shared/service/stripe.service'
+import { Modal, Button } from 'react-bootstrap'
 
-  const styledDeposit = {
+const styledDeposit = {
     color: "#1ABCB0",
     fontSize: "1rem",
     fontFamily: "Rubik",
@@ -28,6 +30,9 @@ export default function Wallet() {
     const changeHeading = useStoreActions(actions => actions.obj.changeHeadingRed)
     const changePara = useStoreActions(actions => actions.obj.changeParaRed)
     const paymentHistory = useStoreState(state => state.obj.paymentHistory)
+    const [show, setShow] = useState(false);
+    const handleClose = () => setShow(false);
+    const handleShow = () => setShow(true);
 
     const currentBalance = useStoreState(state => state.obj.currentBalance)
     useEffect(() => {
@@ -36,40 +41,64 @@ export default function Wallet() {
     })
     function clickWallet() {
         console.log("clicked")
-        
+
     }
 
     return (
         <>
+            <Modal show={show} onHide={handleClose} style={{ borderRadius: "100px" }}>
+                <Modal.Header closeButton>
+                </Modal.Header>
+
+
+                <Modal.Body className="mx-md-5 mx-sm-3 text-left d-flex flex-column align-items-center justify-content-center">
+                    <p style={{
+                        font: " normal normal medium 1.4rem Rubik",
+                        color: "#064B8D"
+                    }}>Add you Payment Deatils</p>
+                    <p style={{
+                        font: "normal normal normal 0.875rem Montserrat",
+                        color: "#064B8D"
+
+                    }}>Enter your payment info below.</p>
+                    <form className="">
+
+                    </form>
+                </Modal.Body>
+            </Modal>
             <div className="wallet">
-                <div className="row" id="cards">
-                    <div className="d-flex container" id="container">
+                <div className="d-flex align-items-center justify-content-center flex-wrap w-100" id="cards"
+                style={{marginTop:"-12rem"}}
+                >
 
-                        <div className="col-sm-12 col-lg-6 col-md-6 col-xs-12" id="div1">
-                            <div className="d-flex flex-column" style={{ alignItems: "flex-start" }}>
-                                <p className="div-text mt-auto">Current Balance</p>
-                                <h2 className="card-heading">{`$${currentBalance}`}</h2>
+                    <div className="mx-2" id="div1" >
+                        <div className="d-flex flex-column" style={{
+                            alignItems: "flex-start", padding: "2rem 6rem 1rem 1rem"
+                        }}>
+                            <p className="div-text mt-auto">Current Balance</p>
+                            <h2 className="card-heading">{`$${currentBalance}`}</h2>
 
-                            </div>
-                            <div className="d-flex align-items-center mt-5" style={{ justifyContent: "flex-end" }}>
-                                <p className="div-text my-2">WithDraw</p>
-                                <img src={ArrowRight} style={{ width: "3rem", marginLeft: "1rem" }} onClick={clickWallet}/>
-                            </div>
+                        </div>
+                        <div className="d-flex align-items-center" style={{ justifyContent: "flex-end", paddingTop: "3rem" }}>
+                            <p className="div-text my-2">WithDraw</p>
+                            <img src={ArrowRight} style={{ width: "3rem", marginLeft: "1rem" }} onClick={handleShow} />
+                        </div>
 
+
+                    </div>
+
+                    <div className="d-flex flex-column justify-content-center align-items-end mx-2" id="div2">
+
+                        <div className="child-div1 ml-1"></div>
+                        <div className="child-div2"></div>
+                        <div className="d-flex justify-content-center align-items-center mx-1" style={{
+                            padding: "12rem 2.62rem 1rem",
+                        }}>
+                            <div className="wallet-head">Add to Your Wallet</div>
+                            <img src={ArrowRight} style={{ width: "4rem", paddingLeft: "1.31rem" }} onClick={handleShow} />
 
                         </div>
 
-                        <div className="d-flex flex-column justify-content-center align-items-center col-sm-12 col-lg-6  col-md-6 col-xs-12" id="div2">
-
-                            <div className="child-div1 ml-1"></div>
-                            <div className="child-div2"></div>
-                            <div className="d-flex justify-content-center align-items-center mx-1 mt-auto">
-                                <h3 className="wallet-head">Add to You Wallet</h3>
-                                <img src={ArrowRight} style={{ width: "4rem", marginLeft: "1rem" }} onClick={clickWallet} />
-
-                            </div>
-
-                        </div>
                     </div>
                 </div>
             </div>
@@ -186,6 +215,7 @@ export default function Wallet() {
 
                 </div>
             </div>
+            <SubscribeLetter />
         </>)
 
 
