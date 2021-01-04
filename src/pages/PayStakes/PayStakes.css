@@ -1,0 +1,57 @@
+.pay-card {
+    background: #FFFFFF;
+    border-radius: 50px;
+    margin-top: -14rem;
+
+    margin-bottom: 8rem;
+    position:relative;
+    overflow: hidden;
+    max-width:44.5rem;
+    width:100%;
+    padding-top:2.18rem;
+    padding-left: 6.4rem;
+    padding-right:3rem;
+    padding-bottom:1.313rem
+}
+.pay-card .ring1 {
+    position: absolute;
+    width: 4.375rem;
+    height: 4.375rem;
+    border-radius: 50%;
+    background-color: #110A3E;
+    top: -8%;
+    right: 47%;
+}
+
+.pay-card .ring2 {
+    position: absolute;
+    width: 21rem;
+    height: 21rem;
+    border-radius: 50%;
+    border: 59px solid #B90D8E;
+    top: -25%;
+    left: 66%;
+
+}
+.pay-card .content-stake{
+    flex-direction: row;
+}
+.pay-card.prize{
+    font: normal normal medium 2rem Rubik;
+    
+}
+.pay-card .prize-heading {
+    font-family: Rubik;
+    font-size: 4.9rem;
+}
+@media only screen and (min-device-width: 280px) and (max-device-width: 480px) {
+.pay-card{
+    padding-top:2.18rem;
+    padding-left: 2.4rem;
+    padding-right:1rem;
+    padding-bottom:1.313rem
+}
+.pay-card .content-stake{
+    flex-direction: column;
+}
+}
