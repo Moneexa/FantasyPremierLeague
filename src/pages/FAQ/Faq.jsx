@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import Header from '../Header/Header'
+import { Link } from 'react-router-dom'
 import Accordion from '@material-ui/core/Accordion';
 import AccordionSummary from '@material-ui/core/AccordionSummary';
 import AccordionDetails from '@material-ui/core/AccordionDetails';
@@ -15,6 +16,7 @@ export default function Faq() {
     const heading = useStoreState(state => state.obj.heading);
     const changeHeading = useStoreActions(actions => actions.obj.changeHeadingRed)
     useEffect(() => {
+        window.scrollTo(0, 0)
         changeHeading("Frequently Asked Questions")
         setFaqList(_faqList)
         console.log(faqList ? faqList : '')
@@ -37,9 +39,7 @@ export default function Faq() {
                                     <AccordionSummary
                                         expandIcon={<AddIcon />}
                                         aria-controls="panel1a-content"
-                                        id="panel1a-header" style={{
-                                            boxShadow: "0px 3px 6px #00000029",
-                                        }}
+                                        id="panel1a-header"
 
                                     >
                                         <Typography style={{
@@ -55,7 +55,11 @@ export default function Faq() {
                                             color: "#10093D",
                                             fontWeight: "300"
                                         }} >
-                                            {value.description}
+                                            {value.description.includes("click here")
+
+                                                ? <Link to="/winnings">{value.description}</Link>
+                                                : value.description
+                                            }
                                         </Typography>
                                     </AccordionDetails>
                                 </Accordion>)
@@ -68,7 +72,7 @@ export default function Faq() {
             </div>
         </div>
 
-        <SubscribeLetter/>
+        <SubscribeLetter />
 
     </div>)
 
