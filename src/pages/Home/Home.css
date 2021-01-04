@@ -2,6 +2,15 @@ h2, p {
     text-align: center
 }
 
+.circles {
+    z-index: 0;
+    max-width: 1400px;
+}
+
+.MuiAccordion-root:before {
+height:0% !important;    
+}
+
 .rotated-stroke {
     transform: rotateX(180deg);
     position: absolute;
@@ -13,8 +22,16 @@ h2, p {
 }
 
 .stroke1 {
-    position: absolute;
-    left: 36%;
+    z-index: 1;
+    width: 100%;
+    /* margin-left:3rem;
+    margin-right: 3rem; */
+}
+
+.stroke2 {
+    transform: rotateX(180deg);
+    width: 100%;
+    margin-bottom: 8rem;
 }
 
 #cards .gets-started-button {
@@ -41,25 +58,27 @@ h2, p {
     background: #E4F0F9B0;
     border-radius: 500px;
     margin-top: 5rem;
-    padding: 7rem 10rem 10rem 10rem
+    padding: 7rem 5rem 10rem 5rem
 }
 
 #how-to-play .how-to-play-text {
-    font: normal normal 300 1.875rem Rubik;
+    font: normal normal 300 1.375rem Rubik;
     margin-left: 6rem;
     margin-right: 6rem;
 }
 
 #how-to-play .circle-row {
-    width: 100%;
-    padding: 3rem
+    
+        /* width: 100%; */
+        padding: 3rem;
 }
 
 #how-to-play .circle {
     background: transparent linear-gradient(140deg, #F603BE 0%, #340056 126%);
     color: white;
     height: 13.25rem;
-    width: 13.25rem
+    width: 13.25rem;
+    /* margin-left:2rem; */
 }
 
 #how-to-play .tab1 {
@@ -97,11 +116,14 @@ h2, p {
 }
 
 #cards {
-    position: absolute;
-    top: 76%;
-    left: 22%;
-    right: 0;
-    width: 55%
+    margin-top: -14vh;
+    width: 100%;
+    margin-bottom: -3vh;
+    /* position: absolute; */
+    /* top: 76%; */
+    /* left: 22%; */
+    /* right: 0; */
+    /* width: 55% */
 }
 
 #cards #div1 {
@@ -134,26 +156,39 @@ h2, p {
     text-align: center;
 }
 
+.main-circle {
+    /* margin-left: rem; */
+}
+
 @media only screen and (max-device-width:1440px) and (max-device-width:1280px) {
     #cards {
         top: 80%;
-        width:55%;
     }
 }
 
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+@media only screen and (min-device-width: 701px) and (max-device-width: 1024px) {
     #cards {
         top: 80%;
         /* left: 25%; */
         left: 190px;
-        width: 66%;
     }
     /* #how-to-play {
         padding-top: 8rem;
     } */
+    .circles {
+        flex-direction: column;
+    }
+    .stroke1 {
+        transform: rotateZ(98deg);
+        margin-left: 11rem;
+    }
+    .stroke2 {
+        transform: rotateZ(272deg);
+        margin-right: 13rem;
+    }
 }
 
-@media only screen and (min-width:540px) and (max-device-width:700px) {
+@media only screen and (min-width:500px) and (max-device-width:700px) {
     #cards {
         top: 80%;
         /* left: 38%; */
@@ -161,6 +196,20 @@ h2, p {
     /* #how-to-play {
         padding-top: 8rem;
     } */
+    .circles {
+        flex-direction: column;
+    }
+    .stroke1 {
+        transform: rotateZ(90deg);
+        margin-left: 15rem;
+        z-index: -1;
+    }
+    .stroke2 {
+        margin-top: -3rem;
+        transform: rotateZ(272deg);
+        margin-right: 11rem;
+        margin-bottom: 4rem;
+    }
 }
 
 @media only screen and (min-device-width: 280px) and (max-device-width: 480px) {
@@ -168,8 +217,10 @@ h2, p {
         top: 69%;
         /* left: 16%; */
         left: 35px;
-        width: 90%;
         right: 0;
+    }
+    .circles {
+        flex-direction: column;
     }
     #cards button {
         width: 180px;
@@ -179,9 +230,6 @@ h2, p {
         font-weight: 500;
         color: #492477;
         border: none
-    }
-    #how-to-play .circles {
-        flex-direction: column;
     }
     #how-to-play .rounded-circle-text {
         width: 56vw
@@ -194,22 +242,17 @@ h2, p {
         flex-direction: column;
     }
     #how-to-play {
-        padding-left: 5rem;
-        padding-right: 5rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
     }
     #how-to-play .tab1 {
-        width: auto
+        width: 22rem
     }
     #how-to-play .table-headings {
-        width: auto
+        width:22rem
     }
     #how-to-play .rows {
-        width: auto;
-    }
-    #how-to-play .rotated-stroke {
-        transform: rotateZ(270deg);
-        margin-top: 30rem;
-        left: 13%
+        width: 22rem
     }
     #how-to-play .how-to-play-heading {
         padding-top: 12rem
@@ -218,12 +261,24 @@ h2, p {
         width: 100vw;
         font: normal normal 300 1.2rem Rubik;
     }
-    #how-to-play .stroke1 {
-        margin-top: 11rem;
-        transform: rotateZ(90deg);
-        margin-left: 3rem;
-    }
     #cards .gets-started-button {
         padding: 0.25rem 0.5rem 0.25rem 0.5rem
     }
+    .main-circle {
+        margin-left: auto;
+        /* margin-top: -17rem; */
+    }
+    .stroke1 {
+        transform: rotateZ(90deg);
+        margin-left: 15rem;
+        z-index: -1;
+    }
+    .stroke2 {
+       
+    margin-top: -3rem;
+    transform: rotateZ(272deg);
+    margin-right: 11rem;
+    margin-bottom: 4rem;
+    }
+    
 }
