@@ -20,26 +20,26 @@ export default function MyLeagues() {
         <div className="league-card">
             <div className="container">
                 <div className="d-flex flex-column align-items-center tab1">
-                    <div className="d-flex align-items-center table-headings p-2">
-                        <p className="head-text" style={{ width: "10%" }}>#</p>
-                        <p className="head-text" style={{ width: "25%" }}>Game Weak League</p>
-                        <p className="head-text" style={{ width: "30%" }}>League No.</p>
-                        <p className="head-text" style={{ width: "20%" }}>Your Rank</p>
-                        <p className="head-text" style={{ width: "20%" }}>Stack</p>
+                    <div className="d-flex align-items-center table-headings p-2 overflow-auto">
+                        <p className="head-text" style={{ width: "10%", minWidth: "3rem" }}>#</p>
+                        <p className="head-text" style={{ width: "35%", minWidth: "8rem" }}>GameWeek League</p>
+                        <p className="head-text" style={{ width: "25%", minWidth: "8rem" }}>League No.</p>
+                        <p className="head-text" style={{ width: "12.5%", minWidth:"8rem" }}>Your Rank</p>
+                        <p className="head-text" style={{ width: "12.5%", minWidth:"8rem" }}>Stack</p>
                     </div>
 
                     {myLeagues.map((value, index) => {
-                        return (<div key={index} className="d-flex align-items-center rows mb-2 p-3">
+                        return (<div key={index} className="d-flex align-items-center rows mb-2 p-3 overflow-auto">
                             <p className="row-text" style={{
                                 width: "10%",
                                 border: "3px solid #0E335E",
-                                borderRadius: "14px"
+                                borderRadius: "14px", minWidth:"3rem",
                             }}>{value.id}</p>
-                            <p className="row-text" style={{ width: "25%" }}>{value.gameWeakLeague}</p>
-                            <p className="row-text" style={{ width: "30%" }}>{value.leagueNo}</p>
-                            <p className="row-text" style={{ width: "20%" }}>{value.yourRank}</p>
-                            <p className="row-text pl-md-5 pl-sm-0" style={{ width: "20%" }}>{value.stake}
-                                <Link to="/mayhem" className="ml-md-5 ml-sm-0">
+                            <p className="row-text" style={{ width: "35%", minWidth:"8rem" }}>{value.gameWeakLeague}</p>
+                            <p className="row-text" style={{ width: "25%", minWidth:"8rem" }}>{value.leagueNo}</p>
+                            <p className="row-text" style={{ width: "12.5%", minWidth:"8rem" }}>{value.yourRank}</p>
+                            <p className="row-text pl-md-5 pl-sm-0" style={{ width: "12.5%" , minWidth:"8rem"}}>{value.stake}
+                                <Link to="/mayhem" className="ml-md-3 ml-sm-0">
                                     <img src={Arrow} style={{ height: "0.813rem" }} />
                                 </Link>
                             </p>
