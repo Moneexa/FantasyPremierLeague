@@ -10,7 +10,7 @@ export default function Blank() {
 
     })
     return (<>
-        <div className="d-flex flex-column  justify-content-center align-items-center heading-row text-black">
+        <div className="d-flex flex-column  justify-content-center align-items-center heading-row text-black text-center main-padding">
             <h1 style={{
                 font: "normal normal medium 2.5rem Rubik",
                 marginTop: "-3rem"
