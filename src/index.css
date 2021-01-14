@@ -1,16 +1,105 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Rubik','Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, 'Rubik', 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-/* min-width: 100%; */
+  /* min-width: 100%; */
 }
-/* *{ 
-  outline: 1px solid red;
-  } */
+
+* {
+  /* outline: 1px solid red; */
+}
+
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+@media only screen and (min-device-width: 2560px) {
+  .main-padding {
+    padding-right: 15%;
+    padding-left: 15%;
+  }
+  .big-rounded-top {
+    border-top-left-radius: 31.25rem;
+    border-top-right-radius: 31.25rem;
+  }
+  .big-rounded-bottom {
+    border-bottom-left-radius: 31.25rem;
+    border-bottom-right-radius: 31.25rem;
+  }
+}
+
+@media only screen and (min-device-width: 1024px) and (max-device-width: 2559px) {
+  .main-padding {
+    padding-right: 15%;
+    padding-left: 15%;
+  }
+  .big-rounded-top {
+    border-top-left-radius: 16rem;
+    border-top-right-radius: 16rem;
+  }
+  .big-rounded-bottom {
+    border-bottom-left-radius: 16rem;
+    border-bottom-right-radius: 16rem;
+  }
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1023px) {
+  .main-padding {
+    padding-right: 10%;
+    padding-left: 10%;
+  }
+  .big-rounded-top {
+    border-top-left-radius: 11rem;
+    border-top-right-radius: 11rem;
+  }
+  .big-rounded-bottom {
+    border-bottom-left-radius: 11rem;
+    border-bottom-right-radius: 11rem;
+  }
+}
+
+@media only screen and (min-device-width: 425px) and (max-device-width: 767px) {
+  .main-padding {
+    padding-right: 5%;
+    padding-left: 5%;
+  }
+  .big-rounded-top {
+    border-top-left-radius: 6rem;
+    border-top-right-radius: 6rem;
+  }
+  .big-rounded-bottom {
+    border-bottom-left-radius: 6rem;
+    border-bottom-right-radius: 6rem;
+  }
+}
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 424px) {
+  .main-padding {
+    padding-right: 2%;
+    padding-left: 2%;
+  }
+  .big-rounded-top {
+    border-top-left-radius: 3rem;
+    border-top-right-radius: 3rem;
+  }
+  .big-rounded-bottom {
+    border-bottom-left-radius: 3rem;
+    border-bottom-right-radius: 3rem;
+  }
+}
+
+@media only screen and (max-device-width: 372px) {
+  .main-padding {
+    padding-right: 2%;
+    padding-left: 2%;
+  }
+  .big-rounded-top {
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+  }
+  .big-rounded-bottom {
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+  }
 }
