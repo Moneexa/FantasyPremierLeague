@@ -6,12 +6,17 @@ body {
   /* min-width: 100%; */
 }
 
-* {
-  /* outline: 1px solid red; */
-}
+/* * {
+  outline: 1px solid red;
+} */
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+body .modal-dialog .modal-content {
+  border-radius: 100px;
+  /* padding:"3.63rem" */
 }
 
 @media only screen and (min-device-width: 2560px) {
