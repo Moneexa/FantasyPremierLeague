@@ -1,9 +1,10 @@
 import { StoreProvider, createStore, action, thunk } from 'easy-peasy';
-
+import { Link } from 'react-router-dom'
 export const store = createStore({
     obj: {
         heading: "",
         loggedIn: false,
+        sync: false,
         faqList: [{
             subHeading: "How do I play?",
             description: "Sign in with your Fantasy.premierleague.com account, Choose the weekly or monthly option and enroll in an amount of your choosing. Once enrolled, we will place you in a league and try to get you to compete with players who have a similar Overall Rank. We are however, limited to Overall Rank matching based on the number of players who sign up"
@@ -12,7 +13,7 @@ export const store = createStore({
             description: "We have partnered with Dwolla and you can transfer money in and out, hassle free, from your bank account. At this time, we are only accepting Bank transfers and credit card / debit card transactions are not supported"
         }, {
             subHeading: "How much money can I win?",
-            description: "We award players who come in 1st, 2nd or 3rd within any league. To see the complete breakdown of winnings by league, click here"
+            description: "We award players who come in 1st, 2nd or 3rd within any league. To see the complete breakdown of winnings by league,click here"
         }, {
             subHeading: "What does compete based on Overall Rank mean?",
             description: "Overall rank is the criteria on which we assign you to leagues. Depending on the number of players who sign up, we try to sort users with as closely matched Overall Rank to each other, as possible, to make it a fair competition. This however depends on the number of players that sign up for a said league and cannot guarantee that you would be placed in a league with someone with a similar matched OR"
@@ -181,7 +182,7 @@ export const store = createStore({
                 start: "$200",
                 prize: { "1st Prize": "$2,000", "2nd Prize": "$1000", "3rd Prize": "$600" }
 
-            },{
+            }, {
                 start: "$1000", prize: { "1st Prize": "$10,000", "2nd Prize": "$5,000", "3rd Prize": "$3,000" }
 
             }
@@ -204,6 +205,9 @@ export const store = createStore({
                 state.currentBalance = state.changeCurrentBalance + payload.value
             }
             state.currentBalance = payload
+        }),
+        changeSync: action((state, payload) => {
+            state.sync = payload
         }),
         changeLogging: action((state, payload) => {
             state.loggedIn = payload
@@ -239,6 +243,9 @@ export const store = createStore({
         }),
         payStake: thunk((actions, payload) => {
             actions.changeSelectedStake(payload)
+        }),
+        updateSync: thunk((actions, payload) => {
+            actions.changeSync(payload)
         })
 
 
