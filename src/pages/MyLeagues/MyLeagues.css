@@ -1,22 +1,26 @@
 .league-parent #bg {
     background: #E4F0F9B0;
-    border-radius: 500px;
     margin-top: 5rem;
     padding: 7rem 6rem 10rem 6rem;
     position: absolute;
     width: 100%;
-    top: 100%;
+    margin-top: 16rem;
     height: 100%;
     z-index: -1
 }
 
+.league-card .tab1 #league-length {}
+
 .league-card {
     width: 100%;
-    margin-top: -9rem
+    margin-top: -9rem;
+    margin-bottom: 13rem;
 }
 
 .league-card .tab1 {
+    min-width: 63rem;
     width: 100%;
+    margin: 0 auto;
 }
 
 .league-card .table-headings {
@@ -46,19 +50,6 @@
     color: #ffffff;
 }
 
-@media only screen and (min-device-width: 2500px) {
-    .league-parent #bg {
-        background: #E4F0F9B0;
-        border-radius: 500px;
-        margin-top: 5rem;
-        padding: 7rem 6rem 10rem 6rem;
-        position: absolute;
-        width: 100%;
-        top: 28%;
-        height: 45%;
-        z-index: -1;
-    }
-}
 
 @media only screen and (min-device-width: 760px) and (max-device-width: 1024px) {
     .league-card {
@@ -73,9 +64,7 @@
         margin-left: 0.5rem;
         margin-right: 0rem;
     }
-    .league-card .tab1 {
-        width: auto
-    }
+
     .league-card .table-headings {
         width: 100%
     }
