@@ -68,7 +68,7 @@ export default function Wallet() {
             </Modal>
             <div className="wallet">
                 <div className="d-flex align-items-center justify-content-center flex-wrap w-100" id="cards"
-                style={{marginTop:"-12rem"}}
+                    style={{ marginTop: "-12rem" }}
                 >
 
                     <div className="mx-2" id="div1" >
@@ -102,7 +102,7 @@ export default function Wallet() {
                     </div>
                 </div>
             </div>
-            <div className="d-flex flex-column justify-content-center align-items-center" id="how-to-play">
+            <div className="d-flex flex-column justify-content-center align-items-center how-to-play big-rounded-top big-rounded-bottom">
                 <div className="d-flex flex-column payment-history p-3 m-3">
                     <div className="d-flex payment-history-rows">
 
