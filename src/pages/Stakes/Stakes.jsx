@@ -19,7 +19,7 @@ export default function Stakes() {
 
     return (<>
         <div className="stake-parent">
-            <div className="d-flex flex-column justify-content-center align-items-center" id="bg" > </div>
+            <div className="d-flex flex-column justify-content-center align-items-center big-rounded-top big-rounded-bottom" id="bg" > </div>
 
             <div className="stakes-card">
                 <div className="container">
@@ -29,22 +29,27 @@ export default function Stakes() {
                                 return (<div key={index} className="d-flex flex-column justify-content-center align-items-flex-start div1-stake m-3">
                                     <div className="child1-stake ml-1"></div>
                                     <div className="child2-stake mx-3"></div>
-                                    <p className="text-left text-white-50 prize" style={{ fontSize: "0.5rem" }}>{Object.keys(value.prize)[0]}</p>
+                                    <div className="text-left prize mt-3" style={{ fontSize: "0.5rem", fontFamily: "Rubik" }}>
+                                        {Object.keys(value.prize)[0]}
+                                    </div>
 
-                                    <p className="text-left text-white-50 prize">{Object.values(value.prize)[0]}</p>
-                                    <p className="text-left text-white-50 prize" style={{ fontSize: "0.5rem" }}>{Object.keys(value.prize)[1]}/</p>
-                                    <p className="text-left text-white-50 prize">{Object.values(value.prize)[1]}</p>
-                                    <p className="text-left text-white-50 prize" style={{ fontSize: "0.5rem" }}>{Object.keys(value.prize)[2]}</p>
-                                    <p className="text-left text-white-50 prize">{Object.values(value.prize)[2]}</p>
+                                    <div className="text-left prize-amount mb-1">{Object.values(value.prize)[0]}</div>
+                                    <div className="text-left prize" style={{ fontSize: "0.5rem", fontFamily: "Rubik" }}>
+                                        {Object.keys(value.prize)[1]}</div>
+                                    <div className="text-left prize-amount mb-1">{Object.values(value.prize)[1]}</div>
+                                    <div className="text-left prize" style={{ fontSize: "0.5rem", fontFamily: "Rubik" }}>
+                                        {Object.keys(value.prize)[2]}</div>
+                                    <div className="text-left prize-amount mb-1">{Object.values(value.prize)[2]}
+                                    </div>
 
-                                    <div className="d-flex justify-content-between align-items-center mt-5">
+                                    <div className="d-flex justify-content-between align-items-center text-white mt-3">
                                         <div className="d-flex flex-column">
-                                            <p>Get Started with</p>
-                                            <h3 className="prize-heading">{value.start}</h3>
+                                            <div className="get-started">Get Started with</div>
+                                            <div className="prize-heading">{value.start}</div>
                                         </div>
-                                        <Link to="/pay-stake">
+                                        <Link to="/pay-stake" style={{marginLeft:"4.46rem"}}>
                                             <img src={ArrowRight} style={{
-                                                width: "4rem", marginLeft: "1rem",
+                                                width: "4rem",
                                                 filter: "invert(96%) sepia(0%) saturate(0%) hue-rotate(111deg) brightness(104%) contrast(105%)"
 
                                             }} onClick={payStakes({ start: value.start, prize: "$1,000" })} />
@@ -74,7 +79,7 @@ export default function Stakes() {
                     backgroundColor: "white",
                     boxShadow: "0px 3px 6px #00000029",
                     border: "1px solid #492477",
-                    padding:"1rem 2rem"
+                    padding: "1rem 2rem"
                 }}>
                     See What you can win
                    </button>
