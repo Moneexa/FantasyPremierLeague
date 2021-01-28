@@ -1,21 +1,25 @@
 .faq-card {
     width: 100%;
-    margin-top: -9rem
+    margin-top: -9rem;
+}
+
+#faq-length {
+    max-width: 100%;
 }
 
 .faq-parent #bg {
     background: #E4F0F9B0;
-    border-radius: 500px;
-    margin-top: 5rem;
     padding: 7rem 6rem 10rem 6rem;
     position: absolute;
     width: 100%;
-    top: 43%;
-    height: 48%;
-    z-index: -1
+    top: 16rem;
+    height: 77%;
+    z-index: -1;
 }
+
 @media only screen and (min-device-width: 2500px) {
-    .faq-parent #bg {
+
+    /* .faq-parent #bg {
         background: #E4F0F9B0;
         border-radius: 500px;
         margin-top: 5rem;
@@ -25,12 +29,15 @@
         top: 32%;
         height: 56%;
         z-index: -1;
-    }
+    } */
 }
-@media only screen and (min-device-width:1200px) and (min-device-width: 2000px) {
-    .faq-parent #bg {
-    top: 43%;
-    }
+
+@media only screen and (min-device-width:1024px) and (max-device-width: 1400px) {
+    /* .faq-parent #bg {
+        top: 90%;
+        height:77%;
+        width: 98%;
+    } */
 }
 
 @media only screen and (min-device-width: 760px) and (max-device-width: 1024px) {
@@ -39,12 +46,3 @@
         left: 1%
     }
 }
-
-@media only screen and (min-device-width: 280px) and (max-device-width: 480px) {
-    .faq-card {
-        width: 95%;
-        margin-left: 0.5rem;
-        margin-right: 0rem;
-    }
-}
-

@@ -23,12 +23,12 @@ export default function Faq() {
 
     }, [_faqList, setFaqList])
     return (<div className="faq-parent">
-        <div className="d-flex flex-column justify-content-center align-items-center" id="bg" > </div>
+        <div className="position-relative" style={{ paddingBottom: "13rem" }}>
+            <div className="d-flex flex-column justify-content-center align-items-center big-rounded-top big-rounded-bottom" id="bg" > </div>
 
-        <div className="faq-card">
-            <div className="container">
+            <div className="faq-card">
                 <div className="d-flex flex-column justify-content-center align-items-center">
-                    <div className="my-3">
+                    <div className="my-3 main-padding" id="faq-length">
                         {
                             faqList.map((value, index) => {
                                 console.log(value)
@@ -56,18 +56,16 @@ export default function Faq() {
                                             fontWeight: "300"
                                         }} >
                                             {value.description.includes("click here")
-
                                                 ? <Link to="/winnings">{value.description}</Link>
                                                 : value.description
                                             }
+
                                         </Typography>
                                     </AccordionDetails>
                                 </Accordion>)
 
                             })}
-
                     </div>
-
                 </div>
             </div>
         </div>
