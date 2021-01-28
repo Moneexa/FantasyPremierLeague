@@ -16,23 +16,22 @@ export default function Winnings() {
 
             <div className="winning-card">
                 <div className="container">
-                    <div className=" d-flex align-items-center justify-content-center my-3">
+                    <div className=" d-flex flex-column align-items-center justify-content-center my-3">
                         <div className="winning-text text-center text-black">
                             Below are the details describing about the winning prizes. Explore what you can win by putting a specific stake and start playing now. *All prices are in US Dollars ($)</div>
                     </div>
                     {/* <div className="d-flex flex-column justify-content-center align-items-center" id="bg" >  */}
                     {/* </div> */}
                 </div>
-                <div className="d-flex flex-column align-items-center justify-content-center overflow-class"
+                <div className="d-flex flex-column align-items-center justify-content-center overflow-class big-rounded-top big-rounded-bottom"
                     style={{
                         background: "#E4F0F9B0",
-                        borderRadius: "500px",
                         marginTop: "1rem",
                         padding: "15rem 2rem"
 
                     }}
                 >
-                    <div style={{ maxWidth: "100%" }}>
+                    <div style={{ maxWidth: "100%", overflow: 'auto' }}>
 
                         <table>
                             <thead>
@@ -123,9 +122,9 @@ export default function Winnings() {
                             </tbody>
                         </table>
                     </div>
-                    <div className="m-3" style={{ maxWidth: "100%" }}>
+                    <div className="m-3" style={{ maxWidth: "100%", overflow: 'auto' }}>
 
-                        <table>
+                        <table style={{ minWidth: '928px' }}>
                             <thead>
                                 <tr>
                                     <th colSpan="2" style={{ minWidth: "25rem" }} className="p-5">

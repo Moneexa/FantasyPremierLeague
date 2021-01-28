@@ -4,7 +4,6 @@
 
 .winning-parent #bg {
     background: #E4F0F9B0;
-    border-radius: 500px;
     margin-top: 1rem;
     padding: 7rem 6rem 10rem 6rem;
     position: absolute;
@@ -43,6 +42,6 @@
 
 @media only screen and (min-device-width: 280px) and (max-device-width: 480px) {
     .overflow-class {
-        overflow: auto;
+        overflow: auto
     }
 }
