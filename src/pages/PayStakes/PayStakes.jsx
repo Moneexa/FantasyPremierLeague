@@ -8,11 +8,19 @@ export default function PayStakes() {
     const changePara = useStoreActions(actions => actions.obj.changeParaRed)
     const selectedStakes = useStoreState(state => state.obj.selectedStake)
     useEffect(() => {
-    
+
     })
     return (<>
-      <div className="d-flex flex-column  justify-content-center align-items-center heading-row">
+        <div className="d-flex flex-column  justify-content-center align-items-center"
+
+            style={{
+                marginTop: "5rem",
+                marginBottom: "16rem"
+
+            }}
+        >
             <h1 style={{
+                textAlign: "center",
                 color: "white",
                 font: "normal normal medium 2.5rem Rubik",
                 marginTop: "-3rem"
@@ -21,7 +29,7 @@ export default function PayStakes() {
 
             <p className="text-center text-white" style={{
                 font: "normal normal 300 1.25rem Rubik;",
-                maxWidth:"32rem"
+                maxWidth: "32rem"
             }}>
                 You are just a step away to enter the gaming experience, Confirm your payment and start playing.
         </p>
