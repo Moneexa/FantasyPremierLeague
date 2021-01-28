@@ -1,0 +1,45 @@
+.mayhem-row {
+    margin-top: 5rem;
+    margin-bottom: 16rem;
+}
+
+.mayhem-row .mayhem-heading {
+    color: white;
+    max-width: 41rem;
+    width: 100%;
+    /* margin-left: 4rem; */
+    font-size: 3.68rem;
+    font-family: Rubik;
+    font-weight: 500
+}
+
+.mayhem-row .para-text {
+    color: white;
+    text-align: left;
+    font-size: 1.375rem;
+    max-width: 27rem;
+    width: 89%;
+    /* margin-left: 4rem; */
+}
+
+@media only screen and (min-device-width:2000px) and (max-device-width: 2200px) {
+}
+
+@media only screen and (min-device-width: 2200px) {
+
+    .mayhem-row .mayhem-heading {
+        font-size: 5.3rem;
+    }
+}
+
+@media only screen and (min-device-width:500px) and (max-device-width:600px) {
+
+}
+
+@media only screen and (min-device-width: 280px) and (max-device-width: 480px) {
+
+    .mayhem-row .mayhem-heading {
+        max-width: 15rem;
+        font-size: 2.5rem;
+    }
+}

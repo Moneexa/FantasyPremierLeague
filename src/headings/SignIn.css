@@ -1,6 +1,12 @@
 .signin-form {
     color: white;
     z-index: 0;
+    max-width: 100%;
+}
+
+.signin-form form {
+    width: 100%;
+    max-width: 40rem;
 }
 
 .signin-form .signin-heading {
@@ -9,10 +15,14 @@
 }
 
 .signin-form .para {
-    font: normal normal 300 0.8rem Rubik;
-    width: 35%
-}
+    max-width: 37rem;
+    font-size: 1.35rem;
+    font-family: Rubik;
+    width: 100%;    
+    font-weight: lighter;
 
+
+}
 .signin-form .signin-button {
     text-align: center;
     border: 3px solid #FFFFFF;
@@ -28,7 +38,7 @@
 }
 
 .signin-form .fpl-email {
-    width: 40rem;
+    width: 100%;
     text-align: center;
     padding-top: 1rem;
     padding-bottom: 1rem;
@@ -40,37 +50,37 @@
 }
 
 @media only screen and (min-device-width: 1280px) and (max-device-width: 1440px) {
-   
     .signin-form.last-para {
         margin-top: 0.5rem;
     }
     .signin-form .para {
-        font: normal normal 300 0.8rem Rubik;
-        width: 75%
+        max-width: 37rem;
+        font-size: 1.35rem;
+        font-family: Rubik;
+        width: 100%;
+        font-weight: lighter;
+    
     }
 }
+
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
-   
-    .signin-form .last-para {
-        margin-top: 13rem;
-    }
     .signin-form .para {
         width: 75%
     }
 }
+
+@media only screen and (max-device-width: 767px) {
+    .w-md-100 {
+        width: 100%!important;
+    }
+}
+
 @media only screen and (min-device-width: 280px) and (max-device-width: 480px) {
-    .signin-form{
-        top:20%
+    .signin-form {
+        top: 20%
     }
     .signin-form .para {
         font: normal normal 300 0.8rem Rubik;
         width: 100%;
-    }
-    .signin-form .fpl-email {
-        width: 15rem
-    }
-    
-   .signin-form .last-para {
-        margin-top: -2rem;
     }
 }

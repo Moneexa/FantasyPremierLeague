@@ -1,11 +1,11 @@
 import React from 'react'
 
-export default function PrivacyPolicy() {
+export default function Messages() {
     return (<div className="d-flex flex-column  justify-content-center align-items-center text-center"
 
         style={{
             marginTop: "5rem",
-            marginBottom: "16rem"
+            marginBottom: "5rem"
 
         }}
     >
@@ -13,7 +13,7 @@ export default function PrivacyPolicy() {
             color: "white",
             font: "normal normal medium 2.5rem Rubik",
             marginTop: "-3rem"
-        }}> Privacy Policy</h1>
+        }}>Messages</h1>
 
     </div>)
 }

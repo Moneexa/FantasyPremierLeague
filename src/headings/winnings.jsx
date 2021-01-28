@@ -1,12 +1,21 @@
 import React from 'react'
 
 export default function Winnings() {
-    return (<div className="d-flex flex-column  justify-content-center align-items-center heading-row">
-        <h1 style={{
+    return (<div className="d-flex flex-column  justify-content-center align-items-center text-center"
+
+        style={{
+            marginTop: "5rem",
+            marginBottom: "5rem"
+
+        }}
+    >
+        <div style={{
             color: "white",
-            font: "normal normal medium 2.5rem Rubik",
+            fontSize: "2.5rem",
+            fontFamily: "Rubik",
+            fontWeight: "500",
             marginTop: "-3rem"
-        }}> Winnings</h1>
+        }}> Winnings</div>
 
     </div>)
 }

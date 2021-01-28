@@ -1,0 +1,83 @@
+.account-heading {
+    font-size: 3.73rem;
+    font-family: Rubik;
+    font-weight: 500;
+}
+
+.signin-form .MuiStepper-alternativeLabel {
+    /* align-items: flex-start; */
+    background-color: transparent;
+}
+.signin-form .MuiStepIcon-root {
+    color: transparent;
+    border:1px solid white;
+    display: block;
+    border-radius: 50%;
+    height: 3.07rem;
+    width: 3.07rem;
+
+}
+.signin-form .MuiStepIcon-root.MuiStepIcon-active .MuiStepIcon-text {
+    fill: #0F1F4E;
+    font-size: 0.75rem;
+    font-family: Rubik;
+}
+.signin-form .MuiStepIcon-root.MuiStepIcon-active {
+    color: white;
+    border:hidden
+
+}
+.signin-form .MuiStepIcon-root.MuiStepIcon-completed {
+    fill: #fff;
+    border:hidden
+
+}
+.signin-form .MuiButton-containedPrimary {
+    background-color: white;
+    border-radius: 26px;
+    background-color: white;
+    color: #492477;
+    margin-top: 3rem;
+    padding: 0.5rem 4rem;
+    font-family:Rubik;
+    font-size:1rem
+}
+.check-info{
+    font-family:Rubik;
+    font-size:0.9rem;
+    font-weight:lighter;
+    font-style: normal;
+}
+.signin-form .MuiStepConnector-alternativeLabel {
+    top: 22px;
+    left: calc(-47% + 20px);
+    right: calc(52% + 20px);
+    position: absolute;
+}
+.input-bar {
+    border: 2px solid #FFFFFF;
+    border-radius: 30px;
+    background-color: transparent;
+    font-size: 1rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    font-family: Rubik;
+}
+
+.create-account-para {
+    font-size: 1.35rem;
+    max-width: 37rem;
+
+    font-family: Rubik;
+    font-weight: lighter;
+    font-style: normal;
+
+}
+@media only screen and (min-device-width:280px) and (max-device-width:480px){
+    .input-row{
+        flex-direction: column;
+    }
+    .button-row{
+        flex-direction: column;
+    }
+}

@@ -1,19 +1,21 @@
 import React from 'react'
 
-export default function PrivacyPolicy() {
+export default function MyWinnings() {
     return (<div className="d-flex flex-column  justify-content-center align-items-center text-center"
 
         style={{
             marginTop: "5rem",
-            marginBottom: "16rem"
+            marginBottom: "5rem"
 
         }}
     >
-        <h1 style={{
+        <div style={{
             color: "white",
-            font: "normal normal medium 2.5rem Rubik",
+            fontSize: "2.5rem",
+            fontFamily: "Rubik",
+            fontWeight: "500",
             marginTop: "-3rem"
-        }}> Privacy Policy</h1>
+        }}> My Winnings</div>
 
     </div>)
 }
