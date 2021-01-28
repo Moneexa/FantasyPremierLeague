@@ -11,9 +11,9 @@ export default function Confirmation() {
     return (<>
         <div className="d-flex flex-column align-items-center justify-content-center">
             <img src={Party} style={{
-                marginTop: "7rem",
+                marginTop: "3rem",
 
-                marginBottom: "7rem",
+                marginBottom: "4rem",
 
                 maxWidth: "6rem",
                 width: "100%"
