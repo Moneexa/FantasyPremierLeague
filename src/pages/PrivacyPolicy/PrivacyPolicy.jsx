@@ -12,7 +12,7 @@ export default function PrivacyPolicy() {
     })
     return (
         <>
-            <div className="d-flex align-items-center justify-content-center m-5">
+            <div className="d-flex align-items-center justify-content-center mt-5 main-padding" style={{ marginBottom: '13rem' }}>
                 <p style={{
                     textAlign: "left", color: "#000000", font: "normal normal 300 20px Rubik"
                 }}>
@@ -44,8 +44,7 @@ export default function PrivacyPolicy() {
 
         </p>
             </div>
-            <SubscribeLetter />
-        </>
+            <SubscribeLetter />      </>
 
     )
 
