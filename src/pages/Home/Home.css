@@ -1,0 +1,318 @@
+h2, p {
+    text-align: center;
+}
+
+.circles {
+    z-index: 0;
+    max-width: 1400px;
+}
+
+.MuiAccordion-root:before {
+    height: 0% !important;
+}
+
+.rotated-stroke {
+    transform: rotateX(180deg);
+    position: absolute;
+    left: 55%;
+}
+
+#cards .card-heading {
+    font-size: 2.75rem;
+    font-family: Rubik;
+    font-weight: 500;
+}
+
+.stroke1 {
+    z-index: 1;
+    width: 100%;
+    /* margin-left:3rem;
+    margin-right: 3rem; */
+}
+
+.stroke2 {
+    transform: rotateX(180deg);
+    width: 100%;
+    margin-bottom: 8rem;
+}
+
+#cards .gets-started-button {
+    border-radius: 26px;
+    margin-top: 2rem;
+    padding: 0.25rem 2rem 0.25rem 2rem;
+    font: normal normal medium 1.5rem Rubik;
+    font-weight: 500;
+    color: #492477;
+    border: none;
+}
+
+#faq {
+    padding: 0rem 7rem;
+}
+
+#faq button, #how-to-play #leaguesBtn {
+    border-radius: 26px;
+    /* padding: 0.5rem; */
+    font-size: 20px;
+    font-weight: 600;
+    color: #0e335e;
+    background-color: white;
+    box-shadow: 0px 3px 6px #00000029;
+    border: 3px solid #ffffff;
+}
+
+#how-to-play {
+    background: #e4f0f9b0;
+    padding: 12rem 5rem 10rem 5rem;
+}
+
+#how-to-play .how-to-play-text {
+    font: normal normal 300 1.1rem Rubik;
+    max-width: 36rem;
+    margin-left: 6rem;
+    margin-right: 6rem;
+}
+
+#how-to-play .circle-row {
+    /* width: 100%; */
+    padding: 3rem;
+}
+
+#how-to-play .circle {
+    background: transparent linear-gradient(140deg, #f603be 0%, #340056 126%);
+    color: white;
+    height: 9.8rem;
+    width: 9.8rem;
+    /* margin-left:2rem; */
+}
+
+#how-to-play .tab1 {
+    min-width: 70rem;
+    margin: 0 auto;
+}
+
+#how-to-play .table-headings {
+    width: 100%;
+}
+
+#how-to-play .rows {
+    width: 100%;
+    box-shadow: 0px 3px 6px #00000029;
+    border-radius: 30px;
+    background: white;
+}
+
+/* #how-to-play .table-headings, .rows{
+    justify-content: space-between;
+} */
+
+#how-to-play .tab1 .rows .row-text {
+    font-family: Rubik;
+    font-size: 1.63rem;
+    color: #0f1f4e;
+}
+
+#how-to-play .tab1 .table-headings .head-text {
+    font-family: Rubik;
+    font-size: 1.3rem;
+    color: #0f1f4e;
+}
+
+#cards {
+    margin-top: -9rem;
+    margin-bottom: -5.4rem;
+    width: 100%;
+    /* margin-bottom: -3vh; */
+    /* position: absolute; */
+    /* top: 76%; */
+    /* left: 22%; */
+    /* right: 0; */
+    /* width: 55% */
+}
+
+#cards #div1 {
+    background: #ff2882;
+    border-radius: 50px;
+    opacity: 1;
+    padding: 2.4rem 1.5rem 3.4rem 1.5rem;
+    color: white;
+    margin-right: 1rem;
+    box-shadow: -3px 14px 52px -6px rgba(59, 57, 59, 1);
+    margin-bottom: 1rem;
+}
+
+#cards #div2 {
+    background: #963cff;
+    border-radius: 50px;
+    opacity: 1;
+    padding: 2.4rem 1.5rem 3.4rem 1.5rem;
+    color: white;
+    margin-right: 1rem;
+    box-shadow: -3px 14px 52px -6px rgba(59, 57, 59, 1);
+    margin-bottom: 1rem;
+}
+
+#how-to-play .how-to-play-heading {
+    /* font-weight: 650; */
+    font: normal normal medium 5rem Rubik;
+    color: #10093d;
+    padding-top: 2rem;
+    text-align: center;
+}
+
+.main-circle {
+    /* margin-left: rem; */
+}
+
+@media only screen and (min-device-width: 2500px) {
+    #how-to-play {
+        /* margin-top: 13rem; */
+        padding: 12rem 5rem 10rem 5rem;
+    }
+    #how-to-play .how-to-play-text {
+        font-size: 1.5rem;
+    }
+}
+
+@media only screen and (max-device-width: 1440px) and (max-device-width: 1280px) {
+    #cards {
+        top: 80%;
+    }
+    #how-to-play {
+        padding: 7rem 5rem 10rem 5rem;
+    }
+}
+
+@media only screen and (min-device-width: 701px) and (max-device-width: 1024px) {
+    #cards {
+        top: 80%;
+        /* left: 25%; */
+        left: 190px;
+    }
+    /* #how-to-play {
+        padding-top: 8rem;
+    } */
+    #how-to-play {
+        padding-left: 6rem;
+        padding-right: 6rem;
+    }
+    .circles {
+        flex-direction: column;
+    }
+    .stroke1 {
+        transform: rotateZ(98deg);
+        margin-left: 11rem;
+    }
+    .stroke2 {
+        transform: rotateZ(272deg);
+        margin-right: 13rem;
+    }
+}
+
+@media only screen and (min-width: 500px) and (max-device-width: 700px) {
+    #cards {
+        top: 80%;
+        /* left: 38%; */
+    }
+    /* #how-to-play {
+        padding-top: 8rem;
+    } */
+    #how-to-play {
+        padding-left: 4rem;
+        padding-right: 4rem;
+    }
+    .circles {
+        flex-direction: column;
+    }
+    .stroke1 {
+        transform: rotateZ(90deg);
+        margin-left: 15rem;
+        z-index: -1;
+    }
+    .stroke2 {
+        margin-top: -3rem;
+        transform: rotateZ(272deg);
+        margin-right: 11rem;
+        margin-bottom: 4rem;
+    }
+}
+
+@media only screen and (min-device-width: 280px) and (max-device-width: 900px) {
+    #table-leagues {
+        width: 100vw;
+    }
+}
+
+@media only screen and (min-device-width: 280px) and (max-device-width: 480px) {
+    #table-leagues {
+        width: 100vw;
+    }
+    #cards {
+        top: 69%;
+        /* left: 16%; */
+        left: 35px;
+        right: 0;
+    }
+    .circles {
+        flex-direction: column;
+    }
+    #cards button {
+        width: 180px;
+        border-radius: 26px;
+        padding: 0.25rem;
+        font-size: 20px;
+        font-weight: 500;
+        color: #492477;
+        border: none;
+    }
+    #how-to-play .rounded-circle-text {
+        width: 56vw;
+    }
+    #div1, #div2 {
+        margin-top: 1rem;
+    }
+    #container {
+        display: flex;
+        flex-direction: column;
+    }
+    #how-to-play {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+    #how-to-play .table-headings {
+        width: 100%;
+    }
+    #how-to-play .rows {
+        width: 100%;
+    }
+    #how-to-play .how-to-play-heading {
+        padding-top: 12rem;
+    }
+    #how-to-play .how-to-play-text {
+        max-width: 20rem;
+        width:100%;
+        font: normal normal 300 1.2rem Rubik;
+    }
+    #cards .gets-started-button {
+        padding: 0.25rem 0.5rem 0.25rem 0.5rem;
+    }
+    .main-circle {
+        margin-left: auto;
+        /* margin-top: -17rem; */
+    }
+    .stroke1 {
+        margin-top: -3rem;
+        transform: rotateZ(90deg);
+        margin-left: 13rem;
+        z-index: -1;
+    }
+    .stroke2 {
+        margin-top: -3rem;
+        transform: rotateZ(272deg);
+        margin-right: 11rem;
+        margin-bottom: 4rem;
+    }
+    #faq {
+        padding: 0rem 2rem;
+    }
+}

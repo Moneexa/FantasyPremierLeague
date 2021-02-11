@@ -1,0 +1,138 @@
+.profile-parent {
+    padding-right: 3.2rem;
+    margin-top: 4.29rem;
+}
+
+.main-profile {
+    display: flex;
+    margin-bottom: 12rem;
+    /* align-items: center; */
+    /* justify-content: center; */
+}
+
+.form-parent {
+    padding-left: 3.87rem;
+    margin-top: 4.29rem;
+    border-left: 2px solid #00000030;
+    width: 100%;
+}
+
+.form-head {
+    font-family: Rubik;
+    font-weight: 500;
+    font-size: 2.09rem
+}
+
+#profile-form {
+    margin-top: 2.97rem;
+    text-align: left;
+    color: #0F1F4E;
+    font-family: Rubik;
+    font-size: 1.212rem;
+    width: 100%;
+}
+
+#profile-form .profile-input {
+    border: 3px solid #0F1F4E;
+    border-radius: 26px;
+    font-size: 1.21rem;
+    font-family: Rubik;
+    padding-left: 1.39rem
+}
+
+#profile-form #add1, #add2 {
+    width: 32rem
+}
+
+#profile-form #current-password {
+    width: 50%
+}
+
+#profile-form .save-changes {
+    background: #0F1F4E;
+    border-radius: 26px;
+    border: hidden;
+    color: white;
+    font-size: 1.25rem;
+    font-family: Rubik;
+    padding: 0.69rem 1.86rem
+}
+
+#profile-form .form-half {
+    border-bottom: 2px solid #00000030;
+}
+
+.profile-box {
+    background: linear-gradient(to bottom, #B90D8E 2%, #110A3E 100%);
+    border-radius: 30px;
+}
+
+.profile-box .profile-name {
+    font-size: 1.32rem;
+    font-family: Rubik;
+    margin-top: 0.69rem;
+    font-weight: 500;
+}
+
+.profile-box .edit-btn {
+    font-size: 0.65rem;
+    font-family: Rubik;
+    padding: 0.37rem 0.69rem;
+    color: #492477;
+    border-radius: 26px;
+    border: hidden;
+    margin-top: 2.75rem;
+    margin-bottom: 1.39rem;
+}
+@media only screen and (min-device-width:1600px) and (max-device-width:2800px) {
+    #profile-form #current-password {
+        width: 25%
+    }
+}
+@media only screen and (min-device-width:700px) and (max-device-width:930px) {
+    .profile-parent {
+        padding-left: 3.2rem
+    }
+    #profile-form #add1, #add2 {
+        width: auto
+    }
+    #profile-form #current-password {
+        width: auto
+    }
+}
+
+@media only screen and (min-device-width:481px) and (max-device-width:700px) {
+    .profile-parent {
+        padding-left: 3.2rem
+    }
+    #profile-form #add1, #add2 {
+        width: 32rem
+    }
+}
+
+@media only screen and (min-device-width:280px) and (max-device-width:650px) {
+    .profile-parent {
+        padding-left: 3.2rem
+    }
+    #profile-form #add1, #add2 {
+        width: auto
+    }
+}
+
+@media only screen and (min-device-width:280px) and (max-device-width:700px) {
+    .main-profile {
+        flex-direction: column
+    }
+}
+
+@media only screen and (min-device-width:351px) and (max-device-width:700px) {
+    #profile-form #current-password {
+        width: 50%
+    }
+}
+
+@media only screen and (min-device-width:280px) and (max-device-width:350px) {
+    #profile-form #current-password {
+        width: auto
+    }
+}

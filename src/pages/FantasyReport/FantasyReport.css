@@ -1,0 +1,58 @@
+.button-rows {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center
+}
+
+.button-rows .button1{
+    font-size: 0.93rem;
+    font-family: Rubik;
+    padding:0.65rem 4.1rem;
+    background-color: #A52A8E;
+    border-radius: 30px;
+    border:hidden
+}
+.button-rows .button2{
+    font-size: 0.93rem;
+    font-family: Rubik;
+    padding:0.65rem 4.1rem;
+    background-color: #24336B;
+    border-radius: 30px;
+    border:hidden
+}
+.button-rows .button3{
+    background-color: #666766;
+    font-size: 0.93rem;
+    font-family: Rubik;
+    padding:0.65rem 4.1rem;
+    border-radius: 30px;
+    border:hidden
+}
+.fixeddiv{
+    background-color: #ECF4FB;
+    padding-top:4.2rem;
+    padding-bottom:3.4rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.where-to-play .whereplay-head{
+    font-size: 2.09rem;
+    font-family:Rubik;
+    font-weight: 500;
+}
+.where-to-play .whereplay-text{
+    font-size: 0.9rem;
+    font-family:Rubik;
+    /* font-weight: 500; */
+}
+@media only screen and (min-device-width:280px) and (max-device-width:480px){
+    .button-rows{
+        flex-direction: column;
+    }
+    .fixeddiv{
+        flex-direction: column;
+    }
+}

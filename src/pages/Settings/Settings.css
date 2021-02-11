@@ -1,0 +1,42 @@
+.sett-head {
+    font-size: 2.09rem;
+    font-family: Rubik;
+    font-weight: 500;
+}
+
+.switch-cont {
+    width: 100%;
+    max-width: 57rem;
+    padding: 0.5rem 1.5rem;
+    font-size: 0.9rem;
+    font-family: Rubik;
+    font-weight: 500;
+    color: #0F1F4E;
+    border: 3px solid #0F1F4E;
+    border-radius: 26px;
+}
+
+.warning-row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.MuiSwitch-thumb .Component-thumb-19 {
+    width: 24px;
+    height: 24px;
+    border: 1px solid 0F1F4E;
+}
+
+.warning-msg {
+    font-size: 1.3rem;
+    font-family: Rubik;
+    color: #D90000
+}
+
+@media only screen and (min-device-width:280px) and (max-device-width:480px) {
+    .warning-msg{
+        flex-direction: column;
+    }
+}

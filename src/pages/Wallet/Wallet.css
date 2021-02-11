@@ -1,0 +1,144 @@
+.wallet #cards #div1 .card-heading {
+    font-family: Rubik;
+    font-size: 3.5rem;
+    color: #110A3E;
+}
+
+.wallet #cards {}
+
+.wallet #cards #div1 {
+    background: white;
+    border-radius: 50px;
+    opacity: 1;
+    padding: 3rem;
+    margin-right: 1rem;
+    box-shadow: -3px 14px 52px -6px rgba(59, 57, 59, 1);
+}
+
+.wallet #cards .div-text {
+    color: #110A3E;
+    font-family: Rubik;
+    font-size: 1.2rem;
+}
+
+.wallet #cards #div2 .wallet-head {
+    font-family: Rubik;
+    font-size: 2.25rem;
+    color: #110A3E;
+    width: 12rem;
+    font-weight: 500;
+}
+
+.wallet #cards #div2 {
+    background: white;
+    border-radius: 50px;
+    position: relative;
+    opacity: 1;
+    padding: 1rem;
+    color: #110A3E;
+    margin-right: 1rem;
+    box-shadow: -3px 14px 52px -6px rgba(59, 57, 59, 1);
+    overflow: hidden;
+}
+
+.wallet #cards #div2 .child-div1 {
+    position: absolute;
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    background-color: #110A3E;
+    top: -9%;
+    left: 18%;
+}
+
+.wallet #cards #div2 .child-div2 {
+    position: absolute;
+    width: 16rem;
+    height: 16rem;
+    border-radius: 50%;
+    border: 43px solid #B90D8E;
+    top: -39%;
+    left: 57%;
+}
+
+.how-to-play {
+    background: #E4F0F9B0;
+    margin-top: -8rem;
+    padding: 10rem 1rem 10rem 1rem
+}
+
+.how-to-play .how-to-play-text {
+    font: normal normal 300 1.375rem Rubik;
+    margin-left: 6rem;
+    margin-right: 6rem;
+}
+
+.how-to-play .payment-history {
+    align-items: flex-start;
+    background: #FFFFFF;
+    box-shadow: 0px 10px 25px #00000008;
+    border: 0.5px solid #E8E8E8;
+    border-radius: 10px;
+}
+
+.how-to-play .payment-history .payment-history-rows {
+    justify-content: space-between;
+}
+
+.how-to-play .row-ind {
+    margin-right: 20rem;
+}
+
+@media only screen and (max-device-width:1440px) and (max-device-width:1280px) {
+    .wallet #cards {
+        top: 50%;
+        /* left: 16% */
+    }
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+    .wallet #cards {
+        top: 131%;
+        left: 4%;
+    }
+    /* #how-to-play {
+        padding-top: 8rem;
+    } */
+}
+
+@media only screen and (min-width:540px) and (max-device-width:700px) {
+    .wallet #cards {
+        top: 110%;
+        left: 38%;
+    }
+    /* #how-to-play {
+        padding-top: 8rem;
+    } */
+}
+
+@media only screen and (min-device-width: 280px) and (max-device-width: 480px) {
+    .wallet #cards {}
+    .wallet #cards button {
+        width: 180px;
+        border-radius: 26px;
+        padding: 0.25rem;
+        font-size: 20px;
+        font-weight: 500;
+        color: #492477;
+        border: none
+    }
+    .wallet #div1, #div2 {
+        margin-top: 1rem;
+    }
+    .how-to-play {
+        padding-top: 13rem;
+        padding-left: 0rem;
+        padding-right: 0rem;
+    }
+    .how-to-play .row-ind {
+        margin-right: 5rem;
+    }
+    .wallet #cards #div1 {
+        padding: 1.5rem
+    }
+}

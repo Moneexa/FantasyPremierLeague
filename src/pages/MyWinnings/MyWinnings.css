@@ -1,0 +1,106 @@
+.sub-winnings {
+    font-size: 1.5rem;
+    font-family: Rubik;
+    font-weight: lighter;
+}
+
+#bg {
+    background: #E4F0F9B0;
+    padding: 7rem 6rem 10rem 6rem;
+    position: absolute;
+    width: 100%;
+    top: 16rem;
+    height: 77%;
+    z-index: -1;
+}
+
+.start-date, .end-date {
+    color: #748AA1;
+    font-size: 0.7rem;
+    font-family: Rubik;
+}
+
+.winning-cards {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.winning-cards .winning-card1, .winning-card2, .winning-card3 {
+    border-radius: 30px;
+    padding: 1.21rem 3.54rem
+}
+
+.winning-cards .winning-card2 {
+    box-shadow: 0px 3px 6px #00000029;
+    border: 3px solid #0F1F4E;
+}
+
+.winning-cards .winning-card3 {
+    box-shadow: 0px 3px 6px #00000029;
+    border: 3px solid #FF2882;
+}
+
+.winning-cards .winning-card1 {
+    box-shadow: 0px 3px 6px #00000029;
+    border: 3px solid #BBBBBB;
+    padding: 1.21rem 2.5rem
+}
+
+.tab-1 {
+    min-width: 63rem;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.tableHeadings {
+    width: 100%;
+}
+
+.rows1 {
+    width: 100%;
+    box-shadow: 0px 3px 6px #00000029;
+    border-radius: 30px;
+    background: white;
+}
+
+.tab-1 .rows1 .rowText {
+    font-family: Rubik;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #0F1F4E;
+}
+
+.tab-1 .tableHeadings .headText {
+    font-family: Rubik;
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: #0F1F4E;
+}
+
+.winning-card1 .winning-lead-heading1, .winning-card2 .winning-lead-heading2, .winning-card3 .winning-lead-heading3 {
+    font-size: 1.72rem;
+    font-family: Rubik;
+    font-weight: 500;
+    color: #1B2055;
+}
+
+.winning-card1 .winning-lead-number1, .winning-card2 .winning-lead-number2, .winning-card3 .winning-lead-number3 {
+    font-size: 4.6rem;
+    font-family: Rubik;
+    font-weight: 500;
+    color: #FF2882;
+}
+
+.center-detail {
+    font-size: 1.4rem;
+    font-family: Rubik;
+    font-weight: lighter;
+}
+
+@media only screen and (min-device-width:280px) and (max-device-width:768px) {
+    .winning-cards {
+        flex-direction: column;
+    }
+}
