@@ -11,7 +11,7 @@
 }
 
 .search-messages .input-group-text {
-    background-color: #FFFFFF26;
+    background-color: transparent;
     border: hidden
 }
 
@@ -19,6 +19,10 @@
     left: 0px;
     background: #1B2055;
     border-radius: 0px 60px 60px 0px;
+    overflow: hidden;
+    z-index: 1;
+    max-width: 29rem;
+    width: 100%;
 }
 
 .main-cont {
@@ -27,13 +31,17 @@
 }
 
 .corner-card .search-messages {
-    background: #FFFFFF26;
+    background-color: #FFFFFF26;
     border-radius: 20px;
     font-size: 1rem;
     font-family: Rubik;
     color: #FFFFFFB3;
     border: hidden;
     max-width: 19rem;
+}
+
+.search-messages .input-text-bar:focus {
+    box-shadow: none;
 }
 
 .corner-card .icon-head {
@@ -50,7 +58,6 @@
 .chat-box {
     width: 100%;
     margin-left: -4rem;
-    z-index: -1;
 }
 
 .chat-box .message-header {
@@ -67,7 +74,10 @@
 
 .chat-box .chat-portion {
     padding-left: 13.05rem;
-    padding-top: 0.6rem;
+    padding-top: 19rem;
+    height: 100%;
+    max-height: 36rem;
+    overflow-y: auto;
 }
 
 .chat-portion .messages {
@@ -76,7 +86,7 @@
     font-size: 0.89rem;
     font-family: Rubik;
     padding: 1.21rem;
-    max-width: 31rem;
+    max-width: 62rem;
     width: 100%;
 }
 
@@ -103,6 +113,13 @@
     align-items: center;
 }
 
+@media only screen and (min-device-width:2500px) {
+    .chat-portion .messages {
+
+        max-width: 100rem;
+
+    }
+}
 @media only screen and (min-device-width:1600px) {
     .pic-image {
         width: 59%
