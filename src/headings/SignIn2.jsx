@@ -48,8 +48,11 @@ export default function SignIn({ match }) {
                 <input value={email} onChange={(e) => handleEmailChange(e)} className="fpl-email" placeholder="Your email" />
                 <input className="fpl-email" value={password} onChange={(e) => handlePasswordChange(e)}
                     placeholder="Your password" />
-                <Link to="/blank">
-                    <button className="py-1 px-3 my-5 signin-button bg-white" type="button" onClick={signin}>
+                <Link to="/home" style={{
+                    width: "100%",
+                    maxWidth: "30rem"
+                }}>
+                    <button className="my-5 signin-button bg-white w-100" type="button" onClick={signin}>
 
                         Sign In</button>
                 </Link>

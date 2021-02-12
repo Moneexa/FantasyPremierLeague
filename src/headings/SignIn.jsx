@@ -132,7 +132,7 @@ export default function SignIn({ match }) {
                 <input value={email} onChange={(e) => handleEmailChange(e)} className="fpl-email" placeholder="Your FPL email" />
                 <input className="fpl-email" value={password} onChange={(e) => handlePasswordChange(e)}
                     placeholder="Your FPL password" />
-                <button className="py-1 px-3 my-5 signin-button bg-white" type="button" onClick={handleShow1}>
+                <button className="my-5 signin-button bg-white w-100" style={{maxWidth:"30rem"}} type="button" onClick={handleShow1}>
                    
                     Start Playing</button>
             </form>
