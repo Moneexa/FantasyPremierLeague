@@ -48,8 +48,8 @@ export default function Menu() {
             <Link className="home-menu" to="/settings">
                 Settings
                 </Link>
-            <Link className="home-menu" to="/faq">
-                Security
+            <Link className="home-menu" to="/tracker">
+                Tracker
                 </Link>
             <Link className="home-menu" to="/sync-fpl" style={{ border: "none" }}>
                 Sync FPL Account
