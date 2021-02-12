@@ -18,10 +18,7 @@ export default function Mayhem() {
     useEffect(() => {
         changeHeading("Method & Mayhem Money League!")
         changePara("View your standing in this league, Click on the row to view full team.")
-        console.log('MEJHEM')
-        console.log(mayhemLeague)
         api.getMayhem(mayhemLeague).then(res => {
-            console.log(res.data)
             setMayhem(res.data)
         })
     }, [])
