@@ -123,7 +123,41 @@ export const store = createStore({
                 yourRank: "2997",
                 stake: "$100",
             },
-
+            {
+                id: "5",
+                gameWeakLeague: "Gameweek 06",
+                leagueNo: "1522",
+                yourRank: "2997",
+                stake: "$100",
+            },
+            {
+                id: "5",
+                gameWeakLeague: "Gameweek 06",
+                leagueNo: "1522",
+                yourRank: "2997",
+                stake: "$100",
+            },
+            {
+                id: "5",
+                gameWeakLeague: "Gameweek 06",
+                leagueNo: "1522",
+                yourRank: "2997",
+                stake: "$100",
+            },
+            {
+                id: "5",
+                gameWeakLeague: "Gameweek 06",
+                leagueNo: "1522",
+                yourRank: "2997",
+                stake: "$100",
+            },
+            {
+                id: "5",
+                gameWeakLeague: "Gameweek 06",
+                leagueNo: "1522",
+                yourRank: "2997",
+                stake: "$100",
+            },
 
         ],
         paymentHistory: [
