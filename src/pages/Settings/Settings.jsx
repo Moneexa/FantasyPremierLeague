@@ -120,7 +120,7 @@ export default function Settings() {
                         fontSize: "1.5rem",fontFamily: "Rubik",fontWeight:"lighter",
                         color: "#0F1F4E", textAlign: "center"
                     }}>
-                       Are you sure you still want to close your account permanently?
+                       Are you sure you want to delete your account? Once deleted you would not be able to create a new account for one month with the same User info
                        
                        </div>
                        <div className="d-flex align-items-center justify-content-center mt-5 ">
@@ -143,6 +143,7 @@ export default function Settings() {
                            }}>Yes</button>
                            </Link>
                        </div>
+                       <Link to="/blank" className="mt-5">Disclaimer</Link>
                 </div>
             </Modal.Body>
         </Modal>
@@ -152,7 +153,7 @@ export default function Settings() {
 
             <div className="d-flex align-items-center justify-content-between switch-cont mt-5">
 
-                <div>I wish to receive newsletters, promotions and news from FPL Play</div>
+                <div>I consent to receiving newsletter, promotions, and news from FPL Play</div>
                 <FormControlLabel style={{ marginLeft: "2.5rem", marginRight: "2.5rem" }}
                     control={<IOSSwitch checked={_switch} onChange={handleChange} name="checkedB" />}
 
@@ -160,7 +161,7 @@ export default function Settings() {
             </div>
             <div className="d-flex align-items-center justify-content-between switch-cont mt-5">
 
-                <div>Lorem Ipsum is simply dummy text of the typesetting industry.</div>
+                <div>I consent to receiving Messaging updates from FPL Play</div>
                 <FormControlLabel style={{ marginLeft: "2.5rem", marginRight: "2.5rem" }}
                     control={<IOSSwitch checked={_switch1} onChange={handleChange2} name="checkedB" />}
 
@@ -168,7 +169,7 @@ export default function Settings() {
             </div>
             <div className="d-flex align-items-center justify-content-between switch-cont mt-5">
 
-                <div>Lorem Ipsum is simply dummy text of the typesetting industry.</div>
+                <div>I consent to text communication on my cell# from FPL Play</div>
                 <FormControlLabel style={{ marginLeft: "2.5rem", marginRight: "2.5rem" }}
                     control={<IOSSwitch checked={_switch2} onChange={handleChange3} name="checkedB" />}
 
@@ -176,7 +177,7 @@ export default function Settings() {
             </div>
             <div className="d-flex align-items-center justify-content-between switch-cont mt-5">
 
-                <div>Lorem Ipsum is simply dummy text of the typesetting industry.</div>
+                <div>I consent to receiving Desktop notifications from FPL Play</div>
                 <FormControlLabel style={{ marginLeft: "2.5rem", marginRight: "2.5rem" }}
                     control={<IOSSwitch checked={_switch3} onChange={handleChange4} name="checkedB" />}
 
@@ -184,31 +185,32 @@ export default function Settings() {
             </div>
             <div className="d-flex align-items-center justify-content-between switch-cont mt-5">
 
-                <div>Lorem Ipsum is simply dummy text of the typesetting industry.</div>
+                <div>Auto enroll in lower league – In case of not being able to assigned a league, I am okay being auto enrolled in a lower league denomination amount</div>
                 <FormControlLabel style={{ marginLeft: "2.5rem", marginRight: "2.5rem" }}
                     control={<IOSSwitch checked={_switch4} onChange={handleChange5} name="checkedB" />}
 
                 />
             </div>
+            
             <div className="d-flex align-items-center justify-content-between switch-cont mt-5">
 
-                <div>Lorem Ipsum is simply dummy text of the typesetting industry.</div>
+                <div>I consent to Cookie Policy setup by FPL Play</div>
                 <FormControlLabel style={{ marginLeft: "2.5rem", marginRight: "2.5rem" }}
-                    control={<IOSSwitch checked={_switch5} onChange={handleChange6} name="checkedB" />}
+                    control={<IOSSwitch checked={_switch6} onChange={handleChange7} name="checkedB" />}
 
                 />
             </div>
             <div className="d-flex align-items-center justify-content-between switch-cont mt-5">
 
-                <div>Lorem Ipsum is simply dummy text of the typesetting industry.</div>
+                <div>I consent to attempt to having fun while interacting on FPL Play</div>
                 <FormControlLabel style={{ marginLeft: "2.5rem", marginRight: "2.5rem" }}
                     control={<IOSSwitch checked={_switch6} onChange={handleChange7} name="checkedB" />}
 
                 />
             </div>
 
-            <div className="warning-row mt-5">
-                <img className="px-3 py-sm-5" src={close} onClick={handleShow}/>
+            <div className="warning-row mt-5" onClick={handleShow}>
+                <img className="px-3 py-sm-5" src={close} />
                 <div className="warning-msg">Force close your account</div>
 
             </div>
