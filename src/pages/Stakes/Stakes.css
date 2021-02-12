@@ -1,6 +1,7 @@
 .stakes-card {
     width: 100%;
-    margin-top: -9rem
+    margin-top: -12rem;
+    margin-bottom: 11rem;
 }
 
 .stake-parent #bg {
@@ -19,13 +20,14 @@
     border-radius: 50px;
     opacity: 1;
     padding: 2rem;
-    color:#3A4EFF;
+    color: #3A4EFF;
     font-family: Rubik;
     margin-right: 1rem;
     box-shadow: -3px 14px 52px -6px rgba(59, 57, 59, 1);
     overflow: hidden;
-    position:relative
+    position: relative
 }
+
 .stakes-card .div1-stake:nth-child(even) {
     font-family: Rubik;
     background-color: #355EFF;
@@ -36,11 +38,9 @@
     margin-right: 1rem;
     box-shadow: -3px 14px 52px -6px rgba(59, 57, 59, 1);
     overflow: hidden;
-    position:relative
+    position: relative
 }
-.stakes-card .div1-stake:last-child(){
-    width:"90vh"
-}
+
 .stakes-card .div1-stake:nth-child(odd) .child1-stake {
     position: absolute;
     width: 5rem;
@@ -50,14 +50,29 @@
     top: -6%;
     left: 30%;
 }
+
 .stakes-card .div1-stake:nth-child(even) .child1-stake {
     position: absolute;
     width: 5rem;
     height: 5rem;
     border-radius: 50%;
-    background-color: #6ABCFF ;
+    background-color: #6ABCFF;
     top: -6%;
     left: 30%;
+}
+
+.stakes-card .last-stake {
+    width: 100%;
+    background-color: #1D2786;
+    border-radius: 50px;
+    opacity: 1;
+    padding: 2rem 2rem 0.8rem 2rem;
+    color: #3A4EFF;
+    font-family: Rubik;
+    margin-right: 1rem;
+    box-shadow: -3px 14px 52px -6px rgba(59, 57, 59, 1);
+    overflow: hidden;
+    position: relative
 }
 
 .stakes-card .div1-stake:nth-child(odd) .child2-stake {
@@ -70,36 +85,97 @@
     left: 48%;
 }
 
+.stakes-card .last-stake .child1-last-stake {
+    position: absolute;
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    background-color: #3A4EFF;
+    top: -6%;
+    left: 73%;
+}
+
+.stakes-card .last-stake .child2-last-stake {
+    position: absolute;
+    width: 19rem;
+    height: 19rem;
+    border-radius: 50%;
+    border: 60px solid #3A4EFF;
+    top: -59%;
+    left: 81%;
+}
+
 .stakes-card .div1-stake:nth-child(even) .child2-stake {
     position: absolute;
     width: 19rem;
-    height:19rem;
+    height: 19rem;
     border-radius: 50%;
     border: 60px solid #6ABCFF;
     top: -13%;
     left: 48%;
 }
- .div1-stake .prize-amount{
+
+.div1-stake .prize-amount, .last-stake .prize-amount {
     font-size: 2rem;
-    font-family:  Rubik;
+    font-family: Rubik;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.div1-stake .prize, .last-stake .prize {
+    font-size: 2rem;
+    font-family: Rubik;
     font-weight: normal;
     font-style: normal;
-    
 }
-.div1-stake  .prize{
-    font-size: 2rem;
-    font-family:  Rubik;
-    font-weight: normal;
-    font-style: normal;
-    
-}
-.div1-stake .get-started {
+
+.div1-stake .get-started, .last-stake .get-started {
     font-family: Rubik;
     font-size: 1.02rem;
     font-weight: lighter;
 }
-.div1-stake .prize-heading {
+
+.div1-stake .prize-heading, .last-stake .prize-heading {
     font-family: Rubik;
     font-size: 3.7rem;
     font-weight: 500;
+}
+.last-stake .last-stake-row{
+    display:flex;
+    flex-direction: row;
+}
+.last-stake .get-started-arrow, .div1-stake .arrow{
+    margin-left: 4.46rem;
+}
+@media only screen and (min-device-width:280px) and (max-device-width:480px) {
+    .stakes-card .last-stake {
+        padding: 2rem;
+    }
+    .last-stake .last-stake-row{
+        flex-direction: column;
+    }
+    .last-stake .get-started-arrow{
+        margin-left: 1.3rem;
+    }
+    .div1-stake .arrow{
+        margin-left: 2rem;
+    }
+    .stakes-card .last-stake .child1-last-stake {
+        position: absolute;
+        width: 5rem;
+        height: 5rem;
+        border-radius: 50%;
+        background-color: #3A4EFF;
+        top: -6%;
+        left: 30%;
+    }
+    .stakes-card .last-stake .child2-last-stake {
+        position: absolute;
+        width: 19rem;
+        height: 19rem;
+        border-radius: 50%;
+        border: 60px solid #3A4EFF;
+        top: -13%;
+        left: 48%;
+    }
 }
