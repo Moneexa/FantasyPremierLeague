@@ -61,7 +61,8 @@ export default function Mayhem() {
                                     <div className="text-left d-inline-block" style={{ width: "12%", minWidth: "6rem" }}>WildCard</div>
                                     <div className="text-left d-inline-block" style={{ width: "12%", minWidth: "6rem" }}>De Bruyne</div>
                                     <div className="text-left d-inline-block" style={{ width: "12%", minWidth: "6rem" }}>Fernandas</div>
-                                    <div className="text-left d-inline-block" style={{ width: "5.5%", minWidth: "4rem" }}>12/12</div>
+                                    <div className="text-left d-inline-block" style={{ width: "5.5%", minWidth: "4rem",
+                                    color:"green",fontWeight:"500", fontFamily:"Rubik" }}>$20</div>
 
                                 </Typography>
 
@@ -207,7 +208,8 @@ export default function Mayhem() {
                                     <div className="text-left d-inline-block" style={{ width: "12%", minWidth: "6rem" }}>WildCard</div>
                                     <div className="text-left d-inline-block" style={{ width: "12%", minWidth: "6rem" }}>De Bruyne</div>
                                     <div className="text-left d-inline-block" style={{ width: "12%", minWidth: "6rem" }}>Fernandas</div>
-                                    <div className="text-left d-inline-block" style={{ width: "5.5%", minWidth: "4rem" }}>12/12</div>
+                                    <div className="text-left d-inline-block" style={{ width: "5.5%", minWidth: "4rem", color:"green", 
+                                    fontWeight:"500", fontFamily:"Rubik" }}>$40</div>
 
                                 </Typography>
 
@@ -353,7 +355,8 @@ export default function Mayhem() {
                                     <div className="text-left d-inline-block" style={{ width: "12%", minWidth: "6rem" }}>WildCard</div>
                                     <div className="text-left d-inline-block" style={{ width: "12%", minWidth: "6rem" }}>De Bruyne</div>
                                     <div className="text-left d-inline-block" style={{ width: "12%", minWidth: "6rem" }}>Fernandas</div>
-                                    <div className="text-left d-inline-block" style={{ width: "5.5%", minWidth: "4rem" }}>12/12</div>
+                                    <div className="text-left d-inline-block" style={{ width: "5.5%", minWidth: "4rem",
+                                    color:"green",fontWeight:"500", fontFamily:"Rubik" }}>$100</div>
 
                                 </Typography>
 
@@ -499,7 +502,9 @@ export default function Mayhem() {
                                     <div className="text-left d-inline-block" style={{ width: "12%", minWidth: "6rem" }}>WildCard</div>
                                     <div className="text-left d-inline-block" style={{ width: "12%", minWidth: "6rem" }}>De Bruyne</div>
                                     <div className="text-left d-inline-block" style={{ width: "12%", minWidth: "6rem" }}>Fernandas</div>
-                                    <div className="text-left d-inline-block" style={{ width: "5.5%", minWidth: "4rem" }}>12/12</div>
+                                    <div className="text-left d-inline-block" style={{ width: "5.5%", minWidth: "4rem",color:"red",
+                                    fontWeight:"500", fontFamily:"Rubik" }}>-</div>
+
 
                                 </Typography>
 
@@ -645,7 +650,9 @@ export default function Mayhem() {
                                     <div className="text-left d-inline-block" style={{ width: "12%", minWidth: "6rem" }}>WildCard</div>
                                     <div className="text-left d-inline-block" style={{ width: "12%", minWidth: "6rem" }}>De Bruyne</div>
                                     <div className="text-left d-inline-block" style={{ width: "12%", minWidth: "6rem" }}>Fernandas</div>
-                                    <div className="text-left d-inline-block" style={{ width: "5.5%", minWidth: "4rem" }}>12/12</div>
+                                    <div className="text-left d-inline-block" style={{ width: "5.5%", minWidth: "4rem",color:"red",
+                                    fontWeight:"500", fontFamily:"Rubik" }}>-</div>
+
 
                                 </Typography>
 
@@ -791,7 +798,300 @@ export default function Mayhem() {
                                     <div className="text-left d-inline-block" style={{ width: "12%", minWidth: "6rem" }}>WildCard</div>
                                     <div className="text-left d-inline-block" style={{ width: "12%", minWidth: "6rem" }}>De Bruyne</div>
                                     <div className="text-left d-inline-block" style={{ width: "12%", minWidth: "6rem" }}>Fernandas</div>
-                                    <div className="text-left d-inline-block" style={{ width: "5.5%", minWidth: "4rem" }}>12/12</div>
+                                    <div className="text-left d-inline-block" style={{ width: "5.5%", minWidth: "4rem",color:"red",
+                                    fontWeight:"500", fontFamily:"Rubik" }}>-</div>
+                                </Typography>
+
+                            </AccordionSummary>
+                            <AccordionDetails>
+                                <Typography style={{
+                                    textAlign: "left", color: "#0F1F4E"
+                                }} >
+                                    <div className="d-flex flex-wrap">
+                                        <div className="d-flex flex-column m-md-3 m-sm-2">
+                                            <img src="/AVL.png" style={{ height: "5rem" }} />
+                                            <p style={{
+                                                font: "normal normal 300 1rem Rubik",
+                                            }}>McCarthy</p>
+                                            <p style={{
+                                                font: "normal normal 300 1rem Rubik",
+                                            }}>1</p>
+                                        </div>
+                                        <div className="d-flex flex-column m-md-3 m-sm-2">
+                                            <img src="/BHA.png" style={{ height: "5rem" }} />
+                                            <p style={{
+                                                font: "normal normal 300 1rem Rubik",
+                                            }}>McCarthy</p>
+                                            <p style={{
+                                                font: "normal normal 300 1rem Rubik",
+                                            }}>1</p>
+                                        </div>
+                                        <div className="d-flex flex-column m-md-3 m-sm-2">
+                                            <img src="/LEE.png" style={{ height: "5rem" }} />
+                                            <p style={{
+                                                font: "normal normal 300 1rem Rubik",
+                                            }}>McCarthy</p>
+                                            <p style={{
+                                                font: "normal normal 300 1rem Rubik",
+
+                                            }}>1</p>
+                                        </div>
+                                        <div className="d-flex flex-column m-md-3 m-sm-2">
+                                            <img src="/LEI.png" style={{ height: "5rem" }} />
+                                            <p style={{
+                                                font: "normal normal 300 1rem Rubik",
+
+                                            }}>McCarthy</p>
+                                            <p style={{
+                                                font: "normal normal 300 1rem Rubik",
+
+                                            }}>1</p>
+                                        </div>
+                                        <div className="d-flex flex-column m-md-3 m-sm-2">
+                                            <img src="/LIV.png" style={{ height: "5rem" }} />
+                                            <p style={{
+                                                font: "normal normal 300 1rem Rubik",
+
+                                            }}>McCarthy</p>
+                                            <p style={{
+                                                font: "normal normal 300 1rem Rubik",
+
+                                            }}>1</p>
+                                        </div>
+                                        <div className="d-flex flex-column m-md-3 m-sm-2">
+                                            <img src="/MCI.png" style={{ height: "5rem" }} />
+                                            <p style={{
+                                                font: "normal normal 300 1rem Rubik",
+
+                                            }}>McCarthy</p>
+                                            <p style={{
+                                                font: "normal normal 300 1rem Rubik",
+                                            }}>1</p>
+                                        </div>
+                                        <div className="d-flex flex-column m-md-3 m-sm-2">
+                                            <img src="/MUN.png" style={{ height: "5rem" }} />
+                                            <p style={{
+                                                font: "normal normal 300 1rem Rubik",
+                                            }}>McCarthy</p>
+                                            <p style={{
+                                                font: "normal normal 300 1rem Rubik",
+                                            }}>1</p>
+                                        </div>
+                                        <div className="d-flex flex-column m-md-3 m-sm-2">
+                                            <img src="/NEW.png" style={{ height: "5rem" }} />
+                                            <p style={{
+                                                font: "normal normal 300 1rem Rubik",
+                                            }}>McCarthy</p>
+                                            <p style={{
+                                                font: "normal normal 300 1rem Rubik",
+                                            }}>1</p>
+                                        </div>
+                                        <div className="d-flex flex-column m-md-3 m-sm-2">
+                                            <img src="/SHU.png" style={{ height: "5rem" }} />
+                                            <p style={{
+                                                font: "normal normal 300 1rem Rubik",
+                                            }}>McCarthy</p>
+                                            <p style={{
+                                                font: "normal normal 300 1rem Rubik",
+                                            }}>1</p>
+                                        </div>
+                                        <div className="d-flex flex-column m-md-3 m-sm-2">
+                                            <img src="/SOU.png" style={{ height: "5rem" }} />
+                                            <p style={{
+                                                font: "normal normal 300 1rem Rubik",
+                                            }}>McCarthy</p>
+                                            <p style={{
+                                                font: "normal normal 300 1rem Rubik",
+                                            }}>1</p>
+                                        </div>
+                                        <div className="d-flex flex-column m-md-3 m-sm-2">
+                                            <img src="/WHU.png" style={{ height: "5rem" }} />
+                                            <p style={{
+                                                font: "normal normal 300 1rem Rubik",
+                                            }}> McCarthy</p>
+                                            <p style={{
+                                                font: "normal normal 300 1rem Rubik",
+                                            }}>1</p>
+                                        </div>
+
+                                    </div>
+                                </Typography>
+                            </AccordionDetails>
+                        </Accordion>
+                        <Accordion className="mt-1 w-100" style={{
+                            borderRadius: "30px",
+                            boxShadow: "0px 3px 6px #00000029",
+
+                        }}>
+                            <AccordionSummary
+                                expandIcon={<ExpandIcon />}
+                                aria-controls="panel1a-content"
+                                id="panel1a-header" style={{
+                                    font: "normal normal 300 1.25rem Rubik",
+                                    color: "#10093D",
+
+                                }}
+
+                            >
+                                <Typography className="d-flex align-items-center w-100 overflow-auto" >
+
+
+                                    <div className="text-left d-inline-block" style={{ width: "5.5%", minWidth: "3rem" }}>1</div>
+                                    <div className="text-left d-inline-block" style={{ width: "16%", minWidth: "6rem" }}>Victorious Secret</div>
+                                    <div className="text-left d-inline-block" style={{ width: "11%", minWidth: "3rem" }}>707</div>
+                                    <div className="text-left d-inline-block" style={{ width: "13%", minWidth: "3rem" }}>61</div>
+                                    <div className="text-left d-inline-block" style={{ width: "11%", minWidth: "3rem" }}>0</div>
+                                    <div className="text-left d-inline-block" style={{ width: "12%", minWidth: "6rem" }}>WildCard</div>
+                                    <div className="text-left d-inline-block" style={{ width: "12%", minWidth: "6rem" }}>De Bruyne</div>
+                                    <div className="text-left d-inline-block" style={{ width: "12%", minWidth: "6rem" }}>Fernandas</div>
+                                    <div className="text-left d-inline-block" style={{ width: "5.5%", minWidth: "4rem",color:"red",
+                                    fontWeight:"500", fontFamily:"Rubik" }}>-</div>
+                                </Typography>
+
+                            </AccordionSummary>
+                            <AccordionDetails>
+                                <Typography style={{
+                                    textAlign: "left", color: "#0F1F4E"
+                                }} >
+                                    <div className="d-flex flex-wrap">
+                                        <div className="d-flex flex-column m-md-3 m-sm-2">
+                                            <img src="/AVL.png" style={{ height: "5rem" }} />
+                                            <p style={{
+                                                font: "normal normal 300 1rem Rubik",
+                                            }}>McCarthy</p>
+                                            <p style={{
+                                                font: "normal normal 300 1rem Rubik",
+                                            }}>1</p>
+                                        </div>
+                                        <div className="d-flex flex-column m-md-3 m-sm-2">
+                                            <img src="/BHA.png" style={{ height: "5rem" }} />
+                                            <p style={{
+                                                font: "normal normal 300 1rem Rubik",
+                                            }}>McCarthy</p>
+                                            <p style={{
+                                                font: "normal normal 300 1rem Rubik",
+                                            }}>1</p>
+                                        </div>
+                                        <div className="d-flex flex-column m-md-3 m-sm-2">
+                                            <img src="/LEE.png" style={{ height: "5rem" }} />
+                                            <p style={{
+                                                font: "normal normal 300 1rem Rubik",
+                                            }}>McCarthy</p>
+                                            <p style={{
+                                                font: "normal normal 300 1rem Rubik",
+
+                                            }}>1</p>
+                                        </div>
+                                        <div className="d-flex flex-column m-md-3 m-sm-2">
+                                            <img src="/LEI.png" style={{ height: "5rem" }} />
+                                            <p style={{
+                                                font: "normal normal 300 1rem Rubik",
+
+                                            }}>McCarthy</p>
+                                            <p style={{
+                                                font: "normal normal 300 1rem Rubik",
+
+                                            }}>1</p>
+                                        </div>
+                                        <div className="d-flex flex-column m-md-3 m-sm-2">
+                                            <img src="/LIV.png" style={{ height: "5rem" }} />
+                                            <p style={{
+                                                font: "normal normal 300 1rem Rubik",
+
+                                            }}>McCarthy</p>
+                                            <p style={{
+                                                font: "normal normal 300 1rem Rubik",
+
+                                            }}>1</p>
+                                        </div>
+                                        <div className="d-flex flex-column m-md-3 m-sm-2">
+                                            <img src="/MCI.png" style={{ height: "5rem" }} />
+                                            <p style={{
+                                                font: "normal normal 300 1rem Rubik",
+
+                                            }}>McCarthy</p>
+                                            <p style={{
+                                                font: "normal normal 300 1rem Rubik",
+                                            }}>1</p>
+                                        </div>
+                                        <div className="d-flex flex-column m-md-3 m-sm-2">
+                                            <img src="/MUN.png" style={{ height: "5rem" }} />
+                                            <p style={{
+                                                font: "normal normal 300 1rem Rubik",
+                                            }}>McCarthy</p>
+                                            <p style={{
+                                                font: "normal normal 300 1rem Rubik",
+                                            }}>1</p>
+                                        </div>
+                                        <div className="d-flex flex-column m-md-3 m-sm-2">
+                                            <img src="/NEW.png" style={{ height: "5rem" }} />
+                                            <p style={{
+                                                font: "normal normal 300 1rem Rubik",
+                                            }}>McCarthy</p>
+                                            <p style={{
+                                                font: "normal normal 300 1rem Rubik",
+                                            }}>1</p>
+                                        </div>
+                                        <div className="d-flex flex-column m-md-3 m-sm-2">
+                                            <img src="/SHU.png" style={{ height: "5rem" }} />
+                                            <p style={{
+                                                font: "normal normal 300 1rem Rubik",
+                                            }}>McCarthy</p>
+                                            <p style={{
+                                                font: "normal normal 300 1rem Rubik",
+                                            }}>1</p>
+                                        </div>
+                                        <div className="d-flex flex-column m-md-3 m-sm-2">
+                                            <img src="/SOU.png" style={{ height: "5rem" }} />
+                                            <p style={{
+                                                font: "normal normal 300 1rem Rubik",
+                                            }}>McCarthy</p>
+                                            <p style={{
+                                                font: "normal normal 300 1rem Rubik",
+                                            }}>1</p>
+                                        </div>
+                                        <div className="d-flex flex-column m-md-3 m-sm-2">
+                                            <img src="/WHU.png" style={{ height: "5rem" }} />
+                                            <p style={{
+                                                font: "normal normal 300 1rem Rubik",
+                                            }}> McCarthy</p>
+                                            <p style={{
+                                                font: "normal normal 300 1rem Rubik",
+                                            }}>1</p>
+                                        </div>
+
+                                    </div>
+                                </Typography>
+                            </AccordionDetails>
+                        </Accordion>
+                        <Accordion className="mt-1 w-100" style={{
+                            borderRadius: "30px",
+                            boxShadow: "0px 3px 6px #00000029",
+
+                        }}>
+                            <AccordionSummary
+                                expandIcon={<ExpandIcon />}
+                                aria-controls="panel1a-content"
+                                id="panel1a-header" style={{
+                                    font: "normal normal 300 1.25rem Rubik",
+                                    color: "#10093D",
+
+                                }}
+
+                            >
+                                <Typography className="d-flex align-items-center w-100 overflow-auto" >
+
+
+                                    <div className="text-left d-inline-block" style={{ width: "5.5%", minWidth: "3rem" }}>1</div>
+                                    <div className="text-left d-inline-block" style={{ width: "16%", minWidth: "6rem" }}>Victorious Secret</div>
+                                    <div className="text-left d-inline-block" style={{ width: "11%", minWidth: "3rem" }}>707</div>
+                                    <div className="text-left d-inline-block" style={{ width: "13%", minWidth: "3rem" }}>61</div>
+                                    <div className="text-left d-inline-block" style={{ width: "11%", minWidth: "3rem" }}>0</div>
+                                    <div className="text-left d-inline-block" style={{ width: "12%", minWidth: "6rem" }}>WildCard</div>
+                                    <div className="text-left d-inline-block" style={{ width: "12%", minWidth: "6rem" }}>De Bruyne</div>
+                                    <div className="text-left d-inline-block" style={{ width: "12%", minWidth: "6rem" }}>Fernandas</div>
+                                    <div className="text-left d-inline-block" style={{ width: "5.5%", minWidth: "4rem",color:"red",
+                                    fontWeight:"500", fontFamily:"Rubik" }}>-</div>
 
                                 </Typography>
 
@@ -937,7 +1237,153 @@ export default function Mayhem() {
                                     <div className="text-left d-inline-block" style={{ width: "12%", minWidth: "6rem" }}>WildCard</div>
                                     <div className="text-left d-inline-block" style={{ width: "12%", minWidth: "6rem" }}>De Bruyne</div>
                                     <div className="text-left d-inline-block" style={{ width: "12%", minWidth: "6rem" }}>Fernandas</div>
-                                    <div className="text-left d-inline-block" style={{ width: "5.5%", minWidth: "4rem" }}>12/12</div>
+                                    <div className="text-left d-inline-block" style={{ width: "5.5%", minWidth: "4rem",color:"red",
+                                    fontWeight:"500", fontFamily:"Rubik" }}>-</div>
+                                </Typography>
+                            </AccordionSummary>
+                            <AccordionDetails>
+                                <Typography style={{
+                                    textAlign: "left", color: "#0F1F4E"
+                                }} >
+                                    <div className="d-flex flex-wrap">
+                                        <div className="d-flex flex-column m-md-3 m-sm-2">
+                                            <img src="/AVL.png" style={{ height: "5rem" }} />
+                                            <p style={{
+                                                font: "normal normal 300 1rem Rubik",
+                                            }}>McCarthy</p>
+                                            <p style={{
+                                                font: "normal normal 300 1rem Rubik",
+                                            }}>1</p>
+                                        </div>
+                                        <div className="d-flex flex-column m-md-3 m-sm-2">
+                                            <img src="/BHA.png" style={{ height: "5rem" }} />
+                                            <p style={{
+                                                font: "normal normal 300 1rem Rubik",
+                                            }}>McCarthy</p>
+                                            <p style={{
+                                                font: "normal normal 300 1rem Rubik",
+                                            }}>1</p>
+                                        </div>
+                                        <div className="d-flex flex-column m-md-3 m-sm-2">
+                                            <img src="/LEE.png" style={{ height: "5rem" }} />
+                                            <p style={{
+                                                font: "normal normal 300 1rem Rubik",
+                                            }}>McCarthy</p>
+                                            <p style={{
+                                                font: "normal normal 300 1rem Rubik",
+
+                                            }}>1</p>
+                                        </div>
+                                        <div className="d-flex flex-column m-md-3 m-sm-2">
+                                            <img src="/LEI.png" style={{ height: "5rem" }} />
+                                            <p style={{
+                                                font: "normal normal 300 1rem Rubik",
+
+                                            }}>McCarthy</p>
+                                            <p style={{
+                                                font: "normal normal 300 1rem Rubik",
+
+                                            }}>1</p>
+                                        </div>
+                                        <div className="d-flex flex-column m-md-3 m-sm-2">
+                                            <img src="/LIV.png" style={{ height: "5rem" }} />
+                                            <p style={{
+                                                font: "normal normal 300 1rem Rubik",
+
+                                            }}>McCarthy</p>
+                                            <p style={{
+                                                font: "normal normal 300 1rem Rubik",
+
+                                            }}>1</p>
+                                        </div>
+                                        <div className="d-flex flex-column m-md-3 m-sm-2">
+                                            <img src="/MCI.png" style={{ height: "5rem" }} />
+                                            <p style={{
+                                                font: "normal normal 300 1rem Rubik",
+
+                                            }}>McCarthy</p>
+                                            <p style={{
+                                                font: "normal normal 300 1rem Rubik",
+                                            }}>1</p>
+                                        </div>
+                                        <div className="d-flex flex-column m-md-3 m-sm-2">
+                                            <img src="/MUN.png" style={{ height: "5rem" }} />
+                                            <p style={{
+                                                font: "normal normal 300 1rem Rubik",
+                                            }}>McCarthy</p>
+                                            <p style={{
+                                                font: "normal normal 300 1rem Rubik",
+                                            }}>1</p>
+                                        </div>
+                                        <div className="d-flex flex-column m-md-3 m-sm-2">
+                                            <img src="/NEW.png" style={{ height: "5rem" }} />
+                                            <p style={{
+                                                font: "normal normal 300 1rem Rubik",
+                                            }}>McCarthy</p>
+                                            <p style={{
+                                                font: "normal normal 300 1rem Rubik",
+                                            }}>1</p>
+                                        </div>
+                                        <div className="d-flex flex-column m-md-3 m-sm-2">
+                                            <img src="/SHU.png" style={{ height: "5rem" }} />
+                                            <p style={{
+                                                font: "normal normal 300 1rem Rubik",
+                                            }}>McCarthy</p>
+                                            <p style={{
+                                                font: "normal normal 300 1rem Rubik",
+                                            }}>1</p>
+                                        </div>
+                                        <div className="d-flex flex-column m-md-3 m-sm-2">
+                                            <img src="/SOU.png" style={{ height: "5rem" }} />
+                                            <p style={{
+                                                font: "normal normal 300 1rem Rubik",
+                                            }}>McCarthy</p>
+                                            <p style={{
+                                                font: "normal normal 300 1rem Rubik",
+                                            }}>1</p>
+                                        </div>
+                                        <div className="d-flex flex-column m-md-3 m-sm-2">
+                                            <img src="/WHU.png" style={{ height: "5rem" }} />
+                                            <p style={{
+                                                font: "normal normal 300 1rem Rubik",
+                                            }}> McCarthy</p>
+                                            <p style={{
+                                                font: "normal normal 300 1rem Rubik",
+                                            }}>1</p>
+                                        </div>
+
+                                    </div>
+                                </Typography>
+                            </AccordionDetails>
+                        </Accordion>
+                        <Accordion className="mt-1 w-100" style={{
+                            borderRadius: "30px",
+                            boxShadow: "0px 3px 6px #00000029",
+
+                        }}>
+                            <AccordionSummary
+                                expandIcon={<ExpandIcon />}
+                                aria-controls="panel1a-content"
+                                id="panel1a-header" style={{
+                                    font: "normal normal 300 1.25rem Rubik",
+                                    color: "#10093D",
+
+                                }}
+
+                            >
+                                <Typography className="d-flex align-items-center w-100 overflow-auto" >
+
+
+                                    <div className="text-left d-inline-block" style={{ width: "5.5%", minWidth: "3rem" }}>1</div>
+                                    <div className="text-left d-inline-block" style={{ width: "16%", minWidth: "6rem" }}>Victorious Secret</div>
+                                    <div className="text-left d-inline-block" style={{ width: "11%", minWidth: "3rem" }}>707</div>
+                                    <div className="text-left d-inline-block" style={{ width: "13%", minWidth: "3rem" }}>61</div>
+                                    <div className="text-left d-inline-block" style={{ width: "11%", minWidth: "3rem" }}>0</div>
+                                    <div className="text-left d-inline-block" style={{ width: "12%", minWidth: "6rem" }}>WildCard</div>
+                                    <div className="text-left d-inline-block" style={{ width: "12%", minWidth: "6rem" }}>De Bruyne</div>
+                                    <div className="text-left d-inline-block" style={{ width: "12%", minWidth: "6rem" }}>Fernandas</div>
+                                    <div className="text-left d-inline-block" style={{ width: "5.5%", minWidth: "4rem",color:"red",
+                                    fontWeight:"500", fontFamily:"Rubik" }}>-</div>
 
                                 </Typography>
 
@@ -1083,445 +1529,8 @@ export default function Mayhem() {
                                     <div className="text-left d-inline-block" style={{ width: "12%", minWidth: "6rem" }}>WildCard</div>
                                     <div className="text-left d-inline-block" style={{ width: "12%", minWidth: "6rem" }}>De Bruyne</div>
                                     <div className="text-left d-inline-block" style={{ width: "12%", minWidth: "6rem" }}>Fernandas</div>
-                                    <div className="text-left d-inline-block" style={{ width: "5.5%", minWidth: "4rem" }}>12/12</div>
-
-                                </Typography>
-
-                            </AccordionSummary>
-                            <AccordionDetails>
-                                <Typography style={{
-                                    textAlign: "left", color: "#0F1F4E"
-                                }} >
-                                    <div className="d-flex flex-wrap">
-                                        <div className="d-flex flex-column m-md-3 m-sm-2">
-                                            <img src="/AVL.png" style={{ height: "5rem" }} />
-                                            <p style={{
-                                                font: "normal normal 300 1rem Rubik",
-                                            }}>McCarthy</p>
-                                            <p style={{
-                                                font: "normal normal 300 1rem Rubik",
-                                            }}>1</p>
-                                        </div>
-                                        <div className="d-flex flex-column m-md-3 m-sm-2">
-                                            <img src="/BHA.png" style={{ height: "5rem" }} />
-                                            <p style={{
-                                                font: "normal normal 300 1rem Rubik",
-                                            }}>McCarthy</p>
-                                            <p style={{
-                                                font: "normal normal 300 1rem Rubik",
-                                            }}>1</p>
-                                        </div>
-                                        <div className="d-flex flex-column m-md-3 m-sm-2">
-                                            <img src="/LEE.png" style={{ height: "5rem" }} />
-                                            <p style={{
-                                                font: "normal normal 300 1rem Rubik",
-                                            }}>McCarthy</p>
-                                            <p style={{
-                                                font: "normal normal 300 1rem Rubik",
-
-                                            }}>1</p>
-                                        </div>
-                                        <div className="d-flex flex-column m-md-3 m-sm-2">
-                                            <img src="/LEI.png" style={{ height: "5rem" }} />
-                                            <p style={{
-                                                font: "normal normal 300 1rem Rubik",
-
-                                            }}>McCarthy</p>
-                                            <p style={{
-                                                font: "normal normal 300 1rem Rubik",
-
-                                            }}>1</p>
-                                        </div>
-                                        <div className="d-flex flex-column m-md-3 m-sm-2">
-                                            <img src="/LIV.png" style={{ height: "5rem" }} />
-                                            <p style={{
-                                                font: "normal normal 300 1rem Rubik",
-
-                                            }}>McCarthy</p>
-                                            <p style={{
-                                                font: "normal normal 300 1rem Rubik",
-
-                                            }}>1</p>
-                                        </div>
-                                        <div className="d-flex flex-column m-md-3 m-sm-2">
-                                            <img src="/MCI.png" style={{ height: "5rem" }} />
-                                            <p style={{
-                                                font: "normal normal 300 1rem Rubik",
-
-                                            }}>McCarthy</p>
-                                            <p style={{
-                                                font: "normal normal 300 1rem Rubik",
-                                            }}>1</p>
-                                        </div>
-                                        <div className="d-flex flex-column m-md-3 m-sm-2">
-                                            <img src="/MUN.png" style={{ height: "5rem" }} />
-                                            <p style={{
-                                                font: "normal normal 300 1rem Rubik",
-                                            }}>McCarthy</p>
-                                            <p style={{
-                                                font: "normal normal 300 1rem Rubik",
-                                            }}>1</p>
-                                        </div>
-                                        <div className="d-flex flex-column m-md-3 m-sm-2">
-                                            <img src="/NEW.png" style={{ height: "5rem" }} />
-                                            <p style={{
-                                                font: "normal normal 300 1rem Rubik",
-                                            }}>McCarthy</p>
-                                            <p style={{
-                                                font: "normal normal 300 1rem Rubik",
-                                            }}>1</p>
-                                        </div>
-                                        <div className="d-flex flex-column m-md-3 m-sm-2">
-                                            <img src="/SHU.png" style={{ height: "5rem" }} />
-                                            <p style={{
-                                                font: "normal normal 300 1rem Rubik",
-                                            }}>McCarthy</p>
-                                            <p style={{
-                                                font: "normal normal 300 1rem Rubik",
-                                            }}>1</p>
-                                        </div>
-                                        <div className="d-flex flex-column m-md-3 m-sm-2">
-                                            <img src="/SOU.png" style={{ height: "5rem" }} />
-                                            <p style={{
-                                                font: "normal normal 300 1rem Rubik",
-                                            }}>McCarthy</p>
-                                            <p style={{
-                                                font: "normal normal 300 1rem Rubik",
-                                            }}>1</p>
-                                        </div>
-                                        <div className="d-flex flex-column m-md-3 m-sm-2">
-                                            <img src="/WHU.png" style={{ height: "5rem" }} />
-                                            <p style={{
-                                                font: "normal normal 300 1rem Rubik",
-                                            }}> McCarthy</p>
-                                            <p style={{
-                                                font: "normal normal 300 1rem Rubik",
-                                            }}>1</p>
-                                        </div>
-
-                                    </div>
-                                </Typography>
-                            </AccordionDetails>
-                        </Accordion>
-                        <Accordion className="mt-1 w-100" style={{
-                            borderRadius: "30px",
-                            boxShadow: "0px 3px 6px #00000029",
-
-                        }}>
-                            <AccordionSummary
-                                expandIcon={<ExpandIcon />}
-                                aria-controls="panel1a-content"
-                                id="panel1a-header" style={{
-                                    font: "normal normal 300 1.25rem Rubik",
-                                    color: "#10093D",
-
-                                }}
-
-                            >
-                                <Typography className="d-flex align-items-center w-100 overflow-auto" >
-
-
-                                    <div className="text-left d-inline-block" style={{ width: "5.5%", minWidth: "3rem" }}>1</div>
-                                    <div className="text-left d-inline-block" style={{ width: "16%", minWidth: "6rem" }}>Victorious Secret</div>
-                                    <div className="text-left d-inline-block" style={{ width: "11%", minWidth: "3rem" }}>707</div>
-                                    <div className="text-left d-inline-block" style={{ width: "13%", minWidth: "3rem" }}>61</div>
-                                    <div className="text-left d-inline-block" style={{ width: "11%", minWidth: "3rem" }}>0</div>
-                                    <div className="text-left d-inline-block" style={{ width: "12%", minWidth: "6rem" }}>WildCard</div>
-                                    <div className="text-left d-inline-block" style={{ width: "12%", minWidth: "6rem" }}>De Bruyne</div>
-                                    <div className="text-left d-inline-block" style={{ width: "12%", minWidth: "6rem" }}>Fernandas</div>
-                                    <div className="text-left d-inline-block" style={{ width: "5.5%", minWidth: "4rem" }}>12/12</div>
-
-                                </Typography>
-
-                            </AccordionSummary>
-                            <AccordionDetails>
-                                <Typography style={{
-                                    textAlign: "left", color: "#0F1F4E"
-                                }} >
-                                    <div className="d-flex flex-wrap">
-                                        <div className="d-flex flex-column m-md-3 m-sm-2">
-                                            <img src="/AVL.png" style={{ height: "5rem" }} />
-                                            <p style={{
-                                                font: "normal normal 300 1rem Rubik",
-                                            }}>McCarthy</p>
-                                            <p style={{
-                                                font: "normal normal 300 1rem Rubik",
-                                            }}>1</p>
-                                        </div>
-                                        <div className="d-flex flex-column m-md-3 m-sm-2">
-                                            <img src="/BHA.png" style={{ height: "5rem" }} />
-                                            <p style={{
-                                                font: "normal normal 300 1rem Rubik",
-                                            }}>McCarthy</p>
-                                            <p style={{
-                                                font: "normal normal 300 1rem Rubik",
-                                            }}>1</p>
-                                        </div>
-                                        <div className="d-flex flex-column m-md-3 m-sm-2">
-                                            <img src="/LEE.png" style={{ height: "5rem" }} />
-                                            <p style={{
-                                                font: "normal normal 300 1rem Rubik",
-                                            }}>McCarthy</p>
-                                            <p style={{
-                                                font: "normal normal 300 1rem Rubik",
-
-                                            }}>1</p>
-                                        </div>
-                                        <div className="d-flex flex-column m-md-3 m-sm-2">
-                                            <img src="/LEI.png" style={{ height: "5rem" }} />
-                                            <p style={{
-                                                font: "normal normal 300 1rem Rubik",
-
-                                            }}>McCarthy</p>
-                                            <p style={{
-                                                font: "normal normal 300 1rem Rubik",
-
-                                            }}>1</p>
-                                        </div>
-                                        <div className="d-flex flex-column m-md-3 m-sm-2">
-                                            <img src="/LIV.png" style={{ height: "5rem" }} />
-                                            <p style={{
-                                                font: "normal normal 300 1rem Rubik",
-
-                                            }}>McCarthy</p>
-                                            <p style={{
-                                                font: "normal normal 300 1rem Rubik",
-
-                                            }}>1</p>
-                                        </div>
-                                        <div className="d-flex flex-column m-md-3 m-sm-2">
-                                            <img src="/MCI.png" style={{ height: "5rem" }} />
-                                            <p style={{
-                                                font: "normal normal 300 1rem Rubik",
-
-                                            }}>McCarthy</p>
-                                            <p style={{
-                                                font: "normal normal 300 1rem Rubik",
-                                            }}>1</p>
-                                        </div>
-                                        <div className="d-flex flex-column m-md-3 m-sm-2">
-                                            <img src="/MUN.png" style={{ height: "5rem" }} />
-                                            <p style={{
-                                                font: "normal normal 300 1rem Rubik",
-                                            }}>McCarthy</p>
-                                            <p style={{
-                                                font: "normal normal 300 1rem Rubik",
-                                            }}>1</p>
-                                        </div>
-                                        <div className="d-flex flex-column m-md-3 m-sm-2">
-                                            <img src="/NEW.png" style={{ height: "5rem" }} />
-                                            <p style={{
-                                                font: "normal normal 300 1rem Rubik",
-                                            }}>McCarthy</p>
-                                            <p style={{
-                                                font: "normal normal 300 1rem Rubik",
-                                            }}>1</p>
-                                        </div>
-                                        <div className="d-flex flex-column m-md-3 m-sm-2">
-                                            <img src="/SHU.png" style={{ height: "5rem" }} />
-                                            <p style={{
-                                                font: "normal normal 300 1rem Rubik",
-                                            }}>McCarthy</p>
-                                            <p style={{
-                                                font: "normal normal 300 1rem Rubik",
-                                            }}>1</p>
-                                        </div>
-                                        <div className="d-flex flex-column m-md-3 m-sm-2">
-                                            <img src="/SOU.png" style={{ height: "5rem" }} />
-                                            <p style={{
-                                                font: "normal normal 300 1rem Rubik",
-                                            }}>McCarthy</p>
-                                            <p style={{
-                                                font: "normal normal 300 1rem Rubik",
-                                            }}>1</p>
-                                        </div>
-                                        <div className="d-flex flex-column m-md-3 m-sm-2">
-                                            <img src="/WHU.png" style={{ height: "5rem" }} />
-                                            <p style={{
-                                                font: "normal normal 300 1rem Rubik",
-                                            }}> McCarthy</p>
-                                            <p style={{
-                                                font: "normal normal 300 1rem Rubik",
-                                            }}>1</p>
-                                        </div>
-
-                                    </div>
-                                </Typography>
-                            </AccordionDetails>
-                        </Accordion>
-                        <Accordion className="mt-1 w-100" style={{
-                            borderRadius: "30px",
-                            boxShadow: "0px 3px 6px #00000029",
-
-                        }}>
-                            <AccordionSummary
-                                expandIcon={<ExpandIcon />}
-                                aria-controls="panel1a-content"
-                                id="panel1a-header" style={{
-                                    font: "normal normal 300 1.25rem Rubik",
-                                    color: "#10093D",
-
-                                }}
-
-                            >
-                                <Typography className="d-flex align-items-center w-100 overflow-auto" >
-
-
-                                    <div className="text-left d-inline-block" style={{ width: "5.5%", minWidth: "3rem" }}>1</div>
-                                    <div className="text-left d-inline-block" style={{ width: "16%", minWidth: "6rem" }}>Victorious Secret</div>
-                                    <div className="text-left d-inline-block" style={{ width: "11%", minWidth: "3rem" }}>707</div>
-                                    <div className="text-left d-inline-block" style={{ width: "13%", minWidth: "3rem" }}>61</div>
-                                    <div className="text-left d-inline-block" style={{ width: "11%", minWidth: "3rem" }}>0</div>
-                                    <div className="text-left d-inline-block" style={{ width: "12%", minWidth: "6rem" }}>WildCard</div>
-                                    <div className="text-left d-inline-block" style={{ width: "12%", minWidth: "6rem" }}>De Bruyne</div>
-                                    <div className="text-left d-inline-block" style={{ width: "12%", minWidth: "6rem" }}>Fernandas</div>
-                                    <div className="text-left d-inline-block" style={{ width: "5.5%", minWidth: "4rem" }}>12/12</div>
-
-                                </Typography>
-
-                            </AccordionSummary>
-                            <AccordionDetails>
-                                <Typography style={{
-                                    textAlign: "left", color: "#0F1F4E"
-                                }} >
-                                    <div className="d-flex flex-wrap">
-                                        <div className="d-flex flex-column m-md-3 m-sm-2">
-                                            <img src="/AVL.png" style={{ height: "5rem" }} />
-                                            <p style={{
-                                                font: "normal normal 300 1rem Rubik",
-                                            }}>McCarthy</p>
-                                            <p style={{
-                                                font: "normal normal 300 1rem Rubik",
-                                            }}>1</p>
-                                        </div>
-                                        <div className="d-flex flex-column m-md-3 m-sm-2">
-                                            <img src="/BHA.png" style={{ height: "5rem" }} />
-                                            <p style={{
-                                                font: "normal normal 300 1rem Rubik",
-                                            }}>McCarthy</p>
-                                            <p style={{
-                                                font: "normal normal 300 1rem Rubik",
-                                            }}>1</p>
-                                        </div>
-                                        <div className="d-flex flex-column m-md-3 m-sm-2">
-                                            <img src="/LEE.png" style={{ height: "5rem" }} />
-                                            <p style={{
-                                                font: "normal normal 300 1rem Rubik",
-                                            }}>McCarthy</p>
-                                            <p style={{
-                                                font: "normal normal 300 1rem Rubik",
-
-                                            }}>1</p>
-                                        </div>
-                                        <div className="d-flex flex-column m-md-3 m-sm-2">
-                                            <img src="/LEI.png" style={{ height: "5rem" }} />
-                                            <p style={{
-                                                font: "normal normal 300 1rem Rubik",
-
-                                            }}>McCarthy</p>
-                                            <p style={{
-                                                font: "normal normal 300 1rem Rubik",
-
-                                            }}>1</p>
-                                        </div>
-                                        <div className="d-flex flex-column m-md-3 m-sm-2">
-                                            <img src="/LIV.png" style={{ height: "5rem" }} />
-                                            <p style={{
-                                                font: "normal normal 300 1rem Rubik",
-
-                                            }}>McCarthy</p>
-                                            <p style={{
-                                                font: "normal normal 300 1rem Rubik",
-
-                                            }}>1</p>
-                                        </div>
-                                        <div className="d-flex flex-column m-md-3 m-sm-2">
-                                            <img src="/MCI.png" style={{ height: "5rem" }} />
-                                            <p style={{
-                                                font: "normal normal 300 1rem Rubik",
-
-                                            }}>McCarthy</p>
-                                            <p style={{
-                                                font: "normal normal 300 1rem Rubik",
-                                            }}>1</p>
-                                        </div>
-                                        <div className="d-flex flex-column m-md-3 m-sm-2">
-                                            <img src="/MUN.png" style={{ height: "5rem" }} />
-                                            <p style={{
-                                                font: "normal normal 300 1rem Rubik",
-                                            }}>McCarthy</p>
-                                            <p style={{
-                                                font: "normal normal 300 1rem Rubik",
-                                            }}>1</p>
-                                        </div>
-                                        <div className="d-flex flex-column m-md-3 m-sm-2">
-                                            <img src="/NEW.png" style={{ height: "5rem" }} />
-                                            <p style={{
-                                                font: "normal normal 300 1rem Rubik",
-                                            }}>McCarthy</p>
-                                            <p style={{
-                                                font: "normal normal 300 1rem Rubik",
-                                            }}>1</p>
-                                        </div>
-                                        <div className="d-flex flex-column m-md-3 m-sm-2">
-                                            <img src="/SHU.png" style={{ height: "5rem" }} />
-                                            <p style={{
-                                                font: "normal normal 300 1rem Rubik",
-                                            }}>McCarthy</p>
-                                            <p style={{
-                                                font: "normal normal 300 1rem Rubik",
-                                            }}>1</p>
-                                        </div>
-                                        <div className="d-flex flex-column m-md-3 m-sm-2">
-                                            <img src="/SOU.png" style={{ height: "5rem" }} />
-                                            <p style={{
-                                                font: "normal normal 300 1rem Rubik",
-                                            }}>McCarthy</p>
-                                            <p style={{
-                                                font: "normal normal 300 1rem Rubik",
-                                            }}>1</p>
-                                        </div>
-                                        <div className="d-flex flex-column m-md-3 m-sm-2">
-                                            <img src="/WHU.png" style={{ height: "5rem" }} />
-                                            <p style={{
-                                                font: "normal normal 300 1rem Rubik",
-                                            }}> McCarthy</p>
-                                            <p style={{
-                                                font: "normal normal 300 1rem Rubik",
-                                            }}>1</p>
-                                        </div>
-
-                                    </div>
-                                </Typography>
-                            </AccordionDetails>
-                        </Accordion>
-                        <Accordion className="mt-1 w-100" style={{
-                            borderRadius: "30px",
-                            boxShadow: "0px 3px 6px #00000029",
-
-                        }}>
-                            <AccordionSummary
-                                expandIcon={<ExpandIcon />}
-                                aria-controls="panel1a-content"
-                                id="panel1a-header" style={{
-                                    font: "normal normal 300 1.25rem Rubik",
-                                    color: "#10093D",
-
-                                }}
-
-                            >
-                                <Typography className="d-flex align-items-center w-100 overflow-auto" >
-
-
-                                    <div className="text-left d-inline-block" style={{ width: "5.5%", minWidth: "3rem" }}>1</div>
-                                    <div className="text-left d-inline-block" style={{ width: "16%", minWidth: "6rem" }}>Victorious Secret</div>
-                                    <div className="text-left d-inline-block" style={{ width: "11%", minWidth: "3rem" }}>707</div>
-                                    <div className="text-left d-inline-block" style={{ width: "13%", minWidth: "3rem" }}>61</div>
-                                    <div className="text-left d-inline-block" style={{ width: "11%", minWidth: "3rem" }}>0</div>
-                                    <div className="text-left d-inline-block" style={{ width: "12%", minWidth: "6rem" }}>WildCard</div>
-                                    <div className="text-left d-inline-block" style={{ width: "12%", minWidth: "6rem" }}>De Bruyne</div>
-                                    <div className="text-left d-inline-block" style={{ width: "12%", minWidth: "6rem" }}>Fernandas</div>
-                                    <div className="text-left d-inline-block" style={{ width: "5.5%", minWidth: "4rem" }}>12/12</div>
+                                    <div className="text-left d-inline-block" style={{ width: "5.5%", minWidth: "4rem",color:"red",
+                                    fontWeight:"500", fontFamily:"Rubik" }}>-</div>
 
                                 </Typography>
 
