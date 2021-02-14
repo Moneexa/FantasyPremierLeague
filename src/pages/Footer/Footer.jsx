@@ -18,7 +18,7 @@ export default function Footer() {
                 location.pathname === "/menu" ?
                     <>
                         <div className="d-flex align-items-center main-padding mt-auto foot" style={{
-                            justifyContent: "space-between",
+                            justifyContent: "space-around",
                             borderTop: "1px solid lightslategray",
                             borderBottom: "1px solid lightslategray",
 
@@ -26,27 +26,27 @@ export default function Footer() {
                             color: "white"
                         }}>
 
-                            <Link className="py-2" target="_blank" to="/privacy-policy" style={{paddingRight:"1rem", paddingLeft:"1rem"}}>
-                                <p  style={{
-                                    fontSize: "0.8rem", color: "white",
-                                    
-                                }}>
-                                    Privacy Policy
-                            </p>
+                            <Link className="py-2 text-white" target="_blank" to="/privacy-policy" style={{
+                                paddingRight: "1rem", paddingLeft: "1rem",
+                                fontSize: "0.8rem", color: "white",
+
+                            }}>
+                                Privacy Policy
                             </Link>
-                            <Link to="/blank" target="_blank" style={{paddingRight:"1rem", paddingLeft:"1rem"}}>
-                                <p className="py-2 text-white" style={{
-                                    fontSize: "0.8rem"
-                                }}>Disclaimer</p>
+                            <Link className="py-2 text-white" to="/blank" target="_blank" style={{
+                                paddingRight: "1rem", paddingLeft: "1rem",
+                                fontSize: "0.8rem"
+                            }}>Disclaimer
                             </Link>
-                            <Link to="/blank" target="_blank" style={{paddingRight:"1rem", paddingLeft:"1rem"}}>
-                                <p className="py-2 text-white" style={{
-                                    fontSize: "0.8rem"
-                                }}>Terms and Conditions</p>
+                            <Link className="py-2 text-white" to="/blank" target="_blank" style={{
+                                paddingRight: "1rem", paddingLeft: "1rem",
+
+                                fontSize: "0.8rem"
+                            }}>Terms and Conditions
                             </Link>
 
                         </div>
-                       
+
                     </>
                     :
                     <>
