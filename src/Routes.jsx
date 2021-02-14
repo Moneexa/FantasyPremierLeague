@@ -47,6 +47,7 @@ export default function Routes() {
                         <Route path="/settings" component={Settings} />
                         <Route path="/my-winnings" component={MyWinnings} />
                         <Route path="/tracker" component={FantasyReport} />
+                        <Route path="/privacy-policy" component={PrivacyPolicy} />
 
                         {/* <Route path="/signin" component={SignIn} /> */}
                         {/* <Route path="/pay-stake" component={PayStakes} /> */}
@@ -67,6 +68,7 @@ export default function Routes() {
                         <Route path="/privacy-policy" component={PrivacyPolicy} />
                         <Route path="/faq" component={Faq} />
                         <Route path="/winnings" component={Winnings} />
+                        <Route path="/blank" component={Blank} />
 
 
 
