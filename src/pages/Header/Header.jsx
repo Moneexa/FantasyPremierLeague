@@ -43,7 +43,7 @@ const styledButton = {
 }
 const styledLogo = {
 
-    "height": "6.6rem",
+    "height": "7.69rem",
     // "marginLeft":"8rem"
 
 }
@@ -192,7 +192,7 @@ export default function Header() {
                                         }}>
 
 
-                                            <button className="bg-white" style={{
+                                            <button className="bg-white sign-menu" style={{
                                                 "borderRadius": "26px",
                                                 padding: "0.2rem 2.75rem",
                                                 fontSize: "17.6px",
@@ -271,6 +271,8 @@ export default function Header() {
                             <Route path="/success" component={SuccessMessage} />
                             <Route path="/settings" component={Settings} />
                             <Route path="/my-winnings" component={MyWinnings} />
+                            <Route component={PrivacyPolicy} path="/privacy-policy" />
+
                         </Switch>
                         :
                         <Switch>

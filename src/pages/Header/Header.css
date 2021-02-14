@@ -12,7 +12,10 @@
     font-family: Rubik;
     font-weight: 500
 }
-
+.sign-menu:focus{
+  outline: none;
+  box-shadow: none;
+}
 .heading-row  .para-text {
   color: white;
   text-align: left;
