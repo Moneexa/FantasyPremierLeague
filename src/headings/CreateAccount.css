@@ -63,7 +63,18 @@
     padding-bottom: 0.5rem;
     font-family: Rubik;
 }
-
+.buttonNext:focus{
+    outline:none;
+    box-shadow: none;
+}
+.input-bar .ssnholder:focus{
+    outline:none;
+    box-shadow: none;
+}
+.input-bar:focus{
+    outline:none;
+    box-shadow: none;
+}
 .create-account-para {
     font-size: 1.35rem;
     max-width: 37rem;

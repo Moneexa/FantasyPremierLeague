@@ -3,6 +3,8 @@ import { useStoreState, useStoreActions } from 'easy-peasy'
 import { Link, useLocation } from 'react-router-dom'
 import './CreateAccount.css'
 import './SignIn.css'
+import { useForm } from "react-hook-form";
+
 import { makeStyles } from '@material-ui/core/styles';
 import Stepper from '@material-ui/core/Stepper';
 import Step from '@material-ui/core/Step';
@@ -35,6 +37,8 @@ export default function CreateAccount({ match }) {
     const changeHeading = useStoreActions(actions => actions.obj.changeHeadingRed)
     const loggedIn = useStoreActions(actions => actions.obj.changeLoggingRed)
     const classes = useStyles();
+    const { register, handleSubmit } = useForm();
+
     const [activeStep, setActiveStep] = useState(0);
     const steps = getSteps();
     const [email, setEmail] = useState("")
@@ -104,6 +108,18 @@ export default function CreateAccount({ match }) {
     function signin() {
         loggedIn(true)
     }
+    function handleSubmit1(e) {
+        e.preventDefault()
+        loggedIn(true)
+        history.push("/home");
+
+        console.log("data enrered")
+    }
+    function handleSubmit2(e) {
+        e.preventDefault()
+        handleNext()
+        console.log("data entered")
+    }
     return (<>
 
         <div className="d-flex flex-column justify-content-center align-items-center signin-form p-5">
@@ -127,29 +143,33 @@ export default function CreateAccount({ match }) {
                         <div className="d-flex flex-column align-items-center justify-content-center">
 
                             <div className="d-flex align-items-center justify-content-center button-row">
-                                {
+                                { 
                                     activeStep === steps.length - 1 || activeStep === steps.length
                                         ? <>
                                             <div className={classes.instructions}>
-                                                <form className="d-flex flex-column align-items-center justify-content-center" onSubmit={() => {
-                                                    loggedIn(true)
-                                                    console.log("data enrered")
-                                                    history.push("/home");
+                                                <form className="d-flex flex-column align-items-center justify-content-center" onSubmit={
+                                                    (e) => {
+                                                    handleSubmit1(e)
+                                                    }
 
                                                 }
-                                                }>
+                                                >
                                                     <div className="d-flex align-items-center justify-content-center input-row">
                                                         <input className="text-center text-white input-bar mr-md-3 mr-sm-0 my-sm-2"
                                                             value={bdate} onChange={handleBdate} type="date"
                                                             required
+                                                            name="dob"
                                                             placeholder="Date of Birth" />
-                                                        <InputGroup className="input-bar py-0">
+                                                        <InputGroup className="input-bar py-0 w-100" style={{ maxWidth: "50%" }}
+                                                            
+                                                        >
                                                             <FormControl
-                                                                className="text-center text-white"
+                                                                className="text-center text-white ssnholder"
                                                                 placeholder="SSN"
                                                                 aria-label="SSN"
-                                                                aria-describedby="basic-addon2"
                                                                 required
+                                                                type="number" name="ssn"
+                                                                aria-describedby="basic-addon2"
                                                                 style={{
                                                                     backgroundColor: "transparent",
                                                                     border: "hidden"
@@ -174,27 +194,21 @@ export default function CreateAccount({ match }) {
                                                             </InputGroup.Append>
                                                         </InputGroup>
 
-                                                        {
-                                                            !isNaN(ssn) || ssn === "" ? "" : <span className="text-white text-left">Invalid SSN</span>
-                                                        }
 
                                                     </div>
                                                     <input className="text-center text-white input-bar mt-3 w-100"
                                                         style={{ maxWidth: "27rem" }}
-                                                        value={add} onChange={handleAdd}
+                                                        value={add} onChange={handleAdd} name="address"
                                                         required
                                                         placeholder="Your Address" />
                                                     <div className="d-flex align-items-center justify-content-center input-row mt-3">
                                                         <input className="text-center text-white input-bar mr-md-3 mr-sm-0 my-sm-2"
                                                             value={phone} onChange={handlePhone}
-                                                            required
+                                                            type="number" name="phone"
                                                             placeholder="CellPhone Number" />
-                                                        {
-                                                            !isNaN(phone) || phone === "" || phone.length === 10 ? "" : <span className="text-white text-left">Invalid Phone Number</span>
 
-                                                        }
                                                         <input className="text-center text-white input-bar"
-                                                            required
+                                                            required name="pass"
                                                             value={password} onChange={handlePassword}
                                                             placeholder="Password" type="password" />
                                                     </div>
@@ -214,10 +228,10 @@ export default function CreateAccount({ match }) {
                                                         </label>
                                                     </div>
                                                     <div className="button-rows">
-                                                        <Button variant="contained" type="button" className="mr-3" color="primary" onClick={handleBack}>
+                                                        <Button variant="contained" type="button" className="mr-3 buttonNext" color="primary" onClick={handleBack}>
                                                             Back
                                                         </Button>
-                                                        <Button variant="contained" type="submit" color="primary">
+                                                        <Button variant="contained" type="submit" color="primary" className="buttonNext">
                                                             Create Account
                                                             </Button>
 
@@ -228,29 +242,33 @@ export default function CreateAccount({ match }) {
 
                                         </>
                                         : <>
-                                            <form className="d-flex flex-column align-items-center justify-content-center" onSubmit={() => {
-                                                handleNext()
-                                                console.log("data entered")
-                                            }}>
+                                            <form className="d-flex flex-column align-items-center justify-content-center" onSubmit={
+                                                (e) => {
+                                                handleSubmit2(e)
+                                                }
+                                            }>
                                                 <div className="d-flex align-items-center justify-content-center input-row">
                                                     <input className="text-center text-white input-bar mr-md-3 mr-sm-0 my-sm-2"
-                                                        required
                                                         value={name} onChange={handleFirstName}
+                                                        name="firstName"
+                                                        required
                                                         placeholder="First Name" />
                                                     <input className="text-center text-white input-bar"
+                                                        name="secondName"
                                                         required
+                                                        ref={register({ required: true, maxLength: 20 })}
                                                         value={secName} onChange={handleSecondName}
                                                         placeholder="Second Name" />
 
                                                 </div>
                                                 <input className="text-center text-white input-bar mt-3 w-100"
+                                                    name="email" type="email"
                                                     required
+                                                    
                                                     value={email} onChange={handleEmail}
                                                     placeholder="Your Email Address" />
-                                                {
-                                                    email.includes("@") || email === "" ? "" : <span className="text-white text-left">Invalid Email Address</span>
-                                                }
-                                                <Button variant="contained" type="submit" color="primary" id="submit">
+
+                                                <Button variant="contained" type="submit" color="primary" className="buttontNext">
                                                     Next
                                                 </Button>
                                             </form>

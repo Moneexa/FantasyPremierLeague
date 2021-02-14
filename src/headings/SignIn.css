@@ -34,6 +34,10 @@
    
 }
 
+.signin-form .signin-button:focus{
+    outline: none;
+    box-shadow: none;
+}
 .signin-form .last-para {
     margin-top: 2rem
 }
@@ -49,6 +53,10 @@
     background: transparent;
     border-radius: 17px;
     color: white
+}
+.signin-form .fpl-email:focus{
+    outline: none;
+    box-shadow: none;
 }
 
 @media only screen and (min-device-width: 1280px) and (max-device-width: 1440px) {

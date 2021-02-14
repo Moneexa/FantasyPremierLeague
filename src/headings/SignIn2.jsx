@@ -1,11 +1,15 @@
 import React, { useState, useEffect } from 'react'
 import { useStoreState, useStoreActions } from 'easy-peasy'
 import { Link, useLocation } from 'react-router-dom'
+import { useHistory } from "react-router-dom";
+
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faShieldAlt, faQuestionCircle } from '@fortawesome/free-solid-svg-icons'
 import './SignIn.css'
 import { Modal, Button } from 'react-bootstrap'
 export default function SignIn({ match }) {
+    const history = useHistory();
+
     const heading = useStoreState(state => state.obj.heading)
     const changeHeading = useStoreActions(actions => actions.obj.changeHeadingRed)
     const loggedIn = useStoreActions(actions => actions.obj.changeLoggingRed)
@@ -32,8 +36,10 @@ export default function SignIn({ match }) {
     function handlePasswordChange(e) {
         setPassword(e.target.value)
     }
-    function signin() {
+    function signin(e) {
+        e.preventDefault()
         loggedIn(true)
+        history.push("/home")
     }
     return (<>
 
@@ -44,18 +50,27 @@ export default function SignIn({ match }) {
                 <br /><br />
                 New here? <Link to="/create-account">Create an account now</Link>
             </div>
-            <form className="d-flex flex-column align-items-center justify-content-center " style={{ margin: "-1rem" }}>
-                <input value={email} onChange={(e) => handleEmailChange(e)} className="fpl-email" placeholder="Your email" />
+            <form className="d-flex flex-column align-items-center justify-content-center " style={{ margin: "-1rem" }}
+            onSubmit={(e)=>{
+                signin(e)
+            }}
+            
+            >
+                <input value={email} onChange={(e) => handleEmailChange(e)} className="fpl-email" placeholder="Your email" 
+                required type="email"
+                />
                 <input className="fpl-email" value={password} onChange={(e) => handlePasswordChange(e)}
+                required type="password"
                     placeholder="Your password" />
-                <Link to="/home" style={{
-                    width: "100%",
-                    maxWidth: "30rem"
-                }}>
-                    <button className="my-5 signin-button bg-white w-100" type="button" onClick={signin}>
+                    <button className="my-5 signin-button bg-white w-100" type="submit"
+                    
+                    style={{
+                        width: "100%",
+                        maxWidth: "30rem"
+                    }}
+                    >
 
                         Sign In</button>
-                </Link>
             </form>
 
         </div >

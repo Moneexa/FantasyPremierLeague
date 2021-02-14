@@ -89,7 +89,7 @@ export default function SignIn({ match }) {
                    </p>
             </Modal.Body>
         </Modal>
-        <Modal show={show1} onHide={handleClose1} style={{ borderRadius: "100px"}}>
+        <Modal show={show1} onHide={handleClose1} style={{ borderRadius: "100px" }}>
             <Modal.Header closeButton />
             <Modal.Body>
                 <div className="d-flex flex-column align-items-center justify-content-center mt-5">
@@ -110,13 +110,13 @@ export default function SignIn({ match }) {
                     >Your FPL Team is now synced with FPL Play. Now you can enjoy participating and winning the leagues</div>
                     <Link to="/success" className="mt-3 mb-5">
                         <button className="text-center text-white" style={{
-                            borderRadius:"26px",
-                            border:"hidden",
-                            backgroundColor:"#0F1F4E",
-                            fontFamily:"Rubik",
-                            fontSize:"1.25rem",
-                            padding:"0.69rem 2.23rem",
-                            fontWeight:"400"
+                            borderRadius: "26px",
+                            border: "hidden",
+                            backgroundColor: "#0F1F4E",
+                            fontFamily: "Rubik",
+                            fontSize: "1.25rem",
+                            padding: "0.69rem 2.23rem",
+                            fontWeight: "400"
                         }} onClick={signin}>
                             Start Playing
                         </button></Link>
@@ -128,12 +128,23 @@ export default function SignIn({ match }) {
             <div className="py-3 px-2 para text-center">
                 You are just a step away to enter the gaming experience, Sign in with your FPL account and get started.
             </div>
-            <form className="d-flex flex-column align-items-center justify-content-center " style={{ margin: "-1rem" }}>
-                <input value={email} onChange={(e) => handleEmailChange(e)} className="fpl-email" placeholder="Your FPL email" />
+            <form className="d-flex flex-column align-items-center justify-content-center " style={{ margin: "-1rem" }}
+            onSubmit={(e)=>{
+                e.preventDefault()
+                handleShow1()
+            }}
+            
+            >
+                <input value={email} onChange={(e) => handleEmailChange(e)} className="fpl-email" placeholder="Your FPL email"
+
+                    required type="email"
+
+                />
                 <input className="fpl-email" value={password} onChange={(e) => handlePasswordChange(e)}
+                    required type="password"
                     placeholder="Your FPL password" />
-                <button className="my-5 signin-button bg-white w-100" style={{maxWidth:"30rem"}} type="button" onClick={handleShow1}>
-                   
+                <button className="my-5 signin-button bg-white w-100" style={{ maxWidth: "30rem" }} type="submit">
+
                     Start Playing</button>
             </form>
             <div className="d-flex flex-column flex-md-row align-items-center justify-content-center last-para mb-5" >
