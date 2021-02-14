@@ -7,6 +7,8 @@
 
 path {
     pointer-events: all;
+    cursor: pointer;
+
 }
 
 #map path:hover {
