@@ -13,7 +13,10 @@
     font: normal normal medium 28px/33px Rubik;
 }
 
-
+.menu button:focus{
+    outline: none;
+    box-shadow: none;
+}
 @media only screen and (min-device-width: 280px) and (max-device-width: 480px) {
     .menu {
         top: 25%
