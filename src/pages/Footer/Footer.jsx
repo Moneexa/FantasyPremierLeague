@@ -17,8 +17,7 @@ export default function Footer() {
             {
                 location.pathname === "/menu" ?
                     <>
-                        <div className="d-flex align-items-center main-padding mt-auto foot" style={{
-                            justifyContent: "space-around",
+                        <div className="d-flex align-items-center main-padding justify-content-center mt-auto foot" style={{
                             borderTop: "1px solid lightslategray",
                             borderBottom: "1px solid lightslategray",
 
@@ -26,22 +25,19 @@ export default function Footer() {
                             color: "white"
                         }}>
 
-                            <Link className="py-2 text-white" target="_blank" to="/privacy-policy" style={{
-                                paddingRight: "1rem", paddingLeft: "1rem",
-                                fontSize: "0.8rem", color: "white",
+                            <Link className="py-2 text-white px-3" target="_blank" to="/privacy-policy" style={{
+                                fontSize: "0.8rem",fontFamily:"Rubik"
 
                             }}>
                                 Privacy Policy
                             </Link>
-                            <Link className="py-2 text-white" to="/blank" target="_blank" style={{
-                                paddingRight: "1rem", paddingLeft: "1rem",
-                                fontSize: "0.8rem"
+                            <Link className="py-2 px-3 text-white" to="/blank" target="_blank" style={{
+                                fontSize: "0.8rem",fontFamily:"Rubik"
                             }}>Disclaimer
                             </Link>
-                            <Link className="py-2 text-white" to="/blank" target="_blank" style={{
-                                paddingRight: "1rem", paddingLeft: "1rem",
+                            <Link className="py-2 px-3 text-white" to="/blank" target="_blank" style={{
 
-                                fontSize: "0.8rem"
+                                fontSize: "0.8rem",fontFamily:"Rubik"
                             }}>Terms and Conditions
                             </Link>
 
