@@ -9,6 +9,9 @@ body {
 /* * {
   outline: 1px solid red;
 } */
+button{
+  animation: fadeIn ease-out 0.3s
+}
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
