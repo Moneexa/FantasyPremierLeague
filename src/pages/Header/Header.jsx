@@ -132,7 +132,7 @@ export default function Header() {
                                         color: "white"
 
                                     }}><img src={Cross} style={{
-                                        height: "1.32rem",
+                                        height: "1.5rem",
                                         color: 'white'
                                     }} /></Nav.Link>
                                 </Nav> :
@@ -193,9 +193,9 @@ export default function Header() {
 
 
                                             <button className="bg-white sign-menu" style={{
-                                                "borderRadius": "26px",
-                                                padding: "0.2rem 2.75rem",
-                                                fontSize: "17.6px",
+                                                "borderRadius": "17px",
+                                                padding: "0.1rem 2.75rem",
+                                                fontSize: "18px",
                                                 fontFamily: "Rubik",
                                                 fontWeight: "500",
                                                 color: "#492477",

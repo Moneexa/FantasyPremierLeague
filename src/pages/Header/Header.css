@@ -5,18 +5,25 @@
 
 .heading-row .heading-h1 {
   color: white;
-    max-width: 46rem;
-    width: 100%;
-    /* margin-left: 4rem; */
-    font-size: 3.68rem;
-    font-family: Rubik;
-    font-weight: 500
+  max-width: 46rem;
+  width: 100%;
+  /* margin-left: 4rem; */
+  font-size: 3.68rem;
+  font-family: Rubik;
+  font-weight: 500
 }
-.sign-menu:focus{
+
+.sign-menu:focus {
   outline: none;
   box-shadow: none;
 }
-.heading-row  .para-text {
+
+.navbar-nav button:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.heading-row .para-text {
   color: white;
   text-align: left;
   font-size: 1.375rem;
@@ -24,7 +31,8 @@
   width: 89%;
   /* margin-left: 4rem; */
 }
-#heading-row  .para-text {
+
+#heading-row .para-text {
   color: white;
   text-align: left;
   font-size: 1.375rem;
@@ -32,11 +40,12 @@
   width: 89%;
   /* margin-left: 4rem; */
 }
+
 .heading-row .contain {
   /* margin-left: 4rem */
 }
 
-#heading-row  .start-playing {
+#heading-row .start-playing {
   border-radius: 26px;
   color: #492477;
   padding: 0.2rem 1.3rem 0.2rem 1.3rem;
@@ -46,18 +55,21 @@
   /* margin-left: 4rem; */
   border: none;
   min-width: 10rem;
-
 }
-@media only screen and (min-device-width:2000px) and (max-device-width: 2200px) {
 
+#heading-row .start-playing:focus {
+  outline: none;
+  box-shadow: none;
 }
+
+@media only screen and (min-device-width:2000px) and (max-device-width: 2200px) {}
 
 @media only screen and (min-device-width: 2200px) {
-
   .heading-row .heading-h1 {
-      font-size: 5.3rem;
+    font-size: 5.3rem;
   }
 }
+
 @media only screen and (min-device-width: 1440px) {
   .heading-row .contain {
     margin-left: 7rem;
@@ -65,21 +77,18 @@
 }
 
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
-  
   .heading-row .contain {
     margin-left: 3rem
   }
 }
 
 @media only screen and (min-width:540px) and (max-device-width:700px) {
-  
   .heading-row .contain {
     margin-left: 3rem
   }
 }
 
 @media only screen and (min-device-width: 280px) and (max-device-width: 480px) {
- 
   #Header .start-playing {
     width: 183px;
   }
@@ -90,8 +99,7 @@
     margin-right: 1rem;
     font-family: Rubik;
   }
-  .heading-row .para-text {
-  }
+  .heading-row .para-text {}
   #heading-row .start-playing {
     padding: 0.5rem 0.5rem 0.5rem 0.5rem
   }
