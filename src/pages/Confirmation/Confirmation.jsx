@@ -2,6 +2,7 @@ import React, { useEffect } from 'react'
 import { useStoreActions } from 'easy-peasy'
 import Party from './Enjoy.svg'
 import { Link } from 'react-router-dom'
+import './confirm.css'
 export default function Confirmation() {
     const changeHeading = useStoreActions(actions => actions.obj.changeHeadingRed)
     const changePara = useStoreActions(actions => actions.obj.changeParaRed)
