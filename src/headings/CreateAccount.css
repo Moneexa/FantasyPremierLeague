@@ -34,7 +34,7 @@
 }
 .signin-form .MuiButton-containedPrimary {
     background-color: white;
-    border-radius: 26px;
+    border-radius: 17px;
     background-color: white;
     color: #492477;
     margin-top: 3rem;
@@ -42,6 +42,17 @@
     font-family:Rubik;
     font-size:1rem
 }
+.signin-form .MuiButton-containedPrimary:focus {
+    outline: none;
+    box-shadow: none;
+    
+}
+.signin-form .MuiButton-containedPrimary:hover {
+    background-color: white;
+    color: #492477;
+}
+
+
 .check-info{
     font-family:Rubik;
     font-size:0.9rem;

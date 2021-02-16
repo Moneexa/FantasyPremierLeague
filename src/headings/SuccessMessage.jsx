@@ -1,5 +1,6 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
+import './SuccessMessage.css'
 export default function SuccessMessage() {
     return (<div className="d-flex flex-column  justify-content-center align-items-center text-center"
 
@@ -16,7 +17,7 @@ export default function SuccessMessage() {
         }}>FPL Account Synced Successfully</h1>
 
         <Link to="/sync-fpl">
-            <button style={{
+            <button id="success" style={{
                 borderRadius: "26px",
                 marginTop: "2rem",
                 padding: "0.25rem 2rem",
