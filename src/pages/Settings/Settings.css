@@ -21,6 +21,7 @@
     align-items: center;
     justify-content: center;
     flex-direction: row;
+    cursor: pointer;
 }
 
 .MuiSwitch-thumb .Component-thumb-19 {
