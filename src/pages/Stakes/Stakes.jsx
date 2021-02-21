@@ -76,7 +76,6 @@ export default function Stakes() {
                                 )}
                                 else{
                                     return(
-                                    return (
                                         <div key={league.id} className="d-flex flex-column justify-content-center align-items-flex-start div1-stake m-3">
                                           <div className="child1-stake ml-1"></div>
                                           <div className="child2-stake mx-3"></div>
@@ -88,9 +87,9 @@ export default function Stakes() {
                                                  {league.prize[1].label}
                                           </div>
                                           <div className="text-left prize-amount mb-1">{league.prize[1].label}</div>
-                                           <div className="text-left prize" style={{ fontSize: "0.5rem", fontFamily: "Rubik" }}>
+                                          <div className="text-left prize" style={{ fontSize: "0.5rem", fontFamily: "Rubik" }}>
                                                  {league.prize[2].label}</div>
-                                           <div className="text-left prize-amount mb-1">{league.prize[2].label}</div>
+                                          <div className="text-left prize-amount mb-1">{league.prize[2].label}</div>
                                           <div className="d-flex justify-content-between align-items-center text-white mt-3">
                                             <div className="d-flex flex-column">
                                               <div className="get-started">Get Started with</div>
