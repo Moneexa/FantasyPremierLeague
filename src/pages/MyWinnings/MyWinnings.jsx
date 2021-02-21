@@ -69,15 +69,13 @@ export default function MyWinnings() {
                     </div>
                     {myWinnings.map((value, index) => {
                             return (<div key={index} className="d-flex align-items-center rows1 mb-2 p-3 overflow-auto">
-                        <div className="rowText px-5" style={{
-                            width: "25%", minWidth: "3rem"
+                        <div className="rowText text-center px-5" style={{
+                            width: "25%",
                         }}>
                             <div className="d-flex align-items-center justify-content-center" style={{
 
-                                width: "3rem",
                                 height: "3rem",
-                                textAlign: 'center',
-                                fontSize: "1rem",
+                                fontSize: "0.8rem",
                                 fontWeight: "500",
 
                                 fontFamily: "Rubik",
