@@ -51,105 +51,99 @@ export default function MyWinnings() {
                 <div className="d-flex flex-column align-items-center tab-1">
 
                     <div className="d-flex align-items-center justify-content-center tableHeadings p-3">
-                        <div className="headText px-5" style={{ width: "25%", minWidth: "3rem" }}>Date</div>
-                        <div className="headText" style={{ width: "35%", minWidth: "8rem" }}>Game Week League</div>
-                        <div className="headText" style={{ width: "15%", minWidth: "8rem" }}>Wager</div>
-                        <div className="headText" style={{ width: "25%", minWidth: "8rem" }}>Payout</div>
+                        <div className="headText text-center px-5" style={{ width: "25%", minWidth: "3rem" }}>Date</div>
+                        <div className="headText text-center" style={{ width: "35%", minWidth: "8rem" }}>Game Week League</div>
+                        <div className="headText text-center" style={{ width: "15%", minWidth: "8rem" }}>Wager</div>
+                        <div className="headText text-center" style={{ width: "25%", minWidth: "8rem" }}>Payout</div>
                     </div>
 
                     <div className="d-flex align-items-center rows1 mb-2 p-3 overflow-auto">
-                        <div className="rowText px-5" style={{
-                            width: "25%", minWidth: "3rem"
-                        }}>
-                            <div className="d-flex align-items-center justify-content-center" style={{
-
-                                width: "3rem",
-                                height: "3rem",
-                                textAlign: 'center',
-                                fontSize: "1rem",
-                                fontWeight: "500",
-
-                                fontFamily: "Rubik",
-                            }}>8th January,2021</div>
-                        </div>
-                        <div className="rowText" style={{ width: "35%", minWidth: "8rem" }}>Game Week 07</div>
-                        <div className="rowText" style={{ width: "15%", minWidth: "8rem" }}>$100</div>
-                        <div className="rowText" style={{ width: "25%", minWidth: "8rem" }}>$300</div>
-                    </div>
-                    <div className="d-flex align-items-center rows1 mb-2 p-3 overflow-auto">
-                        <div className="rowText px-5" style={{
+                        <div className="rowText text-center px-5" style={{
                             width: "25%",
                         }}>
                             <div className="d-flex align-items-center justify-content-center" style={{
 
-                                width: "3rem",
                                 height: "3rem",
-                                textAlign: 'center',
-                                fontSize: "1rem",
+                                fontSize: "0.8rem",
                                 fontWeight: "500",
 
                                 fontFamily: "Rubik",
                             }}>8th January,2021</div>
                         </div>
-                        <div className="rowText" style={{ width: "35%", minWidth: "8rem" }}>Game Week 07</div>
-                        <div className="rowText" style={{ width: "15%", minWidth: "8rem" }}>$100</div>
-                        <div className="rowText" style={{ width: "25%", minWidth: "8rem" }}>$300</div>
+                        <div className="rowText text-center" style={{ width: "35%", minWidth: "8rem" }}>Game Week 07</div>
+                        <div className="rowText text-center" style={{ width: "15%", minWidth: "8rem" }}>$100</div>
+                        <div className="rowText text-center" style={{ width: "25%", minWidth: "8rem" }}>$300</div>
                     </div>
                     <div className="d-flex align-items-center rows1 mb-2 p-3 overflow-auto">
-                        <div className="rowText px-5" style={{
+                        <div className="rowText text-center px-5" style={{
                             width: "25%",
                         }}>
                             <div className="d-flex align-items-center justify-content-center" style={{
 
-                                width: "3rem",
                                 height: "3rem",
                                 textAlign: 'center',
-                                fontSize: "1rem",
+                                fontSize: "0.8rem",
                                 fontWeight: "500",
 
                                 fontFamily: "Rubik",
                             }}>8th January,2021</div>
                         </div>
-                        <div className="rowText" style={{ width: "35%", minWidth: "8rem" }}>Game Week 07</div>
-                        <div className="rowText" style={{ width: "15%", minWidth: "8rem" }}>$100</div>
-                        <div className="rowText" style={{ width: "25%", minWidth: "8rem" }}>$300</div>
+                        <div className="rowText text-center" style={{ width: "35%", minWidth: "8rem" }}>Game Week 07</div>
+                        <div className="rowText text-center" style={{ width: "15%", minWidth: "8rem" }}>$100</div>
+                        <div className="rowText text-center" style={{ width: "25%", minWidth: "8rem" }}>$300</div>
+                    </div>
+                    <div className="d-flex align-items-center rows1 mb-2 p-3 overflow-auto">
+                        <div className="rowText text-center px-5" style={{
+                            width: "25%",
+                        }}>
+                            <div className="d-flex align-items-center justify-content-center" style={{
+
+                                height: "3rem",
+                                textAlign: 'center',
+                                fontSize: "0.8rem",
+                                fontWeight: "500",
+
+                                fontFamily: "Rubik",
+                            }}>8th January,2021</div>
+                        </div>
+                        <div className="rowText text-center" style={{ width: "35%", minWidth: "8rem" }}>Game Week 07</div>
+                        <div className="rowText text-center" style={{ width: "15%", minWidth: "8rem" }}>$100</div>
+                        <div className="rowText text-center" style={{ width: "25%", minWidth: "8rem" }}>$300</div>
                     </div>
                     <div className="d-flex align-items-center rows1 overflow-auto mb-2 p-3">
-                        <div className="rowText px-5" style={{
+                        <div className="rowText text-center px-5" style={{
                             width: "25%",
                         }}>
                             <div className="d-flex align-items-center justify-content-center" style={{
 
-                                width: "3rem",
                                 height: "3rem",
                                 textAlign: 'center',
-                                fontSize: "1rem",
+                                fontSize: "0.8rem",
                                 fontFamily: "Rubik",
                                 fontWeight: "500",
                             }}>8th January,2021</div>
                         </div>
-                        <div className="rowText" style={{ width: "35%", minWidth: "8rem" }}>Game Week 07</div>
-                        <div className="rowText" style={{ width: "15%", minWidth: "8rem" }}>$100</div>
-                        <div className="rowText" style={{ width: "25%", minWidth: "8rem" }}>$300</div>
+                        <div className="rowText text-center" style={{ width: "35%", minWidth: "8rem" }}>Game Week 07</div>
+                        <div className="rowText text-center" style={{ width: "15%", minWidth: "8rem" }}>$100</div>
+                        <div className="rowText text-center" style={{ width: "25%", minWidth: "8rem" }}>$300</div>
                     </div>
                     <div className="d-flex align-items-center rows1 mb-2 p-3 overflow-auto">
-                        <div className="rowText px-5" style={{
+                        <div className="rowText text-center px-5" style={{
                             width: "25%",
                         }}>
                             <div className="d-flex align-items-center justify-content-center" style={{
 
-                                width: "3rem",
                                 height: "3rem",
                                 textAlign: 'center',
-                                fontSize: "1rem",
+                                fontSize: "0.8rem",
                                 fontFamily: "Rubik",
                                 fontWeight: "500",
 
                             }}>8th January,2021</div>
                         </div>
-                        <div className="rowText" style={{ width: "35%", minWidth: "8rem" }}>Game Week 07</div>
-                        <div className="rowText" style={{ width: "15%", minWidth: "8rem" }}>$100</div>
-                        <div className="rowText" style={{ width: "25%", minWidth: "8rem" }}>$300</div>
+                        <div className="rowText text-center" style={{ width: "35%", minWidth: "8rem" }}>Game Week 07</div>
+                        <div className="rowText text-center" style={{ width: "15%", minWidth: "8rem" }}>$100</div>
+                        <div className="rowText text-center" style={{ width: "25%", minWidth: "8rem" }}>$300</div>
                     </div>
                 </div>
             </div>
