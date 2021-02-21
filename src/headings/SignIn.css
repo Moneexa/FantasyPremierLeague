@@ -26,29 +26,43 @@
 .signin-form .signin-button {
     text-align: center;
     border: 3px solid #FFFFFF;
-    padding: 0.25rem 1rem 0.25rem 1rem;
+    padding: 0.35rem 2rem;
     font-weight: 500;
     font: normal normal medium 1.938rem Rubik;
     color: #492477;
-    border-radius: 26px;
+    border-radius: 17px;
+    margin-top: 1.5rem;
+
+   
 }
 
+.signin-form .signin-button:focus{
+    outline: none;
+    box-shadow: none;
+}
 .signin-form .last-para {
     margin-top: 2rem
 }
 
 .signin-form .fpl-email {
     width: 100%;
+    max-width: 30rem;
     text-align: center;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
     margin-top: 1.5rem;
     border: 2px solid #FFFFFF;
     background: transparent;
-    border-radius: 30px;
-    color: white
+    border-radius: 17px;
 }
-
+.signin-form .fpl-email:focus{
+    outline: none;
+    box-shadow: none;
+}
+.modal-body button:focus{
+    outline: none;
+    box-shadow: none;
+}
 @media only screen and (min-device-width: 1280px) and (max-device-width: 1440px) {
     .signin-form.last-para {
         margin-top: 0.5rem;
