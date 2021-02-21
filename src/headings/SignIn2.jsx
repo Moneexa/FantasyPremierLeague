@@ -1,12 +1,15 @@
 import React, { useState, useEffect } from 'react'
 import { useStoreState, useStoreActions } from 'easy-peasy'
 import { Link, useLocation } from 'react-router-dom'
+import { useHistory } from "react-router-dom";
+
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faShieldAlt, faQuestionCircle } from '@fortawesome/free-solid-svg-icons'
 import './SignIn.css'
 import { Modal, Button } from 'react-bootstrap'
 import axios from "axios";
 export default function SignIn({ match }) {
+    const history = useHistory();
     const heading = useStoreState(state => state.obj.heading)
     const changeHeading = useStoreActions(actions => actions.obj.changeHeadingRed)
     const loggedIn = useStoreActions(actions => actions.obj.changeLoggingRed)
@@ -34,13 +37,16 @@ export default function SignIn({ match }) {
     function handlePasswordChange(e) {
         setPassword(e.target.value)
     }
-    function signin() {
-        axios.post('http://localhost:8000/api/login/', {"username": email, "password": password})
+    function signin(e) {
+     e.preventDefault()
+     axios.post('http://localhost:8000/api/login/', {"username": email, "password": password})
             .then(res => {
                 if (res.status == 200) {
                     localStorage.setItem('accessToken', res.data.access);
                     localStorage.setItem('refreshToken', res.data.refresh);
                     loggedIn(true);
+                    history.push("/home")
+
                 }
             }).catch(error => {
                 for (const [key, value] of Object.entries(error.response.data)) {
@@ -57,18 +63,26 @@ export default function SignIn({ match }) {
                 <br /><br />
                 New here? <Link to="/create-account">Create an account now</Link>
             </div>
-            <form className="d-flex flex-column align-items-center justify-content-center " style={{ margin: "-1rem" }}>
+            <form className="d-flex flex-column align-items-center justify-content-center " style={{ margin: "-1rem" }}
+                onSubmit={(e) => {
+                    signin(e)
+                }}
+
+            >
                 <input value={email} onChange={(e) => handleEmailChange(e)} className="fpl-email" placeholder="Your email" />
                 <input className="fpl-email" type="password" value={password} onChange={(e) => handlePasswordChange(e)}
                     placeholder="Your password" />
-                    <button className="py-1 px-3 my-5 signin-button bg-white" type="button" onClick={signin}>
-
-                        Sign In
-                    </button>
+                   <button className="mb-5 signin-button bg-white w-100" type="submit"
+                        style={{
+                        width: "100%",
+                        maxWidth: "30rem"
+                    }}>
+                      Sign In
+                   </button>
                  <div className="d-flex align-items-center justify-content-center button-row">
                                 errors:
                                 {JSON.stringify(errors)}
-                            </div>
+                 </div>
             </form>
 
         </div >
