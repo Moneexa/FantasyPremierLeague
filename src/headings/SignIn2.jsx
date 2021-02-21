@@ -51,26 +51,26 @@ export default function SignIn({ match }) {
                 New here? <Link to="/create-account">Create an account now</Link>
             </div>
             <form className="d-flex flex-column align-items-center justify-content-center " style={{ margin: "-1rem" }}
-            onSubmit={(e)=>{
-                signin(e)
-            }}
-            
+                onSubmit={(e) => {
+                    signin(e)
+                }}
+
             >
-                <input value={email} onChange={(e) => handleEmailChange(e)} className="fpl-email" placeholder="Your email" 
-                required type="email"
+                <input value={email} onChange={(e) => handleEmailChange(e)} className="fpl-email" placeholder="Your email"
+                    required type="email"
                 />
                 <input className="fpl-email" value={password} onChange={(e) => handlePasswordChange(e)}
-                required type="password"
+                    required type="password"
                     placeholder="Your password" />
-                    <button className="my-5 signin-button bg-white w-100" type="submit"
-                    
+                <button className="mb-5 signin-button bg-white w-100" type="submit"
+
                     style={{
                         width: "100%",
                         maxWidth: "30rem"
                     }}
-                    >
+                >
 
-                        Sign In</button>
+                    Sign In</button>
             </form>
 
         </div >

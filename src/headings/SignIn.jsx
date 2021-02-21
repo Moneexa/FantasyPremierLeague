@@ -129,11 +129,11 @@ export default function SignIn({ match }) {
                 You are just a step away to enter the gaming experience, Sign in with your FPL account and get started.
             </div>
             <form className="d-flex flex-column align-items-center justify-content-center " style={{ margin: "-1rem" }}
-            onSubmit={(e)=>{
-                e.preventDefault()
-                handleShow1()
-            }}
-            
+                onSubmit={(e) => {
+                    e.preventDefault()
+                    handleShow1()
+                }}
+
             >
                 <input value={email} onChange={(e) => handleEmailChange(e)} className="fpl-email" placeholder="Your FPL email"
 
@@ -143,7 +143,7 @@ export default function SignIn({ match }) {
                 <input className="fpl-email" value={password} onChange={(e) => handlePasswordChange(e)}
                     required type="password"
                     placeholder="Your FPL password" />
-                <button className="my-5 signin-button bg-white w-100" style={{ maxWidth: "30rem" }} type="submit">
+                <button className="mb-5 signin-button bg-white w-100" style={{ maxWidth: "30rem" }} type="submit">
 
                     Start Playing</button>
             </form>
