@@ -1,6 +1,7 @@
 import React from 'react'
 import { Switch, BrowserRouter as Router, Route, Redirect } from 'react-router-dom'
 import Home from './pages/Home/Home'
+import HowToPlay from './pages/HowToPlay/HowToPlay'
 import Faq from './pages/FAQ/Faq'
 import Header from './pages/Header/Header'
 import Footer from './pages/Footer/Footer'
@@ -43,10 +44,10 @@ export default function Routes() {
                         <Route path="/mayhem-monthly" component={MayhemMonthly} />
                         <Route path="/profile" component={Profile} />
                         <Route path="/messages" component={Messages} />
-                        <Route path="/tracker" component={FantasyReport} />
                         <Route path="/settings" component={Settings} />
                         <Route path="/my-winnings" component={MyWinnings} />
-
+                        <Route path="/tracker" component={FantasyReport} />
+                        <Route path="/privacy-policy" component={PrivacyPolicy} />
 
                         {/* <Route path="/signin" component={SignIn} /> */}
                         {/* <Route path="/pay-stake" component={PayStakes} /> */}
@@ -66,6 +67,11 @@ export default function Routes() {
                         <Route path="/home" component={Home} />
                         <Route path="/privacy-policy" component={PrivacyPolicy} />
                         <Route path="/faq" component={Faq} />
+                        <Route path="/winnings" component={Winnings} />
+                        <Route path="/blank" component={Blank} />
+
+
+
                     </Switch>
                     <Footer />
                 </Router>
