@@ -40,6 +40,11 @@
     padding-left: 1.39rem
 }
 
+#profile-form .profile-input:focus {
+    outline: none;
+    box-shadow: none;
+}
+
 #profile-form #add1, #add2 {
     width: 32rem
 }
@@ -56,6 +61,11 @@
     font-size: 1.25rem;
     font-family: Rubik;
     padding: 0.69rem 1.86rem
+}
+
+#profile-form .save-changes:focus {
+    outline: none;
+    box-shadow: none;
 }
 
 #profile-form .form-half {
@@ -84,11 +94,18 @@
     margin-top: 2.75rem;
     margin-bottom: 1.39rem;
 }
+
+.profile-box .edit-btn:focus {
+    outline: none;
+    box-shadow: none;
+}
+
 @media only screen and (min-device-width:1600px) and (max-device-width:2800px) {
     #profile-form #current-password {
         width: 25%
     }
 }
+
 @media only screen and (min-device-width:700px) and (max-device-width:930px) {
     .profile-parent {
         padding-left: 3.2rem
