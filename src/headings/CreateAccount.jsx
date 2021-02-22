@@ -143,13 +143,13 @@ export default function CreateAccount({ match }) {
                         <div className="d-flex flex-column align-items-center justify-content-center">
 
                             <div className="d-flex align-items-center justify-content-center button-row">
-                                { 
+                                {
                                     activeStep === steps.length - 1 || activeStep === steps.length
                                         ? <>
                                             <div className={classes.instructions}>
                                                 <form className="d-flex flex-column align-items-center justify-content-center" onSubmit={
                                                     (e) => {
-                                                    handleSubmit1(e)
+                                                        handleSubmit1(e)
                                                     }
 
                                                 }
@@ -161,7 +161,7 @@ export default function CreateAccount({ match }) {
                                                             name="dob"
                                                             placeholder="Date of Birth" />
                                                         <InputGroup className="input-bar py-0 w-100" style={{ maxWidth: "50%" }}
-                                                            
+
                                                         >
                                                             <FormControl
                                                                 className="text-center text-white ssnholder"
@@ -173,7 +173,13 @@ export default function CreateAccount({ match }) {
                                                                 style={{
                                                                     backgroundColor: "transparent",
                                                                     border: "hidden"
+                                                                }} maxLength="9" onInput={(e) => {
+                                                                    let maxNum = 9;
+                                                                    if (e.target.value.length > maxNum) {
+                                                                        e.target.value = e.target.value.slice(0, maxNum);
+                                                                    }
                                                                 }}
+
                                                                 value={ssn} onChange={handleSsn}
 
                                                             />
@@ -244,7 +250,7 @@ export default function CreateAccount({ match }) {
                                         : <>
                                             <form className="d-flex flex-column align-items-center justify-content-center" onSubmit={
                                                 (e) => {
-                                                handleSubmit2(e)
+                                                    handleSubmit2(e)
                                                 }
                                             }>
                                                 <div className="d-flex align-items-center justify-content-center input-row">
@@ -264,7 +270,7 @@ export default function CreateAccount({ match }) {
                                                 <input className="text-center text-white input-bar mt-3 w-100"
                                                     name="email" type="email"
                                                     required
-                                                    
+
                                                     value={email} onChange={handleEmail}
                                                     placeholder="Your Email Address" />
 
