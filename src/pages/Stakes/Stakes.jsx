@@ -5,6 +5,8 @@ import SubscribeLetter from '../SubscribeLetter/SubscribeLetter'
 import ArrowRight from '../Wallet/right-arrow.svg'
 import { Link, useHistory } from 'react-router-dom'
 import api from "../../shared/api"
+import Pdf from '../Winnings/doc.pdf'
+
 export default function Stakes() {
     const changeHeading = useStoreActions(actions => actions.obj.changeHeadingRed)
     const changePara = useStoreActions(actions => actions.obj.changeParaRed)
