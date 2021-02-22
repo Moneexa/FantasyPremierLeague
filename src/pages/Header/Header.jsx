@@ -26,6 +26,7 @@ import SuccessMessage from '../../headings/SuccessMessage'
 import FantasyReport from '../../headings/FantasyReport'
 import Settings from '../../headings/Settings'
 import MyWinnings from '../../headings/MyWinnings'
+import Cross from './Cross.svg'
 const styledDiv = {
     "backgroundImage": 'url("Hero.jpg")',
     backgroundRepeat: "no-repeat",
@@ -42,7 +43,7 @@ const styledButton = {
 }
 const styledLogo = {
 
-    "height": "8rem",
+    "height": "7.69rem",
     // "marginLeft":"8rem"
 
 }
@@ -58,7 +59,7 @@ const styledHeading = {
 export default function Header() {
     let location = useLocation();
 
-    const heading = useStoreState(state => state.obj.heading)
+    const currentBalance = useStoreState(state => state.obj.currentBalance)
     const para = useStoreState(state => state.obj.para)
     const [changedStyle, setChangedStyle] = useState({})
     const loggedIn = useStoreState(state => state.obj.loggedIn)
@@ -130,14 +131,14 @@ export default function Header() {
                                     <Nav.Link as={NavLink} to="/home" className="color-white pl-5" style={{
                                         color: "white"
 
-                                    }}><FontAwesomeIcon icon={faTimes} style={{
-                                        height: "2rem",
+                                    }}><img src={Cross} style={{
+                                        height: "1.5rem",
                                         color: 'white'
                                     }} /></Nav.Link>
                                 </Nav> :
 
                                 <Nav className="ml-auto" style={{
-                                    fontSize: "16px",
+                                    fontSize: "17.6px",
                                     fontWeight: "500",
                                     fontFamily: "Rubik",
                                     color: "white"
@@ -191,10 +192,10 @@ export default function Header() {
                                         }}>
 
 
-                                            <button className="bg-white" style={{
-                                                "borderRadius": "26px",
-                                                padding: "0.2rem 2.75rem",
-                                                fontSize: "16px",
+                                            <button className="bg-white sign-menu" style={{
+                                                "borderRadius": "17px",
+                                                padding: "0.1rem 2.75rem",
+                                                fontSize: "18px",
                                                 fontFamily: "Rubik",
                                                 fontWeight: "500",
                                                 color: "#492477",
@@ -213,14 +214,14 @@ export default function Header() {
                                                 <button className="bg-white" style={{
                                                     "borderRadius": "26px",
                                                     padding: "0.1rem 1.5rem",
-                                                    fontSize: "16px",
+                                                    fontSize: "17.6px",
                                                     fontFamily: "Rubik",
                                                     fontWeight: "500",
                                                     color: "#492477",
                                                     border: "none"
 
                                                 }}>
-                                                    My Wallet
+                                                    My Wallet,   ${currentBalance}
                                     </button>
                                             </Nav.Link>
                                     }
@@ -231,7 +232,7 @@ export default function Header() {
                                                 color: "white"
 
                                             }}><img src={MenuIcon} style={{
-                                                height: "1.2rem",
+                                                height: "1.32rem",
                                                 filter: "invert(96%) sepia(0%) saturate(0%) hue-rotate(111deg) brightness(104%) contrast(105%)"
                                             }} /></Nav.Link> :
                                             ''
@@ -254,6 +255,7 @@ export default function Header() {
                             <Route component={SignIn} path="/sync-fpl" />
                             <Route component={PrivacyPolicy} path="/privacy-policy" />
                             <Route component={home} path="/home" />
+                            <Route path="/tracker" component={FantasyReport} />
 
                             <Route component={Faq} path="/faq" />
                             <Route component={MyLeagues} path="/my-leagues" />
@@ -267,9 +269,10 @@ export default function Header() {
                             <Route path="/confirm" component={Confirmation} />
                             <Route path="/messages" component={Messages} />
                             <Route path="/success" component={SuccessMessage} />
-                            <Route path="/tracker" component={FantasyReport} />
                             <Route path="/settings" component={Settings} />
                             <Route path="/my-winnings" component={MyWinnings} />
+                            <Route component={PrivacyPolicy} path="/privacy-policy" />
+
                         </Switch>
                         :
                         <Switch>
@@ -277,6 +280,8 @@ export default function Header() {
                             <Route component={home} path="/home" />
                             <Route component={PrivacyPolicy} path="/privacy-policy" />
                             <Route component={Faq} path="/faq" />
+                            <Route component={Winnings} path="/winnings" />
+
                         </Switch>
                 }
             </div>
