@@ -48,15 +48,15 @@ export default function Menu() {
             <Link className="home-menu" to="/settings">
                 Settings
                 </Link>
-            <Link className="home-menu" to="/faq">
-                Security
+            <Link className="home-menu" to="/tracker">
+                Tracker
                 </Link>
             <Link className="home-menu" to="/sync-fpl" style={{ border: "none" }}>
                 Sync FPL Account
                 </Link>
             <Link to="/home" className="mt-md-2 mt-sm-1 mb-5">
                 <button style={{
-                    "borderRadius": "26px",
+                    "borderRadius": "17px",
                     padding: "0.25rem 2.5rem 0.25rem 2.5rem",
                     fontSize: "20px",
                     fontWeight: "500",
