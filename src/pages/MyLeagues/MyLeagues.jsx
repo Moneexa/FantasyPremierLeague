@@ -5,9 +5,26 @@ import { Link } from 'react-router-dom'
 import Arrow from '../Home/Arrow.svg'
 import Pagination from '@material-ui/lab/Pagination';
 import './MyLeagues.css'
+import api from "../../shared/api";
 function DataShowingComponent({ pageNo }) {
-    const myLeagues = useStoreState(state => state.obj.myLeagues);
-
+    // const myLeagues = useStoreState(state => state.obj.myLeagues);
+    const changeHeading = useStoreActions(actions => actions.obj.changeHeadingRed)
+    const changePara = useStoreActions(actions => actions.obj.changeParaRed)
+    const setMayhemLeague = useStoreActions(actions => actions.obj.setMayhemLeague)
+    const history = useHistory();
+    const [myLeagues, setMyLeagues] = useState([])
+    useEffect(() => {
+        changeHeading("My Leagues")
+        changePara("")
+        api.getMyLeagues().then(res => {
+            console.log(res.data)
+            setMyLeagues(res.data)
+        })
+    }, [])
+    function setMayhem(league_id){
+        setMayhemLeague(league_id);
+        history.push('/mayhem');
+    }
     const pageSize = 10;
     const rows = myLeagues.slice(pageSize * pageNo, (pageSize * pageNo) + pageSize);
     return (
@@ -26,10 +43,10 @@ function DataShowingComponent({ pageNo }) {
                             textAlign: 'center'
                         }}>{value.id}</div>
                     </div>
-                    <div className="row-text" style={{ width: "35%", minWidth: "8rem" }}>{value.gameWeakLeague}</div>
-                    <div className="row-text" style={{ width: "25%", minWidth: "8rem" }}>{value.leagueNo}</div>
+                    <div className="row-text" style={{ width: "35%", minWidth: "8rem" }}>{value.league.league_name}</div>
+                    <div className="row-text" style={{ width: "25%", minWidth: "8rem" }}>{value.league.id}</div>
                     <div className="row-text" style={{ width: "12.5%", minWidth: "8rem" }}>{value.yourRank}</div>
-                    <div className="row-text pl-md-5 pl-sm-0" style={{ width: "13.5%", minWidth: "8rem" }}>{value.stake}
+                    <div className="row-text pl-md-5 pl-sm-0" style={{ width: "13.5%", minWidth: "8rem" }}>{value.league.value}
                         <Link to="/mayhem" className="ml-md-3 ml-sm-0">
                             <img src={Arrow} style={{ height: "0.813rem" }} />
                         </Link>
