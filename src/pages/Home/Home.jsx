@@ -38,7 +38,11 @@ export default function Home() {
     const [expandOR4, setExpand4] = useState(false)
     const [expandOR5, setExpand5] = useState(false)
     const [showbar, setShowBar] = useState(false)
-
+    useEffect(() => {
+        if (!sync) {
+            setShowBar(true)
+        }
+    },[])
 
     useEffect(() => {
 
