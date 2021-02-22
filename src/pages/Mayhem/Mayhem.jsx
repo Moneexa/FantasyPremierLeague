@@ -71,7 +71,16 @@ export default function Mayhem() {
                                     <div className="text-left d-inline-block" style={{ width: "12%", minWidth: "6rem" }}>WildCard</div>
                                     <div className="text-left d-inline-block" style={{ width: "12%", minWidth: "6rem" }}>{value.captain}</div>
                                     <div className="text-left d-inline-block" style={{ width: "12%", minWidth: "6rem" }}>{value.vice_captain}</div>
-                                    <div className="text-left d-inline-block" style={{ width: "5.5%", minWidth: "4rem" }}>12/12</div>
+                                { index===0 ? <div className="text-left d-inline-block" style={{ width: "5.5%", minWidth: "4rem",
+                                    color:"green",fontWeight:"500", fontFamily:"Rubik" }}>$20</div>
+                                : index===1 ? <div className="text-left d-inline-block" style={{ width: "5.5%", minWidth: "4rem",
+                                    color:"green",fontWeight:"500", fontFamily:"Rubik" }}>$40</div>
+                                : index===2 ? <div className="text-left d-inline-block" style={{ width: "5.5%", minWidth: "4rem",
+                                    color:"green",fontWeight:"500", fontFamily:"Rubik" }}>$20</div>
+                                : <div className="text-left d-inline-block" style={{ width: "5.5%", minWidth: "4rem",color:"red",
+                                    fontWeight:"500", fontFamily:"Rubik" }}>-</div>
+
+                                }
 
                                 </Typography>
 
