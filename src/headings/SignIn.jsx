@@ -161,7 +161,11 @@ export default function SignIn({ match }) {
             </form>
             State: {syncState}
             <div className="d-flex flex-column flex-md-row align-items-center justify-content-center last-para mb-5" >
-                <div className="d-flex align-items-center justify-content-md-center w-md-100" style={{ width: "43%" }}>
+                <div className="d-flex align-items-center justify-content-md-center w-md-100" style={{
+                    width: "43%",
+                    pointerEvents: "all", cursor: "pointer"
+
+                }}>
                     <FontAwesomeIcon className="mb-1" icon={faQuestionCircle} style={{ font: "normal normal medium 25px Rubik", color: "white" }} />
                     <div style={{
                         paddingLeft: '1rem',
@@ -169,7 +173,11 @@ export default function SignIn({ match }) {
                     }} onClick={handleShow}> Sign in – Why we need your Fantasy Premier League credentials
                     </div>
                 </div>
-                <div className="d-flex align-items-center justify-content-md-center w-md-100" style={{ width: "32%" }}>
+                <div className="d-flex align-items-center justify-content-md-center w-md-100" style={{
+                    width: "32%",
+
+                    pointerEvents: "all", cursor: "pointer"
+                }}>
                     <FontAwesomeIcon icon={faShieldAlt} className="mb-1" style={{ font: "normal normal medium 25px Rubik", color: "white" }} />
                     <div style={{
                         paddingLeft: '1rem',
