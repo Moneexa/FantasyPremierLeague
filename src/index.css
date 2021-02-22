@@ -9,7 +9,8 @@ body {
 /* * {
   outline: 1px solid red;
 } */
-button{
+
+button {
   animation: fadeIn ease-out 0.3s
 }
 
@@ -18,8 +19,18 @@ code {
 }
 
 body .modal-dialog .modal-content {
-  border-radius: 100px;
+  border-radius: 74px;
+  overflow: hidden;
   /* padding:"3.63rem" */
+}
+
+body .modal-dialog .modal-header .close {
+  margin-right: 1.75rem;
+}
+
+body .modal-dialog .modal-header .close:focus {
+  outline: none;
+  box-shadow: none;
 }
 
 @media only screen and (min-device-width: 2560px) {
