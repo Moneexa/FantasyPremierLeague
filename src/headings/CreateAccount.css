@@ -34,7 +34,7 @@
 }
 .signin-form .MuiButton-containedPrimary {
     background-color: white;
-    border-radius: 26px;
+    border-radius: 17px;
     background-color: white;
     color: #492477;
     margin-top: 3rem;
@@ -42,6 +42,17 @@
     font-family:Rubik;
     font-size:1rem
 }
+.signin-form .MuiButton-containedPrimary:focus {
+    outline: none;
+    box-shadow: none;
+    
+}
+.signin-form .MuiButton-containedPrimary:hover {
+    background-color: white;
+    color: #492477;
+}
+
+
 .check-info{
     font-family:Rubik;
     font-size:0.9rem;
@@ -56,14 +67,25 @@
 }
 .input-bar {
     border: 2px solid #FFFFFF;
-    border-radius: 30px;
+    border-radius: 17px;
     background-color: transparent;
     font-size: 1rem;
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
     font-family: Rubik;
 }
-
+.buttonNext:focus{
+    outline:none;
+    box-shadow: none;
+}
+.input-bar .ssnholder:focus{
+    outline:none;
+    box-shadow: none;
+}
+.input-bar:focus{
+    outline:none;
+    box-shadow: none;
+}
 .create-account-para {
     font-size: 1.35rem;
     max-width: 37rem;
