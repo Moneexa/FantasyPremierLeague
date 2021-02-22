@@ -14,7 +14,8 @@ import { useStoreActions, useStoreState } from 'easy-peasy';
 import Arrow from './Arrow.svg'
 import { Link, useHistory } from 'react-router-dom'
 import wave from './wave single.svg'
-
+import { faPlus } from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 export default function Home() {
 
@@ -36,6 +37,7 @@ export default function Home() {
     const [expandOR3, setExpand3] = useState(false)
     const [expandOR4, setExpand4] = useState(false)
     const [expandOR5, setExpand5] = useState(false)
+    const [showbar, setShowBar] = useState(false)
 
 
     useEffect(() => {
@@ -70,22 +72,26 @@ export default function Home() {
             expandOR5 ? setExpand5(false) : setExpand5(true)
         }
     }
+    function handleCancel() {
+        setShowBar(false)
+        console.log(showbar, sync)
+    }
     function goToStakes(value) {
         setLeagueStakes(value);
         history.push('/stakes');
     }
     return (<>
         {
-            loggedIn && !sync ?
+            loggedIn && showbar ?
                 <div className="d-flex align-items-center justify-content-center position-fixed w-100" style={{
                     top: "0px", left: "0px",
                     background: "#DFF4FFD1",
                     boxShadow: "0px 5px 6px #00000073",
-                    padding:"1.3rem 2.6rem"
+                    padding: "1.3rem 2.6rem"
 
-                }}>
+                }} id="top-bar">
 
-                    <div className="text-center text-black mr-3 mr-sm-2" style={{
+                    <div className="text-center text-black ml-auto mr-3 mr-sm-2" style={{
                         fontSize: "1rem",
                         fontFamily: "Rubik",
                     }}>
@@ -100,6 +106,11 @@ export default function Home() {
                             }}
                         > Sync Now</button>
                     </Link>
+                    <div className="ml-auto"><FontAwesomeIcon icon={faPlus} style={{
+                        transform: "rotateZ(135deg)"
+                    }} onClick={() => {
+                        handleCancel()
+                    }} /></div>
                 </div>
                 : ''
 
