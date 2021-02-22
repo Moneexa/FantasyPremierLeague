@@ -35,6 +35,14 @@
     color: #492477;
     border: none;
 }
+.subscribe-letter .subscribe-button:focus {
+    outline: none;
+    box-shadow: none;
+}
+.subscribe-letter input:focus{
+    outline: none;
+    box-shadow: none;
+}
 
 @media only screen and (min-device-width:2500px) {
     .subscribe-letter {

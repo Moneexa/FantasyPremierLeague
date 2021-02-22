@@ -22,12 +22,12 @@ export default function SubscribeLetter() {
                     <div className="subscribe-heading">Join the Community</div>
                     <div className="subscribe-text" >Subscribe and get all the news that matters most delivered straight to you.</div>
                     <form className="d-flex flex-column align-items-center" style={{
-                        maxWidth: "36.15rem",
+                        maxWidth: "30rem",
                         width: "100%"
                     }}>
                         <input className="text-center text-white" style={{
                             color: "white",
-                            maxWidth: "36.15rem",
+                            maxWidth: "25rem",
                             width: "100%",
                             background: "transparent",
                             margin: "1rem 0rem 1rem 0rem",
