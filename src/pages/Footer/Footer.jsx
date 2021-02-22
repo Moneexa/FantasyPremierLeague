@@ -17,8 +17,7 @@ export default function Footer() {
             {
                 location.pathname === "/menu" ?
                     <>
-                        <div className="d-flex align-items-center mt-auto foot" style={{
-                            justifyContent: "space-around",
+                        <div className="d-flex align-items-center justify-content-center main-padding mt-auto foot" style={{
                             borderTop: "1px solid lightslategray",
                             borderBottom: "1px solid lightslategray",
 
