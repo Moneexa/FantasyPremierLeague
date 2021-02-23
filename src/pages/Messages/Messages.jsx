@@ -191,9 +191,7 @@ export default function Messages() {
 
                                     </div>
                                 </div>
-
                             </div>
-
                         </> :
                         slectEnroll ?
                             <>
@@ -222,8 +220,6 @@ export default function Messages() {
                                             </div>
 
                                         </div>
-
-
                                         <div className="d-flex align-items-center justify-content-center my-5">
                                             <div className="messages text-left text-black">
 
@@ -238,7 +234,6 @@ export default function Messages() {
                                     </div>
 
                                 </div>
-
                             </> : slectReject ?
                                 <><div className="d-flex flex-column justify-content-center  chat-box">
                                     <div className="message-header mb-auto">

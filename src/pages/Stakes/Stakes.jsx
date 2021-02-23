@@ -116,20 +116,21 @@ export default function Stakes() {
           </div>
         </div>
         <div className="d-flex justify-content-center align-items-center m-5">
-          <Link to={Pdf} target="_blank"><button style={{
-            borderRadius: "17px",
-            /* padding: 0.5rem; */
-            fontSize: "20px",
-            fontWeight: "600",
-            fontFamily: "Rubik",
-            color: "#492477",
-            backgroundColor: "white",
-            boxShadow: "0px 3px 6px #00000029",
-            border: "1px solid #492477",
-            padding: "1rem 2rem"
-          }}>
-            In case of tie
-                      </button>
+          <Link to={Pdf} target="_blank">
+            <button style={{
+              borderRadius: "17px",
+              /* padding: 0.5rem; */
+              fontSize: "20px",
+              fontWeight: "600",
+              fontFamily: "Rubik",
+              color: "#492477",
+              backgroundColor: "white",
+              boxShadow: "0px 3px 6px #00000029",
+              border: "1px solid #492477",
+              padding: "1rem 2rem"
+            }}>
+              In case of tie
+            </button>
           </Link>
         </div>
       </div>
