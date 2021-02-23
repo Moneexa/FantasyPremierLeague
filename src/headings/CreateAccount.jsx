@@ -90,7 +90,7 @@ export default function CreateAccount({ match }) {
     }
     const handleNext = () => {
 
-        
+
         setActiveStep((prevActiveStep) => prevActiveStep + 1);
     };
 
@@ -119,7 +119,7 @@ export default function CreateAccount({ match }) {
    }
 
     const createAccount = () => {
-        axios.post('http://localhost:8000/api/register/', userData)
+        axios.post('https://fplplay.com/api/register/', userData)
             .then(res => {
                 if (res.status == 201) {
                     loggedIn(true);
@@ -220,7 +220,7 @@ export default function CreateAccount({ match }) {
                                                                     </InputGroup.Text>
                                                                 </OverlayTrigger>
                                                             </InputGroup.Append>
-                                                        </InputGroup> 
+                                                        </InputGroup>
                                                     </div>
                                                     <input className="text-center text-white input-bar mt-3 w-100"
                                                         style={{ maxWidth: "27rem" }}
@@ -264,7 +264,7 @@ export default function CreateAccount({ match }) {
                                           </form>
                                         </div>
                                        </>
-                                      : 
+                                      :
                                       <>
                                             <form className="d-flex flex-column align-items-center justify-content-center" onSubmit={
                                                 (e) => {
@@ -280,7 +280,7 @@ export default function CreateAccount({ match }) {
                                                     <input className="text-center text-white input-bar"
                                                         name="secondName"
                                                         required
-                                                        ref={register({ required: true, maxLength: 20 })}
+                                                        // ref={register({ required: true, maxLength: 20 })}
                                                         value={secName} onChange={handleSecondName}
                                                         placeholder="Second Name" />
 
@@ -295,10 +295,9 @@ export default function CreateAccount({ match }) {
                                                     Next
                                                </Button>
                                             </form>
+                                             errors: {JSON.stringify(errors)}
                                       </>
-                                errors:
-                                {JSON.stringify(errors)}
-                             }
+                                  }
                            </div>
                         </div>
 
@@ -310,6 +309,3 @@ export default function CreateAccount({ match }) {
     </>)
 
 }
-
-
-

@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import { useStoreState, useStoreActions } from 'easy-peasy'
 import SubscribeLetter from '../SubscribeLetter/SubscribeLetter'
-import { Link } from 'react-router-dom'
+import { Link, useHistory } from 'react-router-dom'
 import Arrow from '../Home/Arrow.svg'
 import Pagination from '@material-ui/lab/Pagination';
 import './MyLeagues.css'

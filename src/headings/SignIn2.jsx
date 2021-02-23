@@ -39,7 +39,7 @@ export default function SignIn({ match }) {
     }
     function signin(e) {
      e.preventDefault()
-     axios.post('http://localhost:8000/api/login/', {"username": email, "password": password})
+     axios.post('https://fplplay.com/api/login/', {"username": email, "password": password})
             .then(res => {
                 if (res.status == 200) {
                     localStorage.setItem('accessToken', res.data.access);
@@ -89,6 +89,3 @@ export default function SignIn({ match }) {
     </>)
 
 }
-
-
-

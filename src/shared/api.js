@@ -1,7 +1,7 @@
 import axios from "axios";
 import { useStoreState } from 'easy-peasy';
 
-const baseUrl = "http://localhost:8000/api";
+// const baseUrl = "http://localhost:8000/api";
 
 axios.interceptors.request.use(
     (config) => {
@@ -20,7 +20,7 @@ axios.interceptors.request.use(
         let refreshToken = localStorage.getItem('refreshToken');
         if (refreshToken && error.response.status == 401 && !originalRequest._retry) {
             originalRequest._retry = true;
-            return axios.post(`${baseUrl}/refresh`, {refreshToken: refreshToken})
+            return axios.post(`${process.env.REACT_APP_API_BASE_URL}/api/refresh`, {refreshToken: refreshToken})
                 .then((res) => {
                     if (res.status === 200) {
                         localStorage.setItem("accessToken", res.data.access);
@@ -43,7 +43,7 @@ axios.interceptors.response.use(
         let refreshToken = localStorage.getItem('refreshToken');
         if (refreshToken && error.response.status == 401 && !originalRequest._retry) {
             originalRequest._retry = true;
-            return axios.post(`${baseUrl}/refresh/`, {refresh: refreshToken})
+            return axios.post(`${process.env.REACT_APP_API_BASE_URL}/api/refresh/`, {refresh: refreshToken})
                 .then((res) => {
                     if (res.status === 200) {
                         localStorage.setItem("accessToken", res.data.access);
@@ -59,7 +59,7 @@ axios.interceptors.response.use(
 const api = {
     authorize: (payload) => {
         let status = '';
-        return axios.post(`${baseUrl}/users/authorize/`, payload)
+        return axios.post(`${process.env.REACT_APP_API_BASE_URL}/api/users/authorize/`, payload)
             .then(res => {
                 if (res.status == '200') {
                     status = 'success';
@@ -71,19 +71,19 @@ const api = {
         });
     },
     getLeagues: (payload) => {
-        return axios.get(`${baseUrl}/league/`, {params: {'period':payload}})
+        return axios.get(`${process.env.REACT_APP_API_BASE_URL}/api/league/`, {params: {'period':payload}})
     },
     getMyLeagues: () => {
-        return axios.get(`${baseUrl}/users/my_leagues/`)
+        return axios.get(`${process.env.REACT_APP_API_BASE_URL}/api/users/my_leagues/`)
     },
     getMayhem: (payload) => {
-        return axios.get(`${baseUrl}/users/get_mayhem/`, {params: {'league_id': payload}})
+        return axios.get(`${process.env.REACT_APP_API_BASE_URL}/api/users/get_mayhem/`, {params: {'league_id': payload}})
     },
     getMyWinnings: () => {
-        return axios.get(`${baseUrl}/users/get_gameweekhistory/`)
+        return axios.get(`${process.env.REACT_APP_API_BASE_URL}/api/users/get_gameweekhistory/`)
     },
     joinLeague: (payload) => {
-        return axios.post(`${baseUrl}/team/join_league/${payload}/`)
+        return axios.post(`${process.env.REACT_APP_API_BASE_URL}/api/team/join_league/${payload}/`)
             .then(res => {
                 if (res.status == '201') {
                     return {"status": "ok"}

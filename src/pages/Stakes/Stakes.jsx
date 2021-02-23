@@ -109,8 +109,8 @@ export default function Stakes() {
                                     )
                                 }
 
-                            )}
-                        )}
+                            })
+                        }
 
                     </div>
                 </div>
@@ -132,7 +132,7 @@ export default function Stakes() {
                    </Link>
                </div>
             </div>
-        </div>  
+        </div>
        <SubscribeLetter />
     </>)
 

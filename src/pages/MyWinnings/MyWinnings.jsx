@@ -67,6 +67,25 @@ export default function MyWinnings() {
                         <div className="headText" style={{ width: "15%", minWidth: "8rem" }}>Wager</div>
                         <div className="headText" style={{ width: "25%", minWidth: "8rem" }}>Payout</div>
                     </div>
+
+                    <div key="1" className="d-flex align-items-center rows1 mb-2 p-3 overflow-auto">
+                <div className="rowText text-center px-5" style={{
+                    width: "25%",
+                }}>
+                    <div className="d-flex align-items-center justify-content-center" style={{
+
+                        height: "3rem",
+                        fontSize: "0.8rem",
+                        fontWeight: "500",
+
+                        fontFamily: "Rubik",
+                    }}>8th January,2021</div>
+                </div>
+                <div className="rowText" style={{ width: "35%", minWidth: "8rem" }}>Weeeknbdsffd dd</div>
+                <div className="rowText" style={{ width: "15%", minWidth: "8rem" }}>$ 300</div>
+                <div className="rowText" style={{ width: "25%", minWidth: "8rem" }}>766756</div>
+            </div>
+
                     {myWinnings.map((value, index) => {
                             return (<div key={index} className="d-flex align-items-center rows1 mb-2 p-3 overflow-auto">
                         <div className="rowText text-center px-5" style={{
