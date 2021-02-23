@@ -2,6 +2,7 @@
     width: 100%;
     margin-top: -12rem;
     margin-bottom: 11rem;
+    /* width: 85rem; */
 }
 
 .stake-parent #bg {
@@ -140,28 +141,32 @@
     font-size: 3.7rem;
     font-weight: 500;
 }
-.last-stake .last-stake-row{
-    display:flex;
+
+.last-stake .last-stake-row {
+    display: flex;
     flex-direction: row;
 }
-.last-stake .get-started-arrow, .div1-stake .arrow{
+
+.last-stake .get-started-arrow, .div1-stake .arrow {
     margin-left: 4.46rem;
 }
-.stake-parent button:focus{
+
+.stake-parent button:focus {
     outline: none;
     box-shadow: none;
 }
+
 @media only screen and (min-device-width:280px) and (max-device-width:480px) {
     .stakes-card .last-stake {
         padding: 2rem;
     }
-    .last-stake .last-stake-row{
+    .last-stake .last-stake-row {
         flex-direction: column;
     }
-    .last-stake .get-started-arrow{
+    .last-stake .get-started-arrow {
         margin-left: 1.3rem;
     }
-    .div1-stake .arrow{
+    .div1-stake .arrow {
         margin-left: 2rem;
     }
     .stakes-card .last-stake .child1-last-stake {
@@ -181,5 +186,8 @@
         border: 60px solid #3A4EFF;
         top: -13%;
         left: 48%;
+    }
+    .stakes-card {
+        width: 100%
     }
 }
