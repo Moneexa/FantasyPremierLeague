@@ -342,16 +342,11 @@ export default function Messages() {
                                 </div>
 
                                 </> :
-
                                     <div className="pic-image">
                                         <img src="Notifications Center.png" className="pic" />
                                     </div>
                 }
-
             </div>
-
         </div >
-
-
     </>)
 }
