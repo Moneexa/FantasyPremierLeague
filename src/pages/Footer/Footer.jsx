@@ -25,26 +25,26 @@ export default function Footer() {
                             color: "white"
                         }}>
 
-                            <Link target="_blank" to="/privacy-policy">
+                            <Link target="_blank" to="/privacy-policy" className="px-2">
                                 <p className="py-2" style={{
                                     fontSize: "0.8rem", color: "white"
                                 }}>
                                     Privacy Policy
                             </p>
                             </Link>
-                            <Link to="/blank" target="_blank">
+                            <Link to="/blank" target="_blank" className="px-2">
                                 <p className="py-2 text-white" style={{
                                     fontSize: "0.8rem"
                                 }}>Disclaimer</p>
                             </Link>
-                            <Link to="/blank" target="_blank">
+                            <Link to="/blank" target="_blank" className="px-2">
                                 <p className="py-2 text-white" style={{
                                     fontSize: "0.8rem"
                                 }}>Terms and Conditions</p>
                             </Link>
 
                         </div>
-                       
+
                     </>
                     :
                     <>

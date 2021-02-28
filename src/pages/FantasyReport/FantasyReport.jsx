@@ -3,11 +3,11 @@ import './FantasyReport.css'
 import paper from './legal-paper.svg'
 
 import { Link } from 'react-router-dom'
-const google = window.google;
 
 export default function FantasyReport() {
     const [tooltipIsOpen, setTooltipIsOpen] = useState(false);
     const [st, setSt] = useState("")
+    const google = window.google;
 
     useEffect(() => {
         google.charts.load('current', {
